@@ -1,0 +1,21 @@
+notifications:
+  email: false
+sudo: false
+language: node_js
+node_js:
+  - node
+  - 8
+  - 10
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - npm install -g cross-env codecov
+  - yarn
+
+script:
+  - yarn test
+  - yarn build
+
+fail_fast: true
