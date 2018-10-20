@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <AppLayout>
-          <CrossVisualizer/>
+          <CrossVisualizer />
         </AppLayout>
       </div>
     );

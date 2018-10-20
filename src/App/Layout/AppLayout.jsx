@@ -30,7 +30,7 @@ class AppLayout extends Component {
           ''
         }
         <Layout>
-          {renderHeader ? <AppHeader/> : ''}
+          {renderHeader ? <AppHeader /> : ''}
           <AppContent>
             {this.props.children}
           </AppContent>
