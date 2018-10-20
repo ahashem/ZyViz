@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { store } from 'speedux';
 
-import App from './App';
+import App from './App/App';
 import * as serviceWorker from './utils/serviceWorker';
 
 import 'antd/dist/antd.css';

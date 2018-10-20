@@ -1,5 +1,5 @@
 import { createModule } from 'speedux';
-import { OrdersAPI } from '../utils/API';
+import { OrdersAPI } from '../../utils/API';
 
 export default createModule('CrossVisualizer', {
 

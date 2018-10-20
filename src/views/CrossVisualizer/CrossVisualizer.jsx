@@ -5,14 +5,14 @@ import {
   Spin,
 } from 'antd';
 
-import './style.scss';
+import './CrossVisualizer.scss';
 import module from './CrossVisualizer.module';
+import PieChart from '../../components/PieChart/PieChart';
 
 
 class CrossVisualizer extends Component {
   static propTypes = {
-    actions: PropTypes.shape({
-    }),
+    actions: PropTypes.shape({}),
     state: PropTypes.shape({
       loading: PropTypes.bool,
       error: PropTypes.bool,
@@ -32,9 +32,7 @@ class CrossVisualizer extends Component {
     location: {},
   };
 
-  state = {
-
-  };
+  state = {};
 
   componentDidMount() {
 
@@ -46,10 +44,18 @@ class CrossVisualizer extends Component {
 
   render() {
 
+    const { state } = this.props;
+    const { loading } = state;
+
     return (
       <div>
-        <div>All Charts will render here</div>
-        <Spin />
+        {loading ? (
+            <Spin/>
+          )
+          : (
+            <PieChart
+            />
+          )}
       </div>
     );
   }
