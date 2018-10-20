@@ -1,26 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { VictoryPie } from 'victory';
+import PieChart from '../../../components/PieChart/PieChart';
 
 /**
  * Abstract Pie Chart wrapper
  * @param data
  */
-const PieChart = ({ data }) => {
+const OrdersByPayment = ({ data }) => {
   return (
-    <VictoryPie
+    <PieChart
       data={data}
     />
   );
 };
 
-PieChart.propTypes = {
+OrdersByPayment.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
-PieChart.defaultProps = {
+OrdersByPayment.defaultProps = {
   data: [],
 };
 
-export default PieChart;
+export default OrdersByPayment;

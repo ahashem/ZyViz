@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'speedux';
-import {
-  Spin,
-} from 'antd';
+import { Spin, } from 'antd';
+
+import module from './CrossVisualizer.module';
+import OrdersCountPie from './OrdersCountPie/OrdersCountPie';
 
 import './CrossVisualizer.scss';
-import module from './CrossVisualizer.module';
-import PieChart from '../../components/PieChart/PieChart';
 
 
 class CrossVisualizer extends Component {
@@ -49,12 +48,58 @@ class CrossVisualizer extends Component {
 
     return (
       <div>
-        {loading ? (
-            <Spin/>
-          )
+        {loading ? (<Spin/>)
           : (
-            <PieChart
-            />
+            <React.Fragment>
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+              <OrdersCountPie
+                orders={[]}
+                payments={[]}
+              />
+            </React.Fragment>
           )}
       </div>
     );
