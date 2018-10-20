@@ -15,7 +15,7 @@ install:
   - yarn
 
 script:
-  - yarn test
+  - yarn test --coverage
   - yarn build
 
 fail_fast: true
