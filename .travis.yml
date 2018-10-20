@@ -15,7 +15,7 @@ install:
   - yarn
 
 script:
-  - yarn test --coverage
+  - yarn test --coverage --ci -b
   - yarn build
 
 after_success:
