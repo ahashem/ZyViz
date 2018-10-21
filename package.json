@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "antd": "3.10.1",
+    "crossfilter2": "1.4.6",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.6.0",
+    "fast-deep-equal": "2.0.1",
     "http-status": "1.2.0",
     "node-sass": "4.9.4",
     "prop-types": "15.6.2",

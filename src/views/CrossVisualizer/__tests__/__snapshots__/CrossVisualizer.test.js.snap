@@ -39,14 +39,7 @@ ShallowWrapper {
       "chartsData": Object {
         "id": "001",
       },
-      "history": Object {},
-      "location": Object {},
-      "state": Object {
-        "allColumns": Array [],
-        "campaignsCount": 0,
-        "columns": Array [],
-        "current": 1,
-      },
+      "state": undefined,
       "store": Object {
         "clearActions": [Function],
         "dispatch": [Function],
@@ -91,14 +84,7 @@ ShallowWrapper {
         "chartsData": Object {
           "id": "001",
         },
-        "history": Object {},
-        "location": Object {},
-        "state": Object {
-          "allColumns": Array [],
-          "campaignsCount": 0,
-          "columns": Array [],
-          "current": 1,
-        },
+        "state": undefined,
         "store": Object {
           "clearActions": [Function],
           "dispatch": [Function],

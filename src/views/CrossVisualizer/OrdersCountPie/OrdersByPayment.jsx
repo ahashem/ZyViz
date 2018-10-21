@@ -7,10 +7,11 @@ import PieChart from '../../../components/PieChart/PieChart';
  * Abstract Pie Chart wrapper
  * @param data
  */
-const OrdersByPayment = ({ data }) => {
+const OrdersByPayment = ({ data, ...rest }) => {
   return (
     <PieChart
       data={data}
+      {...rest}
     />
   );
 };

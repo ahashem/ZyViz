@@ -3,12 +3,9 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
 import OrdersByPayment from './OrdersByPayment';
 
-const mockData = [
-  { x: 'Cats', y: 35 },
-  { x: 'Dogs', y: 40 },
-  { x: 'Birds', y: 55 }
-];
-
+/**
+ *
+ */
 class OrdersCountPie extends Component {
   static propTypes = {
     orders: PropTypes.arrayOf(PropTypes.shape({})),
@@ -21,17 +18,31 @@ class OrdersCountPie extends Component {
   };
 
   render() {
+    const { orders } = this.props;
+
     return (
       <div>
         <Row type="flex" justify="space-around">
           <Col span={4}>
-            <OrdersByPayment data={mockData} />
+            <OrdersByPayment
+              data={orders}
+              x="key"
+              y="value"
+            />
           </Col>
           <Col span={4}>
-            <OrdersByPayment data={mockData} />
+            <OrdersByPayment
+              data={orders}
+              x="key"
+              y="value"
+            />
           </Col>
           <Col span={4}>
-            <OrdersByPayment data={mockData} />
+            <OrdersByPayment
+              data={orders}
+              x="key"
+              y="value"
+            />
           </Col>
         </Row>
       </div>

@@ -24,7 +24,7 @@ class AppLayout extends Component {
 
     return (
       <Layout>
-        {process.env.REACT_APP_SIDE_MENU ? (
+        {Boolean(process.env.REACT_APP_SIDE_MENU) ? (
             <AppSidebar collapsed={this.state.collapsed} onCollapse={this.onCollapse}/>
           ) :
           ''

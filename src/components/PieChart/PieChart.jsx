@@ -7,10 +7,11 @@ import { VictoryPie } from 'victory';
  * Abstract Pie Chart wrapper
  * @param data
  */
-const PieChart = ({ data }) => {
+const PieChart = ({ data, ...rest }) => {
   return (
     <VictoryPie
       data={data}
+      {...rest}
     />
   );
 };

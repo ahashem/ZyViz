@@ -7,7 +7,7 @@ export default createModule('CrossVisualizer', {
     loading: false,
     error: false,
     errorMsg: '',
-    chartsData: {},
+    ordersData: [],
   },
 
   actions: {
@@ -19,23 +19,19 @@ export default createModule('CrossVisualizer', {
         loading: true,
       };
 
-      const allData = yield OrdersAPI.getOrders().catch(e => e);
+      const ordersData = yield OrdersAPI.getOrders().catch(e => e);
 
-      if (allData instanceof Error) {
-        const { errorMsg } = JSON.parse(allData.message);
+      if (ordersData instanceof Error) {
+        const { errorMsg } = JSON.parse(ordersData.message);
         yield {
           loading: false,
           error: true,
           errorMsg,
         };
-      }
-
-      const chartsData = allData.data;
-
-      if (chartsData) {
+      } else {
         yield {
           loading: false,
-          chartsData,
+          ordersData,
         };
       }
     },
