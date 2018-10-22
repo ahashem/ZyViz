@@ -41,28 +41,22 @@ class CrossVisualizer extends Component {
   componentDidUpdate(prevProps) {
   }
 
-  prepareOrdersCountData = (ordersData) => {
-    // Serialize data using crossfilter to be:
-    // {key: paymentMethod, value: count}
-    const crossedOrdersData = crossfilter(ordersData);
-    const dimension = crossedOrdersData.dimension(record => record.paymentMethod);
-    const categories = dimension.group().reduceCount();
+  normalizeData = (ordersData) => {
+    const currencyParser = (value) => value && parseFloat(value.replace(/[$,]+/g, ''));
 
-    const data = categories.all();
-    return {
-      categories,
-      dimension,
-      data
-    };
-
+    // Normalize data for Crossfilter usage!
+    ordersData.forEach(order => {
+      order.orderAmount = currencyParser(order.orderAmount);
+    });
+    return ordersData;
   };
 
-  render() {
+    render() {
 
     const { state } = this.props;
     const { loading, ordersData } = state;
 
-    const ordersCountData = (ordersData && ordersData.length) ? this.prepareOrdersCountData(ordersData) : null;
+    const orders = (ordersData && ordersData.length) ? crossfilter(this.normalizeData(ordersData)) : null;
 
     return (
       <div>
@@ -71,8 +65,7 @@ class CrossVisualizer extends Component {
             <React.Fragment>
               <h3>Orders by <br /><strong>payment method</strong></h3>
               <OrdersCountPie
-                orders={ordersCountData ? ordersCountData.data : []}
-                payments={[]}
+                orders={orders}
               />
             </React.Fragment>
           )}
