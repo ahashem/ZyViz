@@ -1,7 +1,7 @@
 import { createModule } from 'speedux';
 import { OrdersAPI } from '../../utils/API';
 
-export default createModule('CrossVisualizer', {
+export default createModule('crossVisualizer', {
 
   state: {
     loading: false,
@@ -35,9 +35,5 @@ export default createModule('CrossVisualizer', {
         };
       }
     },
-  },
-
-  handlers: {
-
   },
 });

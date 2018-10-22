@@ -60,7 +60,7 @@ class CrossVisualizer extends Component {
 
     return (
       <div>
-        {loading ? (<Spin/>)
+        {loading ? (<Spin data-test="loading"/>)
           : (
             <React.Fragment>
               <h3>Orders by <br /><strong>payment method</strong></h3>
