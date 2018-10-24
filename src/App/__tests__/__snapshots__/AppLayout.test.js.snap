@@ -18,10 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <AppSidebar
-          collapsed={false}
-          onCollapse={[Function]}
-        />,
+        "",
         <Adapter>
           
           <AppContent />
@@ -30,19 +27,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [],
-          "collapsed": false,
-          "onCollapse": [Function],
-        },
-        "ref": null,
-        "rendered": Array [],
-        "type": [Function],
-      },
+      "",
       Object {
         "instance": null,
         "key": undefined,
@@ -80,10 +65,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <AppSidebar
-            collapsed={false}
-            onCollapse={[Function]}
-          />,
+          "",
           <Adapter>
             
             <AppContent />
@@ -92,19 +74,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": Array [],
-            "collapsed": false,
-            "onCollapse": [Function],
-          },
-          "ref": null,
-          "rendered": Array [],
-          "type": [Function],
-        },
+        "",
         Object {
           "instance": null,
           "key": undefined,

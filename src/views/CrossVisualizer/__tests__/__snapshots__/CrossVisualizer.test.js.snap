@@ -1,14 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CrossVisualizer /> Component should render children 1`] = `
+exports[`should render children and match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Connect(CrossVisualizer)
-    chartsData={
-      Object {
-        "id": "001",
-      }
-    }
     store={
       Object {
         "clearActions": [Function],
@@ -36,16 +31,30 @@ ShallowWrapper {
       "actions": Object {
         "getOrdersData": [Function],
       },
-      "chartsData": Object {
-        "id": "001",
-      },
-      "history": Object {},
-      "location": Object {},
       "state": Object {
-        "allColumns": Array [],
-        "campaignsCount": 0,
-        "columns": Array [],
-        "current": 1,
+        "error": false,
+        "errorMes": "",
+        "loading": false,
+        "ordersData": Array [
+          Object {
+            "branch": "Branch D",
+            "deliveryArea": "Mirqab",
+            "orderAmount": "$51.89",
+            "orderdate": "2015-03-16T19:46:12+00:00",
+            "orderid": 36,
+            "paymentMethod": "Cash",
+            "userid": "94a16117-9db3-4f25-abdf-1c3ef6578097",
+          },
+          Object {
+            "branch": "Branch A",
+            "deliveryArea": "Funaitees",
+            "orderAmount": "$22.77",
+            "orderdate": "2015-11-06T12:33:56+00:00",
+            "orderid": 37,
+            "paymentMethod": "KNET",
+            "userid": "0aed2c89-8d05-4a0c-b5dd-35c24829020e",
+          },
+        ],
       },
       "store": Object {
         "clearActions": [Function],
@@ -88,16 +97,30 @@ ShallowWrapper {
         "actions": Object {
           "getOrdersData": [Function],
         },
-        "chartsData": Object {
-          "id": "001",
-        },
-        "history": Object {},
-        "location": Object {},
         "state": Object {
-          "allColumns": Array [],
-          "campaignsCount": 0,
-          "columns": Array [],
-          "current": 1,
+          "error": false,
+          "errorMes": "",
+          "loading": false,
+          "ordersData": Array [
+            Object {
+              "branch": "Branch D",
+              "deliveryArea": "Mirqab",
+              "orderAmount": "$51.89",
+              "orderdate": "2015-03-16T19:46:12+00:00",
+              "orderid": 36,
+              "paymentMethod": "Cash",
+              "userid": "94a16117-9db3-4f25-abdf-1c3ef6578097",
+            },
+            Object {
+              "branch": "Branch A",
+              "deliveryArea": "Funaitees",
+              "orderAmount": "$22.77",
+              "orderdate": "2015-11-06T12:33:56+00:00",
+              "orderid": 37,
+              "paymentMethod": "KNET",
+              "userid": "0aed2c89-8d05-4a0c-b5dd-35c24829020e",
+            },
+          ],
         },
         "store": Object {
           "clearActions": [Function],
