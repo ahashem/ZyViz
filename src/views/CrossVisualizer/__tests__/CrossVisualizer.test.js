@@ -58,7 +58,8 @@ describe('<CrossVisualizer /> Component', () => {
   });
 
   test('component UI', () => {
-    // TODO: add more child UI assertions
+    const instance = wrapper.instance();
+    instance.debug();
   });
 
   describe('UI during loading', () => {
