@@ -42,25 +42,6 @@ test('should render children and match snapshot', () => {
 });
 
 describe('<CrossVisualizer /> Component', () => {
-  let wrapper;
-
-  beforeAll(() => {
-    const crossVisualizer = {
-      loading: false,
-      error: false,
-      errorMes: '',
-      ordersData: mockOrders
-    };
-    const mockStore = configureStore();
-    const store = mockStore({ crossVisualizer });
-
-    wrapper = mount(<CrossVisualizer store={store}/>);
-  });
-
-  test('component UI', () => {
-    // TODO: add more child UI assertions
-  });
-
   describe('UI during loading', () => {
     let wrapper;
 
