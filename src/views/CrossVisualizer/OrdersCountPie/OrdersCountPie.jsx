@@ -5,7 +5,7 @@ import { Col, Row } from 'antd';
 import PieChart from '../../../components/PieChart/PieChart';
 
 /**
- *
+ * @component OrdersCountPie
  */
 class OrdersCountPie extends Component {
   static propTypes = {
