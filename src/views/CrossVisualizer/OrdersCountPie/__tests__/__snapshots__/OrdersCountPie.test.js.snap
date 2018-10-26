@@ -44,11 +44,15 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "Cash",
-                  "value": 1,
+                  "value": 8,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 13,
                 },
                 Object {
                   "key": "KNET",
-                  "value": 1,
+                  "value": 6,
                 },
               ]
             }
@@ -64,7 +68,7 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "N/A",
-                  "value": 2,
+                  "value": 27,
                 },
               ]
             }
@@ -79,12 +83,24 @@ ShallowWrapper {
             data={
               Array [
                 Object {
+                  "key": "Afternoon",
+                  "value": 12,
+                },
+                Object {
                   "key": "Evening",
                   "value": 1,
                 },
                 Object {
                   "key": "Morning",
+                  "value": 7,
+                },
+                Object {
+                  "key": "N/A",
                   "value": 1,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 6,
                 },
               ]
             }
@@ -109,11 +125,15 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "Cash",
-                    "value": 1,
+                    "value": 8,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 13,
                   },
                   Object {
                     "key": "KNET",
-                    "value": 1,
+                    "value": 6,
                   },
                 ]
               }
@@ -129,7 +149,7 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "N/A",
-                    "value": 2,
+                    "value": 27,
                   },
                 ]
               }
@@ -144,12 +164,24 @@ ShallowWrapper {
               data={
                 Array [
                   Object {
+                    "key": "Afternoon",
+                    "value": 12,
+                  },
+                  Object {
                     "key": "Evening",
                     "value": 1,
                   },
                   Object {
                     "key": "Morning",
+                    "value": 7,
+                  },
+                  Object {
+                    "key": "N/A",
                     "value": 1,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 6,
                   },
                 ]
               }
@@ -174,11 +206,15 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "Cash",
-                    "value": 1,
+                    "value": 8,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 13,
                   },
                   Object {
                     "key": "KNET",
-                    "value": 1,
+                    "value": 6,
                   },
                 ]
               }
@@ -196,11 +232,15 @@ ShallowWrapper {
               "data": Array [
                 Object {
                   "key": "Cash",
-                  "value": 1,
+                  "value": 8,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 13,
                 },
                 Object {
                   "key": "KNET",
-                  "value": 1,
+                  "value": 6,
                 },
               ],
               "x": "key",
@@ -222,7 +262,7 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "N/A",
-                    "value": 2,
+                    "value": 27,
                   },
                 ]
               }
@@ -240,7 +280,7 @@ ShallowWrapper {
               "data": Array [
                 Object {
                   "key": "N/A",
-                  "value": 2,
+                  "value": 27,
                 },
               ],
               "x": "key",
@@ -261,12 +301,24 @@ ShallowWrapper {
               data={
                 Array [
                   Object {
+                    "key": "Afternoon",
+                    "value": 12,
+                  },
+                  Object {
                     "key": "Evening",
                     "value": 1,
                   },
                   Object {
                     "key": "Morning",
+                    "value": 7,
+                  },
+                  Object {
+                    "key": "N/A",
                     "value": 1,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 6,
                   },
                 ]
               }
@@ -283,12 +335,24 @@ ShallowWrapper {
             "props": Object {
               "data": Array [
                 Object {
+                  "key": "Afternoon",
+                  "value": 12,
+                },
+                Object {
                   "key": "Evening",
                   "value": 1,
                 },
                 Object {
                   "key": "Morning",
+                  "value": 7,
+                },
+                Object {
+                  "key": "N/A",
                   "value": 1,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 6,
                 },
               ],
               "x": "key",
@@ -324,11 +388,15 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "Cash",
-                    "value": 1,
+                    "value": 8,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 13,
                   },
                   Object {
                     "key": "KNET",
-                    "value": 1,
+                    "value": 6,
                   },
                 ]
               }
@@ -344,7 +412,7 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "N/A",
-                    "value": 2,
+                    "value": 27,
                   },
                 ]
               }
@@ -359,12 +427,24 @@ ShallowWrapper {
               data={
                 Array [
                   Object {
+                    "key": "Afternoon",
+                    "value": 12,
+                  },
+                  Object {
                     "key": "Evening",
                     "value": 1,
                   },
                   Object {
                     "key": "Morning",
+                    "value": 7,
+                  },
+                  Object {
+                    "key": "N/A",
                     "value": 1,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 6,
                   },
                 ]
               }
@@ -389,11 +469,15 @@ ShallowWrapper {
                   Array [
                     Object {
                       "key": "Cash",
-                      "value": 1,
+                      "value": 8,
+                    },
+                    Object {
+                      "key": "CreditCard",
+                      "value": 13,
                     },
                     Object {
                       "key": "KNET",
-                      "value": 1,
+                      "value": 6,
                     },
                   ]
                 }
@@ -409,7 +493,7 @@ ShallowWrapper {
                   Array [
                     Object {
                       "key": "N/A",
-                      "value": 2,
+                      "value": 27,
                     },
                   ]
                 }
@@ -424,12 +508,24 @@ ShallowWrapper {
                 data={
                   Array [
                     Object {
+                      "key": "Afternoon",
+                      "value": 12,
+                    },
+                    Object {
                       "key": "Evening",
                       "value": 1,
                     },
                     Object {
                       "key": "Morning",
+                      "value": 7,
+                    },
+                    Object {
+                      "key": "N/A",
                       "value": 1,
+                    },
+                    Object {
+                      "key": "Night",
+                      "value": 6,
                     },
                   ]
                 }
@@ -454,11 +550,15 @@ ShallowWrapper {
                   Array [
                     Object {
                       "key": "Cash",
-                      "value": 1,
+                      "value": 8,
+                    },
+                    Object {
+                      "key": "CreditCard",
+                      "value": 13,
                     },
                     Object {
                       "key": "KNET",
-                      "value": 1,
+                      "value": 6,
                     },
                   ]
                 }
@@ -476,11 +576,15 @@ ShallowWrapper {
                 "data": Array [
                   Object {
                     "key": "Cash",
-                    "value": 1,
+                    "value": 8,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 13,
                   },
                   Object {
                     "key": "KNET",
-                    "value": 1,
+                    "value": 6,
                   },
                 ],
                 "x": "key",
@@ -502,7 +606,7 @@ ShallowWrapper {
                   Array [
                     Object {
                       "key": "N/A",
-                      "value": 2,
+                      "value": 27,
                     },
                   ]
                 }
@@ -520,7 +624,7 @@ ShallowWrapper {
                 "data": Array [
                   Object {
                     "key": "N/A",
-                    "value": 2,
+                    "value": 27,
                   },
                 ],
                 "x": "key",
@@ -541,12 +645,24 @@ ShallowWrapper {
                 data={
                   Array [
                     Object {
+                      "key": "Afternoon",
+                      "value": 12,
+                    },
+                    Object {
                       "key": "Evening",
                       "value": 1,
                     },
                     Object {
                       "key": "Morning",
+                      "value": 7,
+                    },
+                    Object {
+                      "key": "N/A",
                       "value": 1,
+                    },
+                    Object {
+                      "key": "Night",
+                      "value": 6,
                     },
                   ]
                 }
@@ -563,12 +679,24 @@ ShallowWrapper {
               "props": Object {
                 "data": Array [
                   Object {
+                    "key": "Afternoon",
+                    "value": 12,
+                  },
+                  Object {
                     "key": "Evening",
                     "value": 1,
                   },
                   Object {
                     "key": "Morning",
+                    "value": 7,
+                  },
+                  Object {
+                    "key": "N/A",
                     "value": 1,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 6,
                   },
                 ],
                 "x": "key",
