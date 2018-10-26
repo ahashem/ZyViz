@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme/build';
+import { shallow } from 'enzyme';
 import AppSidebar from '../Layout/AppSidebar';
 
 describe('<AppSidebar /> component', () => {

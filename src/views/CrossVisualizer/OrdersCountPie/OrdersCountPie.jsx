@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { utc } from 'moment';
-import { Col, Row } from 'antd';
 import PieChart from '../../../components/PieChart/PieChart';
+import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 
 /**
  * @component OrdersCountPie
@@ -94,29 +94,27 @@ class OrdersCountPie extends Component {
 
     return (
       <div>
-        <Row type="flex" justify="space-around">
-          <Col span={4}>
-            <PieChart
-              data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
-              x="key"
-              y="value"
-            />
-          </Col>
-          <Col span={4}>
-            <PieChart
-              data={ordersCrossed && ordersCrossed.ordersByAmountData}
-              x="key"
-              y="value"
-            />
-          </Col>
-          <Col span={4}>
-            <PieChart
-              data={ordersCrossed && ordersCrossed.ordersByTimeData}
-              x="key"
-              y="value"
-            />
-          </Col>
-        </Row>
+        <FlexGridRow justify="space-around" gutter={48}>
+
+          <PieChart
+            data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
+            x="key"
+            y="value"
+          />
+
+          <PieChart
+            data={ordersCrossed && ordersCrossed.ordersByAmountData}
+            x="key"
+            y="value"
+          />
+
+          <PieChart
+            data={ordersCrossed && ordersCrossed.ordersByTimeData}
+            x="key"
+            y="value"
+          />
+
+        </FlexGridRow>
       </div>
     );
   }
