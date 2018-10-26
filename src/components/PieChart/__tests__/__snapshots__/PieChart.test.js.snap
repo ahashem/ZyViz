@@ -20,6 +20,7 @@ ShallowWrapper {
         },
       ]
     }
+    onClick={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -57,6 +58,14 @@ ShallowWrapper {
       "dataComponent": <Slice
         pathComponent={<Path />}
       />,
+      "events": Array [
+        Object {
+          "eventHandlers": Object {
+            "onClick": [Function],
+          },
+          "target": "data",
+        },
+      ],
       "groupComponent": <g />,
       "labelComponent": <VictoryLabel
         capHeight={0.71}
@@ -577,6 +586,14 @@ ShallowWrapper {
         "dataComponent": <Slice
           pathComponent={<Path />}
         />,
+        "events": Array [
+          Object {
+            "eventHandlers": Object {
+              "onClick": [Function],
+            },
+            "target": "data",
+          },
+        ],
         "groupComponent": <g />,
         "labelComponent": <VictoryLabel
           capHeight={0.71}
