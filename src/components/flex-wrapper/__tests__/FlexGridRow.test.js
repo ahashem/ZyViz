@@ -14,8 +14,6 @@ describe('<FlexGridRow /> component', () => {
 
     expect(rendered.find('Row')).toHaveLength(1);
     expect(rendered.find('Col')).toHaveLength(4);
-
-    expect(rendered).toMatchSnapshot();
   });
 
 });
