@@ -4,3 +4,5 @@ parsers:
 
 ignore:
   - "src/utils"
+  - "src/index.js"
+  - "src/logrocket.js"
