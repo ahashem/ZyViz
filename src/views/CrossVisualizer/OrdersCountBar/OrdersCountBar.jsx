@@ -32,7 +32,7 @@ class OrdersCountBar extends Component {
 
     // Orders by DeliveryArea
     const ordersByDeliveryArea = dimensions.ordersByDeliveryArea;
-    const ordersByDeliveryAreaData = ordersByDeliveryArea.group().reduceCount().all();
+    const ordersByDeliveryAreaData = ordersByDeliveryArea.group().reduceCount().top(20);
 
     // Orders by Order Day of Week
     // Week days (Saturday - Sunday ...etc)

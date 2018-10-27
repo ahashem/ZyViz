@@ -25,8 +25,7 @@ const filterDayTimeRange = (date, min, max) => {
 /**
  * Generate Referenced Dimensions from Crossfilter data
  * @param crossedOrdersData
- * @return {{ordersByPaymentMethod: crossfilter.Dimension<T, *> | *, ordersBySize: crossfilter.Dimension<T, crossfilter.NaturallyOrderedValue> | CrossFilter.Dimension<T, any> | *, ordersByTimeOfDay: crossfilter.Dimension<T, crossfilter.NaturallyOrderedValue> | CrossFilter.Dimension<T, any> | *}}
- * @constructor
+ * @return {Object<crossfilter.Dimension<T, *>>}
  */
 const GenerateDimensions = (crossedOrdersData) => {
   // Orders by paymentMethod
