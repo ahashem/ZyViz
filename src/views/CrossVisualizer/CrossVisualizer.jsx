@@ -9,6 +9,7 @@ import OrdersCountPie from './OrdersCountPie/OrdersCountPie';
 import './CrossVisualizer.scss';
 import OrdersRevenuePie from './OrdersRevenuePie/OrdersRevenuePie';
 import OrdersCountBar from './OrdersCountBar/OrdersCountBar';
+import OrdersRevenueBar from './OrdersRevenueBar/OrdersRevenueBar';
 
 class CrossVisualizer extends Component {
   static propTypes = {
@@ -70,6 +71,12 @@ class CrossVisualizer extends Component {
                 dimensions={dimensions}
                 onFilter={this.onFilter}
               />
+              <OrdersRevenueBar
+                orders={orders}
+                dimensions={dimensions}
+                onFilter={this.onFilter}
+              />
+
             </React.Fragment>
           )}
       </div>
