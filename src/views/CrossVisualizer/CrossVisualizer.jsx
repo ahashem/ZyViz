@@ -7,6 +7,7 @@ import module from './CrossVisualizer.module';
 import OrdersCountPie from './OrdersCountPie/OrdersCountPie';
 
 import './CrossVisualizer.scss';
+import OrdersRevenuePie from './OrdersRevenuePie/OrdersRevenuePie';
 
 class CrossVisualizer extends Component {
   static propTypes = {
@@ -51,8 +52,14 @@ class CrossVisualizer extends Component {
         {loading ? (<Spin data-test="loading"/>)
           : (
             <React.Fragment>
-              <h3>Orders by <br /><strong>payment method</strong></h3>
+              <h3>Order Count</h3>
               <OrdersCountPie
+                orders={orders}
+                dimensions={dimensions}
+                onFilter={this.onFilter}
+              />
+              <h3>Orders Revenue</h3>
+              <OrdersRevenuePie
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}

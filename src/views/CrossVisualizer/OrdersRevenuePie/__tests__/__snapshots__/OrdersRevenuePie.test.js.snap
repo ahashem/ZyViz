@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OrdersCountPie /> Component should render children and match snapshot 1`] = `
+exports[`<OrdersRevenuePie /> Component should render children and match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <OrdersCountPie
+  Symbol(enzyme.__unrendered__): <OrdersRevenuePie
     dimensions={
       Object {
         "ordersByPaymentMethod": Object {
@@ -113,15 +113,15 @@ ShallowWrapper {
             Array [
               Object {
                 "key": "Cash",
-                "value": 8,
+                "value": 447.44,
               },
               Object {
                 "key": "CreditCard",
-                "value": 13,
+                "value": 685,
               },
               Object {
                 "key": "KNET",
-                "value": 6,
+                "value": 298.48,
               },
             ]
           }
@@ -134,23 +134,23 @@ ShallowWrapper {
             Array [
               Object {
                 "key": "$10-$20",
-                "value": 1,
+                "value": 14.34,
               },
               Object {
                 "key": "$20-$40",
-                "value": 9,
+                "value": 291.51,
               },
               Object {
                 "key": "$40-$70",
-                "value": 3,
+                "value": 170.70999999999998,
               },
               Object {
                 "key": "$70 or more",
-                "value": 11,
+                "value": 940.4199999999998,
               },
               Object {
                 "key": "Less than $10",
-                "value": 3,
+                "value": 13.94,
               },
             ]
           }
@@ -163,23 +163,23 @@ ShallowWrapper {
             Array [
               Object {
                 "key": "Afternoon",
-                "value": 12,
+                "value": 686.75,
               },
               Object {
                 "key": "Evening",
-                "value": 1,
+                "value": 99.61,
               },
               Object {
                 "key": "Morning",
-                "value": 7,
+                "value": 324.94,
               },
               Object {
                 "key": "N/A",
-                "value": 1,
+                "value": 67.52,
               },
               Object {
                 "key": "Night",
-                "value": 6,
+                "value": 252.10000000000002,
               },
             ]
           }
@@ -201,15 +201,15 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "Cash",
-                  "value": 8,
+                  "value": 447.44,
                 },
                 Object {
                   "key": "CreditCard",
-                  "value": 13,
+                  "value": 685,
                 },
                 Object {
                   "key": "KNET",
-                  "value": 6,
+                  "value": 298.48,
                 },
               ]
             }
@@ -222,23 +222,23 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "$10-$20",
-                  "value": 1,
+                  "value": 14.34,
                 },
                 Object {
                   "key": "$20-$40",
-                  "value": 9,
+                  "value": 291.51,
                 },
                 Object {
                   "key": "$40-$70",
-                  "value": 3,
+                  "value": 170.70999999999998,
                 },
                 Object {
                   "key": "$70 or more",
-                  "value": 11,
+                  "value": 940.4199999999998,
                 },
                 Object {
                   "key": "Less than $10",
-                  "value": 3,
+                  "value": 13.94,
                 },
               ]
             }
@@ -251,23 +251,23 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "Afternoon",
-                  "value": 12,
+                  "value": 686.75,
                 },
                 Object {
                   "key": "Evening",
-                  "value": 1,
+                  "value": 99.61,
                 },
                 Object {
                   "key": "Morning",
-                  "value": 7,
+                  "value": 324.94,
                 },
                 Object {
                   "key": "N/A",
-                  "value": 1,
+                  "value": 67.52,
                 },
                 Object {
                   "key": "Night",
-                  "value": 6,
+                  "value": 252.10000000000002,
                 },
               ]
             }
@@ -289,15 +289,15 @@ ShallowWrapper {
             "data": Array [
               Object {
                 "key": "Cash",
-                "value": 8,
+                "value": 447.44,
               },
               Object {
                 "key": "CreditCard",
-                "value": 13,
+                "value": 685,
               },
               Object {
                 "key": "KNET",
-                "value": 6,
+                "value": 298.48,
               },
             ],
             "onClick": [Function],
@@ -316,23 +316,23 @@ ShallowWrapper {
             "data": Array [
               Object {
                 "key": "$10-$20",
-                "value": 1,
+                "value": 14.34,
               },
               Object {
                 "key": "$20-$40",
-                "value": 9,
+                "value": 291.51,
               },
               Object {
                 "key": "$40-$70",
-                "value": 3,
+                "value": 170.70999999999998,
               },
               Object {
                 "key": "$70 or more",
-                "value": 11,
+                "value": 940.4199999999998,
               },
               Object {
                 "key": "Less than $10",
-                "value": 3,
+                "value": 13.94,
               },
             ],
             "onClick": [Function],
@@ -351,23 +351,23 @@ ShallowWrapper {
             "data": Array [
               Object {
                 "key": "Afternoon",
-                "value": 12,
+                "value": 686.75,
               },
               Object {
                 "key": "Evening",
-                "value": 1,
+                "value": 99.61,
               },
               Object {
                 "key": "Morning",
-                "value": 7,
+                "value": 324.94,
               },
               Object {
                 "key": "N/A",
-                "value": 1,
+                "value": 67.52,
               },
               Object {
                 "key": "Night",
-                "value": 6,
+                "value": 252.10000000000002,
               },
             ],
             "onClick": [Function],
@@ -398,15 +398,15 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "Cash",
-                  "value": 8,
+                  "value": 447.44,
                 },
                 Object {
                   "key": "CreditCard",
-                  "value": 13,
+                  "value": 685,
                 },
                 Object {
                   "key": "KNET",
-                  "value": 6,
+                  "value": 298.48,
                 },
               ]
             }
@@ -419,23 +419,23 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "$10-$20",
-                  "value": 1,
+                  "value": 14.34,
                 },
                 Object {
                   "key": "$20-$40",
-                  "value": 9,
+                  "value": 291.51,
                 },
                 Object {
                   "key": "$40-$70",
-                  "value": 3,
+                  "value": 170.70999999999998,
                 },
                 Object {
                   "key": "$70 or more",
-                  "value": 11,
+                  "value": 940.4199999999998,
                 },
                 Object {
                   "key": "Less than $10",
-                  "value": 3,
+                  "value": 13.94,
                 },
               ]
             }
@@ -448,23 +448,23 @@ ShallowWrapper {
               Array [
                 Object {
                   "key": "Afternoon",
-                  "value": 12,
+                  "value": 686.75,
                 },
                 Object {
                   "key": "Evening",
-                  "value": 1,
+                  "value": 99.61,
                 },
                 Object {
                   "key": "Morning",
-                  "value": 7,
+                  "value": 324.94,
                 },
                 Object {
                   "key": "N/A",
-                  "value": 1,
+                  "value": 67.52,
                 },
                 Object {
                   "key": "Night",
-                  "value": 6,
+                  "value": 252.10000000000002,
                 },
               ]
             }
@@ -486,15 +486,15 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "Cash",
-                    "value": 8,
+                    "value": 447.44,
                   },
                   Object {
                     "key": "CreditCard",
-                    "value": 13,
+                    "value": 685,
                   },
                   Object {
                     "key": "KNET",
-                    "value": 6,
+                    "value": 298.48,
                   },
                 ]
               }
@@ -507,23 +507,23 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "$10-$20",
-                    "value": 1,
+                    "value": 14.34,
                   },
                   Object {
                     "key": "$20-$40",
-                    "value": 9,
+                    "value": 291.51,
                   },
                   Object {
                     "key": "$40-$70",
-                    "value": 3,
+                    "value": 170.70999999999998,
                   },
                   Object {
                     "key": "$70 or more",
-                    "value": 11,
+                    "value": 940.4199999999998,
                   },
                   Object {
                     "key": "Less than $10",
-                    "value": 3,
+                    "value": 13.94,
                   },
                 ]
               }
@@ -536,23 +536,23 @@ ShallowWrapper {
                 Array [
                   Object {
                     "key": "Afternoon",
-                    "value": 12,
+                    "value": 686.75,
                   },
                   Object {
                     "key": "Evening",
-                    "value": 1,
+                    "value": 99.61,
                   },
                   Object {
                     "key": "Morning",
-                    "value": 7,
+                    "value": 324.94,
                   },
                   Object {
                     "key": "N/A",
-                    "value": 1,
+                    "value": 67.52,
                   },
                   Object {
                     "key": "Night",
-                    "value": 6,
+                    "value": 252.10000000000002,
                   },
                 ]
               }
@@ -574,15 +574,15 @@ ShallowWrapper {
               "data": Array [
                 Object {
                   "key": "Cash",
-                  "value": 8,
+                  "value": 447.44,
                 },
                 Object {
                   "key": "CreditCard",
-                  "value": 13,
+                  "value": 685,
                 },
                 Object {
                   "key": "KNET",
-                  "value": 6,
+                  "value": 298.48,
                 },
               ],
               "onClick": [Function],
@@ -601,23 +601,23 @@ ShallowWrapper {
               "data": Array [
                 Object {
                   "key": "$10-$20",
-                  "value": 1,
+                  "value": 14.34,
                 },
                 Object {
                   "key": "$20-$40",
-                  "value": 9,
+                  "value": 291.51,
                 },
                 Object {
                   "key": "$40-$70",
-                  "value": 3,
+                  "value": 170.70999999999998,
                 },
                 Object {
                   "key": "$70 or more",
-                  "value": 11,
+                  "value": 940.4199999999998,
                 },
                 Object {
                   "key": "Less than $10",
-                  "value": 3,
+                  "value": 13.94,
                 },
               ],
               "onClick": [Function],
@@ -636,23 +636,23 @@ ShallowWrapper {
               "data": Array [
                 Object {
                   "key": "Afternoon",
-                  "value": 12,
+                  "value": 686.75,
                 },
                 Object {
                   "key": "Evening",
-                  "value": 1,
+                  "value": 99.61,
                 },
                 Object {
                   "key": "Morning",
-                  "value": 7,
+                  "value": 324.94,
                 },
                 Object {
                   "key": "N/A",
-                  "value": 1,
+                  "value": 67.52,
                 },
                 Object {
                   "key": "Night",
-                  "value": 6,
+                  "value": 252.10000000000002,
                 },
               ],
               "onClick": [Function],
