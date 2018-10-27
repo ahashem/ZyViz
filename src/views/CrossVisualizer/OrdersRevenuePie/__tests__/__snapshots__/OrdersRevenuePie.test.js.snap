@@ -4,6 +4,79 @@ exports[`<OrdersRevenuePie /> Component should render children and match snapsho
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <OrdersRevenuePie
+    dimensions={
+      Object {
+        "ordersByPaymentMethod": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersBySize": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByTimeOfDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByWeekDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+      }
+    }
+    onFilter={[MockFunction]}
     orders={
       Object {
         "add": [Function],
@@ -36,19 +109,80 @@ ShallowWrapper {
         justify="space-around"
       >
         <PieChart
-          data={null}
+          data={
+            Array [
+              Object {
+                "key": "Cash",
+                "value": 447.44,
+              },
+              Object {
+                "key": "CreditCard",
+                "value": 685,
+              },
+              Object {
+                "key": "KNET",
+                "value": 298.48,
+              },
+            ]
+          }
           onClick={[Function]}
           x="key"
           y="value"
         />
         <PieChart
-          data={null}
+          data={
+            Array [
+              Object {
+                "key": "$10-$20",
+                "value": 14.34,
+              },
+              Object {
+                "key": "$20-$40",
+                "value": 291.51,
+              },
+              Object {
+                "key": "$40-$70",
+                "value": 170.70999999999998,
+              },
+              Object {
+                "key": "$70 or more",
+                "value": 940.4199999999998,
+              },
+              Object {
+                "key": "Less than $10",
+                "value": 13.94,
+              },
+            ]
+          }
           onClick={[Function]}
           x="key"
           y="value"
         />
         <PieChart
-          data={null}
+          data={
+            Array [
+              Object {
+                "key": "Afternoon",
+                "value": 686.75,
+              },
+              Object {
+                "key": "Evening",
+                "value": 99.61,
+              },
+              Object {
+                "key": "Morning",
+                "value": 324.94,
+              },
+              Object {
+                "key": "N/A",
+                "value": 67.52,
+              },
+              Object {
+                "key": "Night",
+                "value": 252.10000000000002,
+              },
+            ]
+          }
           onClick={[Function]}
           x="key"
           y="value"
@@ -63,19 +197,80 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <PieChart
-            data={null}
+            data={
+              Array [
+                Object {
+                  "key": "Cash",
+                  "value": 447.44,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 685,
+                },
+                Object {
+                  "key": "KNET",
+                  "value": 298.48,
+                },
+              ]
+            }
             onClick={[Function]}
             x="key"
             y="value"
           />,
           <PieChart
-            data={null}
+            data={
+              Array [
+                Object {
+                  "key": "$10-$20",
+                  "value": 14.34,
+                },
+                Object {
+                  "key": "$20-$40",
+                  "value": 291.51,
+                },
+                Object {
+                  "key": "$40-$70",
+                  "value": 170.70999999999998,
+                },
+                Object {
+                  "key": "$70 or more",
+                  "value": 940.4199999999998,
+                },
+                Object {
+                  "key": "Less than $10",
+                  "value": 13.94,
+                },
+              ]
+            }
             onClick={[Function]}
             x="key"
             y="value"
           />,
           <PieChart
-            data={null}
+            data={
+              Array [
+                Object {
+                  "key": "Afternoon",
+                  "value": 686.75,
+                },
+                Object {
+                  "key": "Evening",
+                  "value": 99.61,
+                },
+                Object {
+                  "key": "Morning",
+                  "value": 324.94,
+                },
+                Object {
+                  "key": "N/A",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 252.10000000000002,
+                },
+              ]
+            }
             onClick={[Function]}
             x="key"
             y="value"
@@ -91,7 +286,20 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "data": null,
+            "data": Array [
+              Object {
+                "key": "Cash",
+                "value": 447.44,
+              },
+              Object {
+                "key": "CreditCard",
+                "value": 685,
+              },
+              Object {
+                "key": "KNET",
+                "value": 298.48,
+              },
+            ],
             "onClick": [Function],
             "x": "key",
             "y": "value",
@@ -105,7 +313,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "data": null,
+            "data": Array [
+              Object {
+                "key": "$10-$20",
+                "value": 14.34,
+              },
+              Object {
+                "key": "$20-$40",
+                "value": 291.51,
+              },
+              Object {
+                "key": "$40-$70",
+                "value": 170.70999999999998,
+              },
+              Object {
+                "key": "$70 or more",
+                "value": 940.4199999999998,
+              },
+              Object {
+                "key": "Less than $10",
+                "value": 13.94,
+              },
+            ],
             "onClick": [Function],
             "x": "key",
             "y": "value",
@@ -119,7 +348,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "data": null,
+            "data": Array [
+              Object {
+                "key": "Afternoon",
+                "value": 686.75,
+              },
+              Object {
+                "key": "Evening",
+                "value": 99.61,
+              },
+              Object {
+                "key": "Morning",
+                "value": 324.94,
+              },
+              Object {
+                "key": "N/A",
+                "value": 67.52,
+              },
+              Object {
+                "key": "Night",
+                "value": 252.10000000000002,
+              },
+            ],
             "onClick": [Function],
             "x": "key",
             "y": "value",
@@ -144,19 +394,80 @@ ShallowWrapper {
           justify="space-around"
         >
           <PieChart
-            data={null}
+            data={
+              Array [
+                Object {
+                  "key": "Cash",
+                  "value": 447.44,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 685,
+                },
+                Object {
+                  "key": "KNET",
+                  "value": 298.48,
+                },
+              ]
+            }
             onClick={[Function]}
             x="key"
             y="value"
           />
           <PieChart
-            data={null}
+            data={
+              Array [
+                Object {
+                  "key": "$10-$20",
+                  "value": 14.34,
+                },
+                Object {
+                  "key": "$20-$40",
+                  "value": 291.51,
+                },
+                Object {
+                  "key": "$40-$70",
+                  "value": 170.70999999999998,
+                },
+                Object {
+                  "key": "$70 or more",
+                  "value": 940.4199999999998,
+                },
+                Object {
+                  "key": "Less than $10",
+                  "value": 13.94,
+                },
+              ]
+            }
             onClick={[Function]}
             x="key"
             y="value"
           />
           <PieChart
-            data={null}
+            data={
+              Array [
+                Object {
+                  "key": "Afternoon",
+                  "value": 686.75,
+                },
+                Object {
+                  "key": "Evening",
+                  "value": 99.61,
+                },
+                Object {
+                  "key": "Morning",
+                  "value": 324.94,
+                },
+                Object {
+                  "key": "N/A",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 252.10000000000002,
+                },
+              ]
+            }
             onClick={[Function]}
             x="key"
             y="value"
@@ -171,19 +482,80 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <PieChart
-              data={null}
+              data={
+                Array [
+                  Object {
+                    "key": "Cash",
+                    "value": 447.44,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 685,
+                  },
+                  Object {
+                    "key": "KNET",
+                    "value": 298.48,
+                  },
+                ]
+              }
               onClick={[Function]}
               x="key"
               y="value"
             />,
             <PieChart
-              data={null}
+              data={
+                Array [
+                  Object {
+                    "key": "$10-$20",
+                    "value": 14.34,
+                  },
+                  Object {
+                    "key": "$20-$40",
+                    "value": 291.51,
+                  },
+                  Object {
+                    "key": "$40-$70",
+                    "value": 170.70999999999998,
+                  },
+                  Object {
+                    "key": "$70 or more",
+                    "value": 940.4199999999998,
+                  },
+                  Object {
+                    "key": "Less than $10",
+                    "value": 13.94,
+                  },
+                ]
+              }
               onClick={[Function]}
               x="key"
               y="value"
             />,
             <PieChart
-              data={null}
+              data={
+                Array [
+                  Object {
+                    "key": "Afternoon",
+                    "value": 686.75,
+                  },
+                  Object {
+                    "key": "Evening",
+                    "value": 99.61,
+                  },
+                  Object {
+                    "key": "Morning",
+                    "value": 324.94,
+                  },
+                  Object {
+                    "key": "N/A",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 252.10000000000002,
+                  },
+                ]
+              }
               onClick={[Function]}
               x="key"
               y="value"
@@ -199,7 +571,20 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "data": null,
+              "data": Array [
+                Object {
+                  "key": "Cash",
+                  "value": 447.44,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 685,
+                },
+                Object {
+                  "key": "KNET",
+                  "value": 298.48,
+                },
+              ],
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -213,7 +598,28 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "data": null,
+              "data": Array [
+                Object {
+                  "key": "$10-$20",
+                  "value": 14.34,
+                },
+                Object {
+                  "key": "$20-$40",
+                  "value": 291.51,
+                },
+                Object {
+                  "key": "$40-$70",
+                  "value": 170.70999999999998,
+                },
+                Object {
+                  "key": "$70 or more",
+                  "value": 940.4199999999998,
+                },
+                Object {
+                  "key": "Less than $10",
+                  "value": 13.94,
+                },
+              ],
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -227,7 +633,28 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "data": null,
+              "data": Array [
+                Object {
+                  "key": "Afternoon",
+                  "value": 686.75,
+                },
+                Object {
+                  "key": "Evening",
+                  "value": 99.61,
+                },
+                Object {
+                  "key": "Morning",
+                  "value": 324.94,
+                },
+                Object {
+                  "key": "N/A",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 252.10000000000002,
+                },
+              ],
               "onClick": [Function],
               "x": "key",
               "y": "value",

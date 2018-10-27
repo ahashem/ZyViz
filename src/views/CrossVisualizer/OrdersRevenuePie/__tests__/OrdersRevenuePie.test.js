@@ -2,17 +2,20 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import OrdersRevenuePie from '../OrdersRevenuePie';
-import crossfilter from '../../../../components/crossfilter/crossfilter';
-
-import mockOrders from '../../../../utils/test-utils/mock-test-orders';
+import { crossFilterMock, dimensionsMock } from '../../../../utils/test-utils';
 
 describe('<OrdersRevenuePie /> Component', () => {
 
-  const mockOrdersCrossed = crossfilter(mockOrders);
-
   test('should render children and match snapshot', () => {
+    const orders = crossFilterMock;
+    const dimensions = dimensionsMock;
+    const onFilter = jest.fn();
 
-    const rendered = shallow(<OrdersRevenuePie orders={mockOrdersCrossed}/>);
+    const rendered = shallow(<OrdersRevenuePie
+      orders={orders}
+      dimensions={dimensions}
+      onFilter={onFilter}
+    />);
 
     expect(rendered).toMatchSnapshot();
   });
