@@ -1,4 +1,4 @@
-import './logrocket';
+// import './logrocket';
 
 import React from 'react';
 import { render } from 'react-dom';

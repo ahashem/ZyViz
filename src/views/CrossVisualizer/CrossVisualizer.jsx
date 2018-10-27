@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'speedux';
 import { Spin } from 'antd';
-import crossfilter from '../../components/crossfilter/crossfilter';
 
 import module from './CrossVisualizer.module';
 import OrdersCountPie from './OrdersCountPie/OrdersCountPie';
 
 import './CrossVisualizer.scss';
+import { utc } from 'moment';
 
 
 class CrossVisualizer extends Component {
@@ -19,15 +19,8 @@ class CrossVisualizer extends Component {
       loading: PropTypes.bool,
       error: PropTypes.bool,
       errorMsg: PropTypes.string,
-      ordersData: PropTypes.arrayOf(PropTypes.shape({
-        userid: PropTypes.string,
-        orderid: PropTypes.number,
-        orderAmount: PropTypes.string,
-        orderdate: PropTypes.string,
-        paymentMethod: PropTypes.string,
-        branch: PropTypes.string,
-        deliveryArea: PropTypes.string,
-      }))
+      ordersData: PropTypes.shape({}),
+      dimensions: PropTypes.shape({}),
     }).isRequired
   };
 
@@ -41,22 +34,80 @@ class CrossVisualizer extends Component {
   componentDidUpdate(prevProps) {
   }
 
-  normalizeData = (ordersData) => {
-    const currencyParser = (value) => value && parseFloat(value.replace(/[$,]+/g, ''));
+  prepareOrdersData = (crossedOrdersData) => {
+    // Serialize and group data using crossfilter to be
+    // for-example: {key: 'paymentMethod', value: 20}
 
-    // Normalize data for Crossfilter usage!
-    ordersData.forEach(order => {
-      order.orderAmount = currencyParser(order.orderAmount);
+    // Orders by paymentMethod
+    const ordersByPaymentMethodDimension = crossedOrdersData.dimension(record => record.paymentMethod);
+    const ordersByPaymentMethodData = ordersByPaymentMethodDimension.group().reduceCount().all();
+
+    // utils
+    const filterAmountRange = (amount, min, max) => amount && amount > min && amount <= max;
+    const filterDayTimeRange = (date, min, max) => {
+      const hour = utc(date).hours();
+      return hour > min && hour <= max;
+    };
+
+    // Orders by orderAmount
+    // Less than $10, $10-$20, $20-40, $40-$70, $70 or more
+    const ordersByAmountDimension = crossedOrdersData.dimension(record => {
+      const amount = record.orderAmount;
+
+      switch (true) {
+        case filterAmountRange(amount, 10, 20):
+          return '$10-$20';
+        case filterAmountRange(amount, 20, 40):
+          return '$20-$40';
+        case filterAmountRange(amount, 40, 70):
+          return '$40-$70';
+        case filterAmountRange(amount, 70, Infinity):
+          return '$70 or more';
+        case filterAmountRange(amount, -Infinity, 10):
+          return 'Less than $10';
+        default:
+          return 'N/A';
+      }
     });
-    return ordersData;
+    const ordersByAmountData = ordersByAmountDimension.group().reduceCount().all();
+
+    // Orders by Order time
+    // Morning 6am-12pm, Afternoon 12-5pm, Evening 5-8pm, Night 8pm-6am
+    const ordersByTimeDimension = crossedOrdersData.dimension(record => {
+      const date = record.orderdate;
+
+      switch (true) {
+        case filterDayTimeRange(date, 6, 12):
+          return 'Morning';
+        case filterDayTimeRange(date, 12, 17):
+          return 'Afternoon';
+        case filterDayTimeRange(date, 17, 20):
+          return 'Evening';
+        case filterDayTimeRange(date, 0, 6):
+        case filterDayTimeRange(date, 20, 23):
+          return 'Night';
+        // TODO: issue with some date filters!
+        default:
+          return 'N/A';
+      }
+    });
+    const ordersByTimeData = ordersByTimeDimension.group().reduceCount().all();
+
+    return {
+      ordersByPaymentMethodData,
+      ordersByAmountData,
+      ordersByTimeData,
+    };
+
   };
 
     render() {
 
     const { state } = this.props;
-    const { loading, ordersData } = state;
+      const { loading, ordersData, dimensions: dimensionsData } = state;
 
-    const orders = (ordersData && ordersData.length) ? crossfilter(this.normalizeData(ordersData)) : null;
+      const orders = (ordersData) ? ordersData : null;
+      const dimensions = (dimensionsData) ? dimensionsData : null;
 
     return (
       <div>
@@ -66,6 +117,7 @@ class CrossVisualizer extends Component {
               <h3>Orders by <br /><strong>payment method</strong></h3>
               <OrdersCountPie
                 orders={orders}
+                dimensions={dimensions}
               />
             </React.Fragment>
           )}
