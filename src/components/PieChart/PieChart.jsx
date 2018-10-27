@@ -1,28 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { VictoryPie } from 'victory';
+import { VictoryPie, VictoryTheme } from 'victory';
+
+const styleChartSlices = (selected,) => {
+  const fill = selected.style && selected.style.fill;
+  return fill === '#c43a31' ? null : { style: { fill: '#c43a31' } };
+};
 
 /**
  * Abstract Pie Chart wrapper
  * @param data
+ * @param {function} onClick
  */
 const PieChart = ({ data, onClick, ...rest }) => {
   return (
     <VictoryPie
+      theme={VictoryTheme.material}
       data={data}
       {...rest}
       events={[{
         target: 'data',
         eventHandlers: {
           onClick: (e) => {
-            console.log('event', e);
             return [
               {
                 target: 'data',
                 mutation: (props) => {
-                  const fill = props.style && props.style.fill;
-                  return fill === '#c43a31' ? null : { style: { fill: '#c43a31' } };
+                  onClick(props.index);
+                  return styleChartSlices(props);
                 }
               }, {
                 target: 'labels',
