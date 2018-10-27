@@ -23,18 +23,19 @@ const filterDayTimeRange = (date, min, max) => {
 
 
 /**
- *
+ * Generate Referenced Dimensions from Crossfilter data
  * @param crossedOrdersData
- * @return {{ordersByPaymentMethod: crossfilter.Dimension<T, *> | *, ordersBySize: crossfilter.Dimension<T, crossfilter.NaturallyOrderedValue> | CrossFilter.Dimension<T, any> | *, ordersByTimeOfDay: crossfilter.Dimension<T, crossfilter.NaturallyOrderedValue> | CrossFilter.Dimension<T, any> | *}}
- * @constructor
+ * @return {Object<crossfilter.Dimension<T, *>>}
  */
 const GenerateDimensions = (crossedOrdersData) => {
-
-  // Serialize and group data using crossfilter to be
-  // for-example: {key: 'paymentMethod', value: 20}
-
   // Orders by paymentMethod
   const ordersByPaymentMethod = crossedOrdersData.dimension(record => record.paymentMethod);
+
+  // Orders by Branch
+  const ordersByBranch = crossedOrdersData.dimension(record => record.branch);
+
+  // Orders by Delivery Area
+  const ordersByDeliveryArea = crossedOrdersData.dimension(record => record.deliveryArea);
 
   // Orders by orderAmount
   // Less than $10, $10-$20, $20-40, $40-$70, $70 or more
@@ -94,6 +95,8 @@ const GenerateDimensions = (crossedOrdersData) => {
     ordersBySize,
     ordersByTimeOfDay,
     ordersByWeekDay,
+    ordersByBranch,
+    ordersByDeliveryArea,
   };
 
 };

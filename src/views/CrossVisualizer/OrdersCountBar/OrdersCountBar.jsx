@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import PieChart from '../../../components/PieChart/PieChart';
 import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
+import BarChart from '../../../components/BarChart/BarChart';
 
 /**
- * @component OrdersRevenuePie
+ * @component OrdersCountBar
  */
-class OrdersRevenuePie extends Component {
+class OrdersCountBar extends Component {
   static propTypes = {
     orders: PropTypes.shape({}),
-    dimensions: PropTypes.shape({}),
+    dimension: PropTypes.shape({}),
   };
 
   static defaultProps = {
     orders: {},
-    dimensions: {},
+    dimension: {},
   };
 
   /**
@@ -26,24 +26,23 @@ class OrdersRevenuePie extends Component {
     // Serialize and group data using crossfilter to be
     // for-example: {key: 'paymentMethod', value: 20}
 
-    // Orders by paymentMethod
-    const ordersByPaymentMethod = dimensions.ordersByPaymentMethod;
-    const ordersByPaymentMethodData = ordersByPaymentMethod.group().reduceSum(order => order.orderAmount).all();
+    // Orders by Branch
+    const ordersByBranch = dimensions.ordersByBranch;
+    const ordersByBranchData = ordersByBranch.group().reduceCount().all();
 
-    // Orders by orderAmount
-    // Less than $10, $10-$20, $20-40, $40-$70, $70 or more
-    const ordersBySize = dimensions.ordersBySize;
-    const ordersByAmountData = ordersBySize.group().reduceSum(order => order.orderAmount).all();
+    // Orders by DeliveryArea
+    const ordersByDeliveryArea = dimensions.ordersByDeliveryArea;
+    const ordersByDeliveryAreaData = ordersByDeliveryArea.group().reduceCount().top(20);
 
-    // Orders by Order time
-    // Morning 6am-12pm, Afternoon 12-5pm, Evening 5-8pm, Night 8pm-6am
-    const ordersByTimeOfDay = dimensions.ordersByTimeOfDay;
-    const ordersByTimeData = ordersByTimeOfDay.group().reduceSum(order => order.orderAmount).all();
+    // Orders by Order Day of Week
+    // Week days (Saturday - Sunday ...etc)
+    const ordersByWeekDay = dimensions.ordersByWeekDay;
+    const ordersByWeekDayData = ordersByWeekDay.group().reduceCount().all();
 
     return {
-      ordersByPaymentMethodData,
-      ordersByAmountData,
-      ordersByTimeData,
+      ordersByBranchData,
+      ordersByDeliveryAreaData,
+      ordersByWeekDayData,
     };
 
   };
@@ -56,6 +55,7 @@ class OrdersRevenuePie extends Component {
    */
   crossFilterSelected = (dimension, selectedKey, deselected = false) => {
     const { onFilter } = this.props;
+    // console.log('selectedData', selectedKey);
     onFilter(dimension, selectedKey, deselected);
   };
 
@@ -68,33 +68,33 @@ class OrdersRevenuePie extends Component {
       <div>
         <FlexGridRow justify="space-around" gutter={48}>
 
-          <PieChart
-            data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
+          <BarChart
+            data={ordersCrossed && ordersCrossed.ordersByBranchData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByPaymentMethod',
-              ordersCrossed.ordersByPaymentMethodData[selectedIndex].key,
+              'ordersByBranch',
+              ordersCrossed.ordersByBranchData[selectedIndex].key,
               deselected
             )}
             x="key"
             y="value"
           />
 
-          <PieChart
-            data={ordersCrossed && ordersCrossed.ordersByAmountData}
+          <BarChart
+            data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersBySize',
-              ordersCrossed.ordersByAmountData[selectedIndex].key,
+              'ordersByDeliveryArea',
+              ordersCrossed.ordersByDeliveryAreaData[selectedIndex].key,
               deselected
             )}
             x="key"
             y="value"
           />
 
-          <PieChart
-            data={ordersCrossed && ordersCrossed.ordersByTimeData}
+          <BarChart
+            data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByTimeOfDay',
-              ordersCrossed.ordersByTimeData[selectedIndex].key,
+              'ordersByWeekDay',
+              ordersCrossed.ordersByWeekDayData[selectedIndex].key,
               deselected
             )}
             x="key"
@@ -107,4 +107,4 @@ class OrdersRevenuePie extends Component {
   }
 }
 
-export default OrdersRevenuePie;
+export default OrdersCountBar;
