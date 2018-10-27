@@ -53,7 +53,7 @@ class OrdersCountPie extends Component {
    * @param {Boolean} deselected
    */
   crossFilterSelected = (dimension, selectedKey, deselected = false) => {
-    const { orders, onFilter } = this.props;
+    const { onFilter } = this.props;
     // console.log('selectedData', selectedKey);
     onFilter(dimension, selectedKey, deselected);
 
