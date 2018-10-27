@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { VictoryPie, VictoryTheme } from 'victory';
 
-const styleChartSlices = (selected,) => {
+function styleChartSlices(selected) {
   const fill = selected.style && selected.style.fill;
   return fill === '#c43a31' ? null : { style: { fill: '#c43a31' } };
 };
@@ -22,13 +22,13 @@ const PieChart = ({ data, onClick, ...rest }) => {
       events={[{
         target: 'data',
         eventHandlers: {
-          onClick: (e) => {
+          onClick: () => {
             return [
               {
                 target: 'data',
                 mutation: (props) => {
-                  onClick(props.index);
-                  return styleChartSlices(props);
+                  styleChartSlices(props);
+                  return onClick(props.index);
                 }
               }, {
                 target: 'labels',

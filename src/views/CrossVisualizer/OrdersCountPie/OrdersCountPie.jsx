@@ -46,6 +46,20 @@ class OrdersCountPie extends Component {
 
   };
 
+  /**
+   *
+   * @param {*|string} dimension
+   * @param {Number} selectedKey
+   * @param {Boolean} deselected
+   */
+  crossFilterSelected = (dimension, selectedKey, deselected = false) => {
+    const { orders, onFilter } = this.props;
+    // console.log('selectedData', selectedKey);
+    onFilter(dimension, selectedKey, deselected);
+
+  };
+
+
   render() {
     const { dimensions } = this.props;
     const ordersCrossed = dimensions ? this.prepareOrdersCountData(dimensions) : null;
@@ -56,18 +70,33 @@ class OrdersCountPie extends Component {
 
           <PieChart
             data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
+            onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+              'ordersByPaymentMethodDimension',
+              ordersCrossed.ordersByPaymentMethodData[selectedIndex].key,
+              deselected
+            )}
             x="key"
             y="value"
           />
 
           <PieChart
             data={ordersCrossed && ordersCrossed.ordersByAmountData}
+            onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+              'ordersByAmountDimension',
+              ordersCrossed.ordersByAmountData[selectedIndex].key,
+              deselected
+            )}
             x="key"
             y="value"
           />
 
           <PieChart
             data={ordersCrossed && ordersCrossed.ordersByTimeData}
+            onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+              'ordersByTimeDimension',
+              ordersCrossed.ordersByTimeData[selectedIndex].key,
+              deselected
+            )}
             x="key"
             y="value"
           />

@@ -36,64 +36,19 @@ ShallowWrapper {
         justify="space-around"
       >
         <PieChart
-          data={
-            Array [
-              Object {
-                "key": "Cash",
-                "value": 8,
-              },
-              Object {
-                "key": "CreditCard",
-                "value": 13,
-              },
-              Object {
-                "key": "KNET",
-                "value": 6,
-              },
-            ]
-          }
+          data={null}
           onClick={[Function]}
           x="key"
           y="value"
         />
         <PieChart
-          data={
-            Array [
-              Object {
-                "key": "N/A",
-                "value": 27,
-              },
-            ]
-          }
+          data={null}
           onClick={[Function]}
           x="key"
           y="value"
         />
         <PieChart
-          data={
-            Array [
-              Object {
-                "key": "Afternoon",
-                "value": 12,
-              },
-              Object {
-                "key": "Evening",
-                "value": 1,
-              },
-              Object {
-                "key": "Morning",
-                "value": 7,
-              },
-              Object {
-                "key": "N/A",
-                "value": 1,
-              },
-              Object {
-                "key": "Night",
-                "value": 6,
-              },
-            ]
-          }
+          data={null}
           onClick={[Function]}
           x="key"
           y="value"
@@ -108,64 +63,19 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "Cash",
-                  "value": 8,
-                },
-                Object {
-                  "key": "CreditCard",
-                  "value": 13,
-                },
-                Object {
-                  "key": "KNET",
-                  "value": 6,
-                },
-              ]
-            }
+            data={null}
             onClick={[Function]}
             x="key"
             y="value"
           />,
           <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "N/A",
-                  "value": 27,
-                },
-              ]
-            }
+            data={null}
             onClick={[Function]}
             x="key"
             y="value"
           />,
           <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "Afternoon",
-                  "value": 12,
-                },
-                Object {
-                  "key": "Evening",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Morning",
-                  "value": 7,
-                },
-                Object {
-                  "key": "N/A",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Night",
-                  "value": 6,
-                },
-              ]
-            }
+            data={null}
             onClick={[Function]}
             x="key"
             y="value"
@@ -181,20 +91,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "data": Array [
-              Object {
-                "key": "Cash",
-                "value": 8,
-              },
-              Object {
-                "key": "CreditCard",
-                "value": 13,
-              },
-              Object {
-                "key": "KNET",
-                "value": 6,
-              },
-            ],
+            "data": null,
             "onClick": [Function],
             "x": "key",
             "y": "value",
@@ -208,12 +105,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "data": Array [
-              Object {
-                "key": "N/A",
-                "value": 27,
-              },
-            ],
+            "data": null,
             "onClick": [Function],
             "x": "key",
             "y": "value",
@@ -227,28 +119,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "data": Array [
-              Object {
-                "key": "Afternoon",
-                "value": 12,
-              },
-              Object {
-                "key": "Evening",
-                "value": 1,
-              },
-              Object {
-                "key": "Morning",
-                "value": 7,
-              },
-              Object {
-                "key": "N/A",
-                "value": 1,
-              },
-              Object {
-                "key": "Night",
-                "value": 6,
-              },
-            ],
+            "data": null,
             "onClick": [Function],
             "x": "key",
             "y": "value",
@@ -273,64 +144,19 @@ ShallowWrapper {
           justify="space-around"
         >
           <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "Cash",
-                  "value": 8,
-                },
-                Object {
-                  "key": "CreditCard",
-                  "value": 13,
-                },
-                Object {
-                  "key": "KNET",
-                  "value": 6,
-                },
-              ]
-            }
+            data={null}
             onClick={[Function]}
             x="key"
             y="value"
           />
           <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "N/A",
-                  "value": 27,
-                },
-              ]
-            }
+            data={null}
             onClick={[Function]}
             x="key"
             y="value"
           />
           <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "Afternoon",
-                  "value": 12,
-                },
-                Object {
-                  "key": "Evening",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Morning",
-                  "value": 7,
-                },
-                Object {
-                  "key": "N/A",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Night",
-                  "value": 6,
-                },
-              ]
-            }
+            data={null}
             onClick={[Function]}
             x="key"
             y="value"
@@ -345,64 +171,19 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Cash",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "CreditCard",
-                    "value": 13,
-                  },
-                  Object {
-                    "key": "KNET",
-                    "value": 6,
-                  },
-                ]
-              }
+              data={null}
               onClick={[Function]}
               x="key"
               y="value"
             />,
             <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "N/A",
-                    "value": 27,
-                  },
-                ]
-              }
+              data={null}
               onClick={[Function]}
               x="key"
               y="value"
             />,
             <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Afternoon",
-                    "value": 12,
-                  },
-                  Object {
-                    "key": "Evening",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Morning",
-                    "value": 7,
-                  },
-                  Object {
-                    "key": "N/A",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Night",
-                    "value": 6,
-                  },
-                ]
-              }
+              data={null}
               onClick={[Function]}
               x="key"
               y="value"
@@ -418,20 +199,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "data": Array [
-                Object {
-                  "key": "Cash",
-                  "value": 8,
-                },
-                Object {
-                  "key": "CreditCard",
-                  "value": 13,
-                },
-                Object {
-                  "key": "KNET",
-                  "value": 6,
-                },
-              ],
+              "data": null,
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -445,12 +213,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "data": Array [
-                Object {
-                  "key": "N/A",
-                  "value": 27,
-                },
-              ],
+              "data": null,
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -464,28 +227,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "data": Array [
-                Object {
-                  "key": "Afternoon",
-                  "value": 12,
-                },
-                Object {
-                  "key": "Evening",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Morning",
-                  "value": 7,
-                },
-                Object {
-                  "key": "N/A",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Night",
-                  "value": 6,
-                },
-              ],
+              "data": null,
               "onClick": [Function],
               "x": "key",
               "y": "value",

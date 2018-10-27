@@ -5,6 +5,9 @@ import { utc } from 'moment';
 
 
 const normalizeData = (ordersData) => {
+  if (!ordersData || !ordersData.length) {
+    return null;
+  }
   const currencyParser = (value) => {
     if (!value || typeof value === 'number') {
       return value;
@@ -123,5 +126,29 @@ export default createModule('crossVisualizer', {
         };
       }
     },
+
+    /**
+     *
+     * @param dimension
+     * @param filterKey
+     * @param clear
+     *
+     */* updateFilters(dimension, filterKey, clear) {
+      if (!dimension || !filterKey) return;
+
+      const dimensions = this.getState('dimensions');
+
+      let updatedDimension;
+      if (dimensions[dimension]) {
+        updatedDimension = clear ? dimensions[dimension].filterAll() : dimensions[dimension].filter(filterKey);
+      }
+
+      yield {
+        dimensions: {
+          ...dimensions,
+          updatedDimension,
+        }
+      };
+    }
   },
 });

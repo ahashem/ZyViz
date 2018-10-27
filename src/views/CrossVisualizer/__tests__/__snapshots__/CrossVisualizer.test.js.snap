@@ -30,6 +30,7 @@ ShallowWrapper {
     "props": Object {
       "actions": Object {
         "getOrdersData": [Function],
+        "updateFilters": [Function],
       },
       "state": Object {
         "error": false,
@@ -321,6 +322,7 @@ ShallowWrapper {
       "props": Object {
         "actions": Object {
           "getOrdersData": [Function],
+          "updateFilters": [Function],
         },
         "state": Object {
           "error": false,
