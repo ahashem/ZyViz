@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { range } from 'lodash';
+import range from 'lodash/range';
 
 import TimeSeries from '../TimeSeries';
 

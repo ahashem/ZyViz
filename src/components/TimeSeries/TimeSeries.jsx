@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { last, maxBy, minBy, round } from 'lodash';
+import last from 'lodash/last';
+import maxBy from 'lodash/maxBy';
+import minBy from 'lodash/minBy';
+import round from 'lodash/round';
 
 import { VictoryChart, VictoryTheme, VictoryZoomContainer } from 'victory';
 
