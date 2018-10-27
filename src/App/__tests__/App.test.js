@@ -1,7 +1,7 @@
 import React from 'react';
 import App from '../App';
 import configureStore from 'redux-mock-store';
-import { shallow } from 'enzyme/build';
+import { shallow } from 'enzyme';
 
 describe('<App /> component', () => {
 

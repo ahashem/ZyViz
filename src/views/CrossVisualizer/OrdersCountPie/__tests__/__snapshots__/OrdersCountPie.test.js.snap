@@ -31,337 +31,101 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Row
-        gutter={0}
+      "children": <FlexGridRow
+        gutter={48}
         justify="space-around"
-        type="flex"
       >
-        <Col
-          span={4}
-        >
-          <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "Cash",
-                  "value": 8,
-                },
-                Object {
-                  "key": "CreditCard",
-                  "value": 13,
-                },
-                Object {
-                  "key": "KNET",
-                  "value": 6,
-                },
-              ]
-            }
-            x="key"
-            y="value"
-          />
-        </Col>
-        <Col
-          span={4}
-        >
-          <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "N/A",
-                  "value": 27,
-                },
-              ]
-            }
-            x="key"
-            y="value"
-          />
-        </Col>
-        <Col
-          span={4}
-        >
-          <PieChart
-            data={
-              Array [
-                Object {
-                  "key": "Afternoon",
-                  "value": 12,
-                },
-                Object {
-                  "key": "Evening",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Morning",
-                  "value": 7,
-                },
-                Object {
-                  "key": "N/A",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Night",
-                  "value": 6,
-                },
-              ]
-            }
-            x="key"
-            y="value"
-          />
-        </Col>
-      </Row>,
+        <PieChart
+          data={null}
+          onClick={[Function]}
+          x="key"
+          y="value"
+        />
+        <PieChart
+          data={null}
+          onClick={[Function]}
+          x="key"
+          y="value"
+        />
+        <PieChart
+          data={null}
+          onClick={[Function]}
+          x="key"
+          y="value"
+        />
+      </FlexGridRow>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Col
-            span={4}
-          >
-            <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Cash",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "CreditCard",
-                    "value": 13,
-                  },
-                  Object {
-                    "key": "KNET",
-                    "value": 6,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />
-          </Col>,
-          <Col
-            span={4}
-          >
-            <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "N/A",
-                    "value": 27,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />
-          </Col>,
-          <Col
-            span={4}
-          >
-            <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Afternoon",
-                    "value": 12,
-                  },
-                  Object {
-                    "key": "Evening",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Morning",
-                    "value": 7,
-                  },
-                  Object {
-                    "key": "N/A",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Night",
-                    "value": 6,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />
-          </Col>,
+          <PieChart
+            data={null}
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />,
+          <PieChart
+            data={null}
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />,
+          <PieChart
+            data={null}
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />,
         ],
-        "gutter": 0,
+        "gutter": 48,
         "justify": "space-around",
-        "type": "flex",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "children": <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Cash",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "CreditCard",
-                    "value": 13,
-                  },
-                  Object {
-                    "key": "KNET",
-                    "value": 6,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />,
-            "span": 4,
+            "data": null,
+            "onClick": [Function],
+            "x": "key",
+            "y": "value",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "data": Array [
-                Object {
-                  "key": "Cash",
-                  "value": 8,
-                },
-                Object {
-                  "key": "CreditCard",
-                  "value": 13,
-                },
-                Object {
-                  "key": "KNET",
-                  "value": 6,
-                },
-              ],
-              "x": "key",
-              "y": "value",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "children": <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "N/A",
-                    "value": 27,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />,
-            "span": 4,
+            "data": null,
+            "onClick": [Function],
+            "x": "key",
+            "y": "value",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "data": Array [
-                Object {
-                  "key": "N/A",
-                  "value": 27,
-                },
-              ],
-              "x": "key",
-              "y": "value",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "children": <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Afternoon",
-                    "value": 12,
-                  },
-                  Object {
-                    "key": "Evening",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Morning",
-                    "value": 7,
-                  },
-                  Object {
-                    "key": "N/A",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Night",
-                    "value": 6,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />,
-            "span": 4,
+            "data": null,
+            "onClick": [Function],
+            "x": "key",
+            "y": "value",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "data": Array [
-                Object {
-                  "key": "Afternoon",
-                  "value": 12,
-                },
-                Object {
-                  "key": "Evening",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Morning",
-                  "value": 7,
-                },
-                Object {
-                  "key": "N/A",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Night",
-                  "value": 6,
-                },
-              ],
-              "x": "key",
-              "y": "value",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": [Function],
         },
       ],
@@ -375,337 +139,101 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Row
-          gutter={0}
+        "children": <FlexGridRow
+          gutter={48}
           justify="space-around"
-          type="flex"
         >
-          <Col
-            span={4}
-          >
-            <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Cash",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "CreditCard",
-                    "value": 13,
-                  },
-                  Object {
-                    "key": "KNET",
-                    "value": 6,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />
-          </Col>
-          <Col
-            span={4}
-          >
-            <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "N/A",
-                    "value": 27,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />
-          </Col>
-          <Col
-            span={4}
-          >
-            <PieChart
-              data={
-                Array [
-                  Object {
-                    "key": "Afternoon",
-                    "value": 12,
-                  },
-                  Object {
-                    "key": "Evening",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Morning",
-                    "value": 7,
-                  },
-                  Object {
-                    "key": "N/A",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Night",
-                    "value": 6,
-                  },
-                ]
-              }
-              x="key"
-              y="value"
-            />
-          </Col>
-        </Row>,
+          <PieChart
+            data={null}
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />
+          <PieChart
+            data={null}
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />
+          <PieChart
+            data={null}
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />
+        </FlexGridRow>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "children": Array [
-            <Col
-              span={4}
-            >
-              <PieChart
-                data={
-                  Array [
-                    Object {
-                      "key": "Cash",
-                      "value": 8,
-                    },
-                    Object {
-                      "key": "CreditCard",
-                      "value": 13,
-                    },
-                    Object {
-                      "key": "KNET",
-                      "value": 6,
-                    },
-                  ]
-                }
-                x="key"
-                y="value"
-              />
-            </Col>,
-            <Col
-              span={4}
-            >
-              <PieChart
-                data={
-                  Array [
-                    Object {
-                      "key": "N/A",
-                      "value": 27,
-                    },
-                  ]
-                }
-                x="key"
-                y="value"
-              />
-            </Col>,
-            <Col
-              span={4}
-            >
-              <PieChart
-                data={
-                  Array [
-                    Object {
-                      "key": "Afternoon",
-                      "value": 12,
-                    },
-                    Object {
-                      "key": "Evening",
-                      "value": 1,
-                    },
-                    Object {
-                      "key": "Morning",
-                      "value": 7,
-                    },
-                    Object {
-                      "key": "N/A",
-                      "value": 1,
-                    },
-                    Object {
-                      "key": "Night",
-                      "value": 6,
-                    },
-                  ]
-                }
-                x="key"
-                y="value"
-              />
-            </Col>,
+            <PieChart
+              data={null}
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />,
+            <PieChart
+              data={null}
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />,
+            <PieChart
+              data={null}
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />,
           ],
-          "gutter": 0,
+          "gutter": 48,
           "justify": "space-around",
-          "type": "flex",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
-              "children": <PieChart
-                data={
-                  Array [
-                    Object {
-                      "key": "Cash",
-                      "value": 8,
-                    },
-                    Object {
-                      "key": "CreditCard",
-                      "value": 13,
-                    },
-                    Object {
-                      "key": "KNET",
-                      "value": 6,
-                    },
-                  ]
-                }
-                x="key"
-                y="value"
-              />,
-              "span": 4,
+              "data": null,
+              "onClick": [Function],
+              "x": "key",
+              "y": "value",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "data": Array [
-                  Object {
-                    "key": "Cash",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "CreditCard",
-                    "value": 13,
-                  },
-                  Object {
-                    "key": "KNET",
-                    "value": 6,
-                  },
-                ],
-                "x": "key",
-                "y": "value",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+            "rendered": null,
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
-              "children": <PieChart
-                data={
-                  Array [
-                    Object {
-                      "key": "N/A",
-                      "value": 27,
-                    },
-                  ]
-                }
-                x="key"
-                y="value"
-              />,
-              "span": 4,
+              "data": null,
+              "onClick": [Function],
+              "x": "key",
+              "y": "value",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "data": Array [
-                  Object {
-                    "key": "N/A",
-                    "value": 27,
-                  },
-                ],
-                "x": "key",
-                "y": "value",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+            "rendered": null,
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
-              "children": <PieChart
-                data={
-                  Array [
-                    Object {
-                      "key": "Afternoon",
-                      "value": 12,
-                    },
-                    Object {
-                      "key": "Evening",
-                      "value": 1,
-                    },
-                    Object {
-                      "key": "Morning",
-                      "value": 7,
-                    },
-                    Object {
-                      "key": "N/A",
-                      "value": 1,
-                    },
-                    Object {
-                      "key": "Night",
-                      "value": 6,
-                    },
-                  ]
-                }
-                x="key"
-                y="value"
-              />,
-              "span": 4,
+              "data": null,
+              "onClick": [Function],
+              "x": "key",
+              "y": "value",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "data": Array [
-                  Object {
-                    "key": "Afternoon",
-                    "value": 12,
-                  },
-                  Object {
-                    "key": "Evening",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Morning",
-                    "value": 7,
-                  },
-                  Object {
-                    "key": "N/A",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Night",
-                    "value": 6,
-                  },
-                ],
-                "x": "key",
-                "y": "value",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+            "rendered": null,
             "type": [Function],
           },
         ],

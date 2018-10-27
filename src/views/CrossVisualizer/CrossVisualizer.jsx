@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'speedux';
 import { Spin } from 'antd';
-import crossfilter from '../../components/crossfilter/crossfilter';
 
 import module from './CrossVisualizer.module';
 import OrdersCountPie from './OrdersCountPie/OrdersCountPie';
 
 import './CrossVisualizer.scss';
-
 
 class CrossVisualizer extends Component {
   static propTypes = {
@@ -19,15 +17,8 @@ class CrossVisualizer extends Component {
       loading: PropTypes.bool,
       error: PropTypes.bool,
       errorMsg: PropTypes.string,
-      ordersData: PropTypes.arrayOf(PropTypes.shape({
-        userid: PropTypes.string,
-        orderid: PropTypes.number,
-        orderAmount: PropTypes.string,
-        orderdate: PropTypes.string,
-        paymentMethod: PropTypes.string,
-        branch: PropTypes.string,
-        deliveryArea: PropTypes.string,
-      }))
+      ordersData: PropTypes.shape({}),
+      dimensions: PropTypes.shape({}),
     }).isRequired
   };
 
@@ -41,22 +32,19 @@ class CrossVisualizer extends Component {
   componentDidUpdate(prevProps) {
   }
 
-  normalizeData = (ordersData) => {
-    const currencyParser = (value) => value && parseFloat(value.replace(/[$,]+/g, ''));
-
-    // Normalize data for Crossfilter usage!
-    ordersData.forEach(order => {
-      order.orderAmount = currencyParser(order.orderAmount);
-    });
-    return ordersData;
+  onFilter = (dimension, key, clearFilter = false) => {
+    const { actions } = this.props;
+    // console.log('data to crossFilter', dimension, key);
+    actions.updateFilters(dimension, key, clearFilter);
   };
 
-    render() {
 
+  render() {
     const { state } = this.props;
-    const { loading, ordersData } = state;
+    const { loading, ordersData, dimensions: dimensionsData } = state;
 
-    const orders = (ordersData && ordersData.length) ? crossfilter(this.normalizeData(ordersData)) : null;
+    const orders = (ordersData) ? ordersData : null;
+    const dimensions = (dimensionsData) ? dimensionsData : null;
 
     return (
       <div>
@@ -66,6 +54,8 @@ class CrossVisualizer extends Component {
               <h3>Orders by <br /><strong>payment method</strong></h3>
               <OrdersCountPie
                 orders={orders}
+                dimensions={dimensions}
+                onFilter={this.onFilter}
               />
             </React.Fragment>
           )}
