@@ -9,10 +9,12 @@ import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 class OrdersRevenuePie extends Component {
   static propTypes = {
     orders: PropTypes.shape({}),
+    dimensions: PropTypes.shape({}),
   };
 
   static defaultProps = {
     orders: {},
+    dimensions: {},
   };
 
   /**
