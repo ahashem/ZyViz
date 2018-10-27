@@ -20,7 +20,7 @@ class OrdersCountBar extends Component {
   /**
    * Receive a crossfilter dimensions, create groups to use for charts
    * @param {Object} dimensions
-   * @return {{ordersByBranchData: Array<crossfilter.Grouping<crossfilter.NaturallyOrderedValue, crossfilter.NaturallyOrderedValue>>, orderBySizeData: Array<crossfilter.Grouping<crossfilter.NaturallyOrderedValue, crossfilter.NaturallyOrderedValue>>}}
+   * @return {Object<Array<crossfilter.Grouping>>}
    */
   prepareOrdersCountData = (dimensions) => {
     // Serialize and group data using crossfilter to be
