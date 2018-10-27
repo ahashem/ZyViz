@@ -16,8 +16,8 @@ class OrdersCountPie extends Component {
   };
 
   /**
-   * Receive a crossfilter object and process it
-   * @param dimensions
+   * Receive a crossfilter dimensions, create groups to use for charts
+   * @param {Object} dimensions
    * @return {{ordersByPaymentMethodData: Array<crossfilter.Grouping<crossfilter.NaturallyOrderedValue, crossfilter.NaturallyOrderedValue>>, orderBySizeData: Array<crossfilter.Grouping<crossfilter.NaturallyOrderedValue, crossfilter.NaturallyOrderedValue>>}}
    */
   prepareOrdersCountData = (dimensions) => {
@@ -25,29 +25,35 @@ class OrdersCountPie extends Component {
     // for-example: {key: 'paymentMethod', value: 20}
 
     // Orders by paymentMethod
-    const ordersByPaymentMethodDimension = dimensions.ordersByPaymentMethodDimension;
-    const ordersByPaymentMethodData = ordersByPaymentMethodDimension.group().reduceCount().all();
+    const ordersByPaymentMethod = dimensions.ordersByPaymentMethod;
+    const ordersByPaymentMethodData = ordersByPaymentMethod.group().reduceCount().all();
 
     // Orders by orderAmount
     // Less than $10, $10-$20, $20-40, $40-$70, $70 or more
-    const ordersByAmountDimension = dimensions.ordersByAmountDimension;
-    const ordersByAmountData = ordersByAmountDimension.group().reduceCount().all();
+    const ordersBySize = dimensions.ordersBySize;
+    const ordersByAmountData = ordersBySize.group().reduceCount().all();
 
     // Orders by Order time
     // Morning 6am-12pm, Afternoon 12-5pm, Evening 5-8pm, Night 8pm-6am
-    const ordersByTimeDimension = dimensions.ordersByTimeDimension;
-    const ordersByTimeData = ordersByTimeDimension.group().reduceCount().all();
+    const ordersByTimeOfDay = dimensions.ordersByTimeOfDay;
+    const ordersByTimeData = ordersByTimeOfDay.group().reduceCount().all();
+
+    // Orders by Order time
+    // Week days (Saturday - Sunday ...etc)
+    const ordersByWeekDay = dimensions.ordersByWeekDay;
+    const ordersByWeekDayData = ordersByWeekDay.group().reduceCount().all();
 
     return {
       ordersByPaymentMethodData,
       ordersByAmountData,
       ordersByTimeData,
+      ordersByWeekDayData
     };
 
   };
 
   /**
-   *
+   * Uplift filter triggers
    * @param {*|string} dimension
    * @param {Number} selectedKey
    * @param {Boolean} deselected
@@ -56,7 +62,6 @@ class OrdersCountPie extends Component {
     const { onFilter } = this.props;
     // console.log('selectedData', selectedKey);
     onFilter(dimension, selectedKey, deselected);
-
   };
 
 
@@ -71,7 +76,7 @@ class OrdersCountPie extends Component {
           <PieChart
             data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByPaymentMethodDimension',
+              'ordersByPaymentMethod',
               ordersCrossed.ordersByPaymentMethodData[selectedIndex].key,
               deselected
             )}
@@ -82,7 +87,7 @@ class OrdersCountPie extends Component {
           <PieChart
             data={ordersCrossed && ordersCrossed.ordersByAmountData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByAmountDimension',
+              'ordersBySize',
               ordersCrossed.ordersByAmountData[selectedIndex].key,
               deselected
             )}
@@ -93,7 +98,7 @@ class OrdersCountPie extends Component {
           <PieChart
             data={ordersCrossed && ordersCrossed.ordersByTimeData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByTimeDimension',
+              'ordersByTimeOfDay',
               ordersCrossed.ordersByTimeData[selectedIndex].key,
               deselected
             )}
