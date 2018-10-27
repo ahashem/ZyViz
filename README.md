@@ -2,7 +2,6 @@
 Awesome Admin Dashboard - Awesome Data Visualization
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bf4824fe727e469c8f3c622ddb7b52fa)](https://app.codacy.com/app/ahashem/ZyViz?utm_source=github.com&utm_medium=referral&utm_content=ahashem/ZyViz&utm_campaign=Badge_Grade_Dashboard)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/80d9ac310ed94c00ae5f72200720ad52)](https://app.codacy.com/app/ahashem/ZyViz?utm_source=github.com&utm_medium=referral&utm_content=ahashem/ZyViz&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/ahashem/ZyViz.svg?branch=master)](https://travis-ci.org/ahashem/ZyViz)
 [![codecov](https://codecov.io/gh/ahashem/ZyViz/branch/master/graph/badge.svg)](https://codecov.io/gh/ahashem/ZyViz)
 
