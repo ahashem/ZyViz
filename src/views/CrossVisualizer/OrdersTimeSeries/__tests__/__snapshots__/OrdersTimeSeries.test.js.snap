@@ -164,80 +164,116 @@ ShallowWrapper {
           data={
             Array [
               Object {
-                "key": 1,
-                "value": 2,
-              },
-              Object {
-                "key": 2,
+                "key": "01-01-2017",
                 "value": 1,
               },
               Object {
-                "key": 4,
-                "value": 2,
-              },
-              Object {
-                "key": 5,
-                "value": 2,
-              },
-              Object {
-                "key": 6,
+                "key": "01-02-2017",
                 "value": 1,
               },
               Object {
-                "key": 9,
+                "key": "02-06-2018",
                 "value": 1,
               },
               Object {
-                "key": 10,
-                "value": 2,
-              },
-              Object {
-                "key": 13,
+                "key": "04-05-2015",
                 "value": 1,
               },
               Object {
-                "key": 16,
+                "key": "04-12-2014",
                 "value": 1,
               },
               Object {
-                "key": 17,
+                "key": "05-08-2017",
                 "value": 1,
               },
               Object {
-                "key": 21,
+                "key": "05-10-2017",
                 "value": 1,
               },
               Object {
-                "key": 22,
+                "key": "06-12-2015",
                 "value": 1,
               },
               Object {
-                "key": 23,
+                "key": "09-07-2015",
                 "value": 1,
               },
               Object {
-                "key": 24,
-                "value": 3,
-              },
-              Object {
-                "key": 25,
+                "key": "10-02-2016",
                 "value": 1,
               },
               Object {
-                "key": 26,
+                "key": "10-08-2016",
                 "value": 1,
               },
               Object {
-                "key": 30,
-                "value": 2,
+                "key": "13-04-2017",
+                "value": 1,
               },
               Object {
-                "key": 31,
-                "value": 3,
+                "key": "16-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "17-09-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "21-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "22-05-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "23-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "24-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "24-07-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "24-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "25-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "26-06-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "30-07-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "30-09-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-03-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "31-05-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-08-2017",
+                "value": 1,
               },
             ]
           }
-          maxPoints={1000}
+          maxPoints={150}
           x="key"
           y="value"
         />
@@ -253,80 +289,116 @@ ShallowWrapper {
           data={
             Array [
               Object {
-                "key": 1,
-                "value": 2,
-              },
-              Object {
-                "key": 2,
+                "key": "01-01-2017",
                 "value": 1,
               },
               Object {
-                "key": 4,
-                "value": 2,
-              },
-              Object {
-                "key": 5,
-                "value": 2,
-              },
-              Object {
-                "key": 6,
+                "key": "01-02-2017",
                 "value": 1,
               },
               Object {
-                "key": 9,
+                "key": "02-06-2018",
                 "value": 1,
               },
               Object {
-                "key": 10,
-                "value": 2,
-              },
-              Object {
-                "key": 13,
+                "key": "04-05-2015",
                 "value": 1,
               },
               Object {
-                "key": 16,
+                "key": "04-12-2014",
                 "value": 1,
               },
               Object {
-                "key": 17,
+                "key": "05-08-2017",
                 "value": 1,
               },
               Object {
-                "key": 21,
+                "key": "05-10-2017",
                 "value": 1,
               },
               Object {
-                "key": 22,
+                "key": "06-12-2015",
                 "value": 1,
               },
               Object {
-                "key": 23,
+                "key": "09-07-2015",
                 "value": 1,
               },
               Object {
-                "key": 24,
-                "value": 3,
-              },
-              Object {
-                "key": 25,
+                "key": "10-02-2016",
                 "value": 1,
               },
               Object {
-                "key": 26,
+                "key": "10-08-2016",
                 "value": 1,
               },
               Object {
-                "key": 30,
-                "value": 2,
+                "key": "13-04-2017",
+                "value": 1,
               },
               Object {
-                "key": 31,
-                "value": 3,
+                "key": "16-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "17-09-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "21-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "22-05-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "23-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "24-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "24-07-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "24-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "25-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "26-06-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "30-07-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "30-09-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-03-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "31-05-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-08-2017",
+                "value": 1,
               },
             ]
           }
-          maxPoints={1000}
+          maxPoints={150}
           x="key"
           y="value"
         />,
@@ -341,79 +413,115 @@ ShallowWrapper {
         "props": Object {
           "data": Array [
             Object {
-              "key": 1,
-              "value": 2,
-            },
-            Object {
-              "key": 2,
+              "key": "01-01-2017",
               "value": 1,
             },
             Object {
-              "key": 4,
-              "value": 2,
-            },
-            Object {
-              "key": 5,
-              "value": 2,
-            },
-            Object {
-              "key": 6,
+              "key": "01-02-2017",
               "value": 1,
             },
             Object {
-              "key": 9,
+              "key": "02-06-2018",
               "value": 1,
             },
             Object {
-              "key": 10,
-              "value": 2,
-            },
-            Object {
-              "key": 13,
+              "key": "04-05-2015",
               "value": 1,
             },
             Object {
-              "key": 16,
+              "key": "04-12-2014",
               "value": 1,
             },
             Object {
-              "key": 17,
+              "key": "05-08-2017",
               "value": 1,
             },
             Object {
-              "key": 21,
+              "key": "05-10-2017",
               "value": 1,
             },
             Object {
-              "key": 22,
+              "key": "06-12-2015",
               "value": 1,
             },
             Object {
-              "key": 23,
+              "key": "09-07-2015",
               "value": 1,
             },
             Object {
-              "key": 24,
-              "value": 3,
-            },
-            Object {
-              "key": 25,
+              "key": "10-02-2016",
               "value": 1,
             },
             Object {
-              "key": 26,
+              "key": "10-08-2016",
               "value": 1,
             },
             Object {
-              "key": 30,
-              "value": 2,
+              "key": "13-04-2017",
+              "value": 1,
             },
             Object {
-              "key": 31,
-              "value": 3,
+              "key": "16-12-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "17-09-2016",
+              "value": 1,
+            },
+            Object {
+              "key": "21-06-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "22-05-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "23-06-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "24-02-2016",
+              "value": 1,
+            },
+            Object {
+              "key": "24-07-2014",
+              "value": 1,
+            },
+            Object {
+              "key": "24-10-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "25-12-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "26-06-2014",
+              "value": 1,
+            },
+            Object {
+              "key": "30-07-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "30-09-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "31-03-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "31-05-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "31-08-2017",
+              "value": 1,
             },
           ],
-          "maxPoints": 1000,
+          "maxPoints": 150,
           "x": "key",
           "y": "value",
         },
@@ -439,80 +547,116 @@ ShallowWrapper {
             data={
               Array [
                 Object {
-                  "key": 1,
-                  "value": 2,
-                },
-                Object {
-                  "key": 2,
+                  "key": "01-01-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 4,
-                  "value": 2,
-                },
-                Object {
-                  "key": 5,
-                  "value": 2,
-                },
-                Object {
-                  "key": 6,
+                  "key": "01-02-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 9,
+                  "key": "02-06-2018",
                   "value": 1,
                 },
                 Object {
-                  "key": 10,
-                  "value": 2,
-                },
-                Object {
-                  "key": 13,
+                  "key": "04-05-2015",
                   "value": 1,
                 },
                 Object {
-                  "key": 16,
+                  "key": "04-12-2014",
                   "value": 1,
                 },
                 Object {
-                  "key": 17,
+                  "key": "05-08-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 21,
+                  "key": "05-10-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 22,
+                  "key": "06-12-2015",
                   "value": 1,
                 },
                 Object {
-                  "key": 23,
+                  "key": "09-07-2015",
                   "value": 1,
                 },
                 Object {
-                  "key": 24,
-                  "value": 3,
-                },
-                Object {
-                  "key": 25,
+                  "key": "10-02-2016",
                   "value": 1,
                 },
                 Object {
-                  "key": 26,
+                  "key": "10-08-2016",
                   "value": 1,
                 },
                 Object {
-                  "key": 30,
-                  "value": 2,
+                  "key": "13-04-2017",
+                  "value": 1,
                 },
                 Object {
-                  "key": 31,
-                  "value": 3,
+                  "key": "16-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "17-09-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "21-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "22-05-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "23-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-02-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-07-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-10-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "25-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "26-06-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-07-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-09-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-03-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-05-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-08-2017",
+                  "value": 1,
                 },
               ]
             }
-            maxPoints={1000}
+            maxPoints={150}
             x="key"
             y="value"
           />
@@ -528,80 +672,116 @@ ShallowWrapper {
             data={
               Array [
                 Object {
-                  "key": 1,
-                  "value": 2,
-                },
-                Object {
-                  "key": 2,
+                  "key": "01-01-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 4,
-                  "value": 2,
-                },
-                Object {
-                  "key": 5,
-                  "value": 2,
-                },
-                Object {
-                  "key": 6,
+                  "key": "01-02-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 9,
+                  "key": "02-06-2018",
                   "value": 1,
                 },
                 Object {
-                  "key": 10,
-                  "value": 2,
-                },
-                Object {
-                  "key": 13,
+                  "key": "04-05-2015",
                   "value": 1,
                 },
                 Object {
-                  "key": 16,
+                  "key": "04-12-2014",
                   "value": 1,
                 },
                 Object {
-                  "key": 17,
+                  "key": "05-08-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 21,
+                  "key": "05-10-2017",
                   "value": 1,
                 },
                 Object {
-                  "key": 22,
+                  "key": "06-12-2015",
                   "value": 1,
                 },
                 Object {
-                  "key": 23,
+                  "key": "09-07-2015",
                   "value": 1,
                 },
                 Object {
-                  "key": 24,
-                  "value": 3,
-                },
-                Object {
-                  "key": 25,
+                  "key": "10-02-2016",
                   "value": 1,
                 },
                 Object {
-                  "key": 26,
+                  "key": "10-08-2016",
                   "value": 1,
                 },
                 Object {
-                  "key": 30,
-                  "value": 2,
+                  "key": "13-04-2017",
+                  "value": 1,
                 },
                 Object {
-                  "key": 31,
-                  "value": 3,
+                  "key": "16-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "17-09-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "21-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "22-05-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "23-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-02-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-07-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-10-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "25-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "26-06-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-07-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-09-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-03-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-05-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-08-2017",
+                  "value": 1,
                 },
               ]
             }
-            maxPoints={1000}
+            maxPoints={150}
             x="key"
             y="value"
           />,
@@ -616,79 +796,115 @@ ShallowWrapper {
           "props": Object {
             "data": Array [
               Object {
-                "key": 1,
-                "value": 2,
-              },
-              Object {
-                "key": 2,
+                "key": "01-01-2017",
                 "value": 1,
               },
               Object {
-                "key": 4,
-                "value": 2,
-              },
-              Object {
-                "key": 5,
-                "value": 2,
-              },
-              Object {
-                "key": 6,
+                "key": "01-02-2017",
                 "value": 1,
               },
               Object {
-                "key": 9,
+                "key": "02-06-2018",
                 "value": 1,
               },
               Object {
-                "key": 10,
-                "value": 2,
-              },
-              Object {
-                "key": 13,
+                "key": "04-05-2015",
                 "value": 1,
               },
               Object {
-                "key": 16,
+                "key": "04-12-2014",
                 "value": 1,
               },
               Object {
-                "key": 17,
+                "key": "05-08-2017",
                 "value": 1,
               },
               Object {
-                "key": 21,
+                "key": "05-10-2017",
                 "value": 1,
               },
               Object {
-                "key": 22,
+                "key": "06-12-2015",
                 "value": 1,
               },
               Object {
-                "key": 23,
+                "key": "09-07-2015",
                 "value": 1,
               },
               Object {
-                "key": 24,
-                "value": 3,
-              },
-              Object {
-                "key": 25,
+                "key": "10-02-2016",
                 "value": 1,
               },
               Object {
-                "key": 26,
+                "key": "10-08-2016",
                 "value": 1,
               },
               Object {
-                "key": 30,
-                "value": 2,
+                "key": "13-04-2017",
+                "value": 1,
               },
               Object {
-                "key": 31,
-                "value": 3,
+                "key": "16-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "17-09-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "21-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "22-05-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "23-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "24-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "24-07-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "24-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "25-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "26-06-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "30-07-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "30-09-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-03-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "31-05-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-08-2017",
+                "value": 1,
               },
             ],
-            "maxPoints": 1000,
+            "maxPoints": 150,
             "x": "key",
             "y": "value",
           },
