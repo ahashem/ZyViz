@@ -23,6 +23,12 @@ class TimeSeries extends Component {
   }
 
   getEntireDomain = (data) => {
+    if (!data) {
+      return {
+        y: [],
+        x: []
+      };
+    }
     return {
       y: [minBy(data, d => d.y).y, maxBy(data, d => d.y).y],
       x: [data[0].x, last(data).x]
@@ -63,7 +69,7 @@ class TimeSeries extends Component {
   };
 
   render() {
-    let { data, onClick, ...rest } = this.props;
+    let { data, ...rest } = this.props;
 
     return (
       <VictoryChart
@@ -71,32 +77,12 @@ class TimeSeries extends Component {
           <VictoryZoomContainer
             onZoomDomainChange={this.onDomainChange}
             zoomDimension="x"
-            minimumZoom={{ x: 1 / data.length }}
+            minimumZoom={data ? { x: 1 / data.length } : { x: 1 / 1000 }}
           />
         }
         theme={VictoryTheme.material}
-        data={this.getData}
-        events={[{
-          target: 'data',
-          eventHandlers: {
-            onClick: () => {
-              return [
-                {
-                  target: 'data',
-                  mutation: (props) => {
-                    this.styleChartSlices(props);
-                    return onClick(props.index);
-                  }
-                }, {
-                  target: 'labels',
-                  mutation: (props) => {
-                    return props.text === 'clicked' ? null : { text: 'clicked' };
-                  }
-                }
-              ];
-            }
-          }
-        }]}
+        data={data && this.getData}
+        scale={{ x: 'time' }}
         {...rest}
       />
     );
@@ -105,13 +91,12 @@ class TimeSeries extends Component {
 
 TimeSeries.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({})),
-  onClick: PropTypes.func,
+  maxPoints: PropTypes.number,
 };
 
 TimeSeries.defaultProps = {
   data: [],
-  onClick: () => {
-  },
+  maxPoints: 150,
 };
 
 export default TimeSeries;

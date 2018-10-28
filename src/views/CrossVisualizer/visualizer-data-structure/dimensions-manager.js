@@ -80,7 +80,6 @@ const GenerateDimensions = (crossedOrdersData) => {
   });
 
   // Orders by Day of Week
-  // Morning 6am-12pm, Afternoon 12-5pm, Evening 5-8pm, Night 8pm-6am
   const ordersByWeekDay = crossedOrdersData.dimension(record => {
     const date = record.orderdate;
     const weekDays = ['N/A', 'Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays', 'Sundays'];
@@ -90,11 +89,20 @@ const GenerateDimensions = (crossedOrdersData) => {
 
   });
 
+  // Orders by Date
+  const ordersByDate = crossedOrdersData.dimension(record => {
+    const date = record.orderdate;
+    const momentDate = utc(date);
+
+    return momentDate.isValid() ? momentDate.format('DD-MM-YYYY') : null;
+  });
+
   return {
     ordersByPaymentMethod,
     ordersBySize,
     ordersByTimeOfDay,
     ordersByWeekDay,
+    ordersByDate,
     ordersByBranch,
     ordersByDeliveryArea,
   };
