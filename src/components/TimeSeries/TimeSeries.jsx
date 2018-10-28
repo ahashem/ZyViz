@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import last from 'lodash/last';
-import maxBy from 'lodash/maxBy';
-import minBy from 'lodash/minBy';
 import round from 'lodash/round';
 
-import { VictoryChart, VictoryTheme, VictoryZoomContainer } from 'victory';
+import { VictoryAxis, VictoryBrushContainer, VictoryChart, VictoryLine, VictoryTheme } from 'victory';
 
 class TimeSeries extends Component {
 
@@ -30,7 +28,7 @@ class TimeSeries extends Component {
       };
     }
     return {
-      y: [minBy(data, d => d.y).y, maxBy(data, d => d.y).y],
+      //y: [minBy(data, d => d.y).y, maxBy(data, d => d.y).y],
       x: [data[0].x, last(data).x]
     };
   };
@@ -69,22 +67,30 @@ class TimeSeries extends Component {
   };
 
   render() {
+    const { zoomedXDomain } = this.state;
     let { data, ...rest } = this.props;
 
     return (
       <VictoryChart
+        scale={{ x: 'time' }}
+        theme={VictoryTheme.material}
         containerComponent={
-          <VictoryZoomContainer
-            onZoomDomainChange={this.onDomainChange}
-            zoomDimension="x"
-            minimumZoom={data ? { x: 1 / data.length } : { x: 1 / 1000 }}
+          <VictoryBrushContainer
+            brushDimension="x"
+            brushDomain={zoomedXDomain}
+            onBrushDomainChange={this.onDomainChange}
           />
         }
-        theme={VictoryTheme.material}
-        data={data && this.getData}
-        scale={{ x: 'time' }}
-        {...rest}
-      />
+      >
+        <VictoryAxis
+          tickFormat={(x) => new Date(x).getFullYear()}
+        />
+        <VictoryLine
+          theme={VictoryTheme.material}
+          data={data}
+          {...rest}
+        />
+      </VictoryChart>
     );
   }
 }
