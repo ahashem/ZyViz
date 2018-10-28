@@ -1,0 +1,938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrdersTimeSeries /> Component should render children and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <OrdersTimeSeries
+    dimension={Object {}}
+    dimensions={
+      Object {
+        "ordersByBranch": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByDate": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByDeliveryArea": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByPaymentMethod": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersBySize": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByTimeOfDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByWeekDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+      }
+    }
+    onFilter={[MockFunction]}
+    orders={
+      Object {
+        "add": [Function],
+        "all": [Function],
+        "allFiltered": [Function],
+        "dimension": [Function],
+        "groupAll": [Function],
+        "isElementFiltered": [Function],
+        "onChange": [Function],
+        "remove": [Function],
+        "size": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <FlexGridRow
+        gutter={48}
+        justify="space-around"
+      >
+        <TimeSeries
+          data={
+            Array [
+              Object {
+                "key": "01-01-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "01-02-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "02-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "04-05-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "04-12-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "05-08-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "05-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "06-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "09-07-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "10-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "10-08-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "13-04-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "16-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "17-09-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "21-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "22-05-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "23-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "24-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "24-07-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "24-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "25-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "26-06-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "30-07-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "30-09-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-03-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "31-05-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-08-2017",
+                "value": 1,
+              },
+            ]
+          }
+          maxPoints={150}
+          x="key"
+          y="value"
+        />
+      </FlexGridRow>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <TimeSeries
+          data={
+            Array [
+              Object {
+                "key": "01-01-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "01-02-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "02-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "04-05-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "04-12-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "05-08-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "05-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "06-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "09-07-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "10-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "10-08-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "13-04-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "16-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "17-09-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "21-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "22-05-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "23-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "24-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "24-07-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "24-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "25-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "26-06-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "30-07-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "30-09-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-03-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "31-05-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-08-2017",
+                "value": 1,
+              },
+            ]
+          }
+          maxPoints={150}
+          x="key"
+          y="value"
+        />,
+        "gutter": 48,
+        "justify": "space-around",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Array [
+            Object {
+              "key": "01-01-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "01-02-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "02-06-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "04-05-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "04-12-2014",
+              "value": 1,
+            },
+            Object {
+              "key": "05-08-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "05-10-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "06-12-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "09-07-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "10-02-2016",
+              "value": 1,
+            },
+            Object {
+              "key": "10-08-2016",
+              "value": 1,
+            },
+            Object {
+              "key": "13-04-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "16-12-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "17-09-2016",
+              "value": 1,
+            },
+            Object {
+              "key": "21-06-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "22-05-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "23-06-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "24-02-2016",
+              "value": 1,
+            },
+            Object {
+              "key": "24-07-2014",
+              "value": 1,
+            },
+            Object {
+              "key": "24-10-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "25-12-2015",
+              "value": 1,
+            },
+            Object {
+              "key": "26-06-2014",
+              "value": 1,
+            },
+            Object {
+              "key": "30-07-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "30-09-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "31-03-2018",
+              "value": 1,
+            },
+            Object {
+              "key": "31-05-2017",
+              "value": 1,
+            },
+            Object {
+              "key": "31-08-2017",
+              "value": 1,
+            },
+          ],
+          "maxPoints": 150,
+          "x": "key",
+          "y": "value",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <FlexGridRow
+          gutter={48}
+          justify="space-around"
+        >
+          <TimeSeries
+            data={
+              Array [
+                Object {
+                  "key": "01-01-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "01-02-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "02-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "04-05-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "04-12-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "05-08-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "05-10-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "06-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "09-07-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "10-02-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "10-08-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "13-04-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "16-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "17-09-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "21-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "22-05-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "23-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-02-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-07-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-10-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "25-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "26-06-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-07-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-09-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-03-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-05-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-08-2017",
+                  "value": 1,
+                },
+              ]
+            }
+            maxPoints={150}
+            x="key"
+            y="value"
+          />
+        </FlexGridRow>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <TimeSeries
+            data={
+              Array [
+                Object {
+                  "key": "01-01-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "01-02-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "02-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "04-05-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "04-12-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "05-08-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "05-10-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "06-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "09-07-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "10-02-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "10-08-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "13-04-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "16-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "17-09-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "21-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "22-05-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "23-06-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-02-2016",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-07-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "24-10-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "25-12-2015",
+                  "value": 1,
+                },
+                Object {
+                  "key": "26-06-2014",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-07-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "30-09-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-03-2018",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-05-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "31-08-2017",
+                  "value": 1,
+                },
+              ]
+            }
+            maxPoints={150}
+            x="key"
+            y="value"
+          />,
+          "gutter": 48,
+          "justify": "space-around",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Array [
+              Object {
+                "key": "01-01-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "01-02-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "02-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "04-05-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "04-12-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "05-08-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "05-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "06-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "09-07-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "10-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "10-08-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "13-04-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "16-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "17-09-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "21-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "22-05-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "23-06-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "24-02-2016",
+                "value": 1,
+              },
+              Object {
+                "key": "24-07-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "24-10-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "25-12-2015",
+                "value": 1,
+              },
+              Object {
+                "key": "26-06-2014",
+                "value": 1,
+              },
+              Object {
+                "key": "30-07-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "30-09-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-03-2018",
+                "value": 1,
+              },
+              Object {
+                "key": "31-05-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "31-08-2017",
+                "value": 1,
+              },
+            ],
+            "maxPoints": 150,
+            "x": "key",
+            "y": "value",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -76,7 +76,12 @@ class CrossVisualizer extends Component {
                 dimensions={dimensions}
                 onFilter={this.onFilter}
               />
-
+              <h3>Orders Time Series</h3>
+              {/*<OrdersTimeSeries*/}
+              {/*orders={orders}*/}
+              {/*dimensions={dimensions}*/}
+              {/*onFilter={this.onFilter}*/}
+              {/*/>*/}
             </React.Fragment>
           )}
       </div>
