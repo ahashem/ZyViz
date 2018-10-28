@@ -53,7 +53,6 @@ class OrdersTimeSeries extends Component {
     const { dimensions } = this.props;
     const ordersCrossed = dimensions ? this.prepareOrdersCountData(dimensions) : null;
 
-    ordersCrossed && console.log('ordersCrossed', ordersCrossed.ordersByDateData);
     return (
       <div>
         <FlexGridRow justify="space-around" gutter={48}>
