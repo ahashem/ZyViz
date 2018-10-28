@@ -15,7 +15,6 @@ describe.skip('<TimeSeries /> component', () => {
     const rendered = shallow(
       <TimeSeries
         data={mockTimeSeriesData}
-        maxPoints={50}
       />
     );
 

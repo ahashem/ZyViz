@@ -10,6 +10,7 @@ import './CrossVisualizer.scss';
 import OrdersRevenuePie from './OrdersRevenuePie/OrdersRevenuePie';
 import OrdersCountBar from './OrdersCountBar/OrdersCountBar';
 import OrdersRevenueBar from './OrdersRevenueBar/OrdersRevenueBar';
+import OrdersTimeSeries from './OrdersTimeSeries/OrdersTimeSeries';
 
 class CrossVisualizer extends Component {
   static propTypes = {
@@ -77,11 +78,11 @@ class CrossVisualizer extends Component {
                 onFilter={this.onFilter}
               />
               <h3>Orders Time Series</h3>
-              {/*<OrdersTimeSeries*/}
-              {/*orders={orders}*/}
-              {/*dimensions={dimensions}*/}
-              {/*onFilter={this.onFilter}*/}
-              {/*/>*/}
+              <OrdersTimeSeries
+                orders={orders}
+                dimensions={dimensions}
+                onFilter={this.onFilter}
+              />
             </React.Fragment>
           )}
       </div>

@@ -50,22 +50,6 @@ class TimeSeries extends Component {
     });
   };
 
-  getData = () => {
-    const { zoomedXDomain } = this.state;
-    const { data, maxPoints } = this.props;
-
-    const filtered = data.filter(
-      (d) => (d.x >= zoomedXDomain[0] && d.x <= zoomedXDomain[1]));
-
-    if (filtered.length > maxPoints) {
-      const k = Math.ceil(filtered.length / maxPoints);
-      return filtered.filter(
-        (d, i) => ((i % k) === 0)
-      );
-    }
-    return filtered;
-  };
-
   render() {
     const { zoomedXDomain } = this.state;
     let { data, ...rest } = this.props;
@@ -86,6 +70,9 @@ class TimeSeries extends Component {
           tickFormat={(x) => new Date(x).getFullYear()}
         />
         <VictoryLine
+          style={{
+            data: { stroke: 'tomato' }
+          }}
           theme={VictoryTheme.material}
           data={data}
           {...rest}
@@ -97,12 +84,10 @@ class TimeSeries extends Component {
 
 TimeSeries.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({})),
-  maxPoints: PropTypes.number,
 };
 
 TimeSeries.defaultProps = {
   data: [],
-  maxPoints: 150,
 };
 
 export default TimeSeries;
