@@ -31,7 +31,7 @@ class TimeSeries extends Component {
         }
       >
         <VictoryAxis
-          tickFormat={(x) => utc(x).toDate().getFullYear()}
+          tickFormat={(x) => utc(x).year()}
         />
         <VictoryLine
           style={{
