@@ -164,10 +164,6 @@ ShallowWrapper {
           data={
             Array [
               Object {
-                "key": "01-01-2017",
-                "value": 1,
-              },
-              Object {
                 "key": "01-02-2017",
                 "value": 1,
               },
@@ -269,6 +265,10 @@ ShallowWrapper {
               },
               Object {
                 "key": "31-08-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "01-01-2017",
                 "value": 1,
               },
             ]
@@ -289,10 +289,6 @@ ShallowWrapper {
           data={
             Array [
               Object {
-                "key": "01-01-2017",
-                "value": 1,
-              },
-              Object {
                 "key": "01-02-2017",
                 "value": 1,
               },
@@ -396,6 +392,10 @@ ShallowWrapper {
                 "key": "31-08-2017",
                 "value": 1,
               },
+              Object {
+                "key": "01-01-2017",
+                "value": 1,
+              },
             ]
           }
           maxPoints={150}
@@ -412,10 +412,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "data": Array [
-            Object {
-              "key": "01-01-2017",
-              "value": 1,
-            },
             Object {
               "key": "01-02-2017",
               "value": 1,
@@ -520,6 +516,10 @@ ShallowWrapper {
               "key": "31-08-2017",
               "value": 1,
             },
+            Object {
+              "key": "01-01-2017",
+              "value": 1,
+            },
           ],
           "maxPoints": 150,
           "x": "key",
@@ -547,10 +547,6 @@ ShallowWrapper {
             data={
               Array [
                 Object {
-                  "key": "01-01-2017",
-                  "value": 1,
-                },
-                Object {
                   "key": "01-02-2017",
                   "value": 1,
                 },
@@ -652,6 +648,10 @@ ShallowWrapper {
                 },
                 Object {
                   "key": "31-08-2017",
+                  "value": 1,
+                },
+                Object {
+                  "key": "01-01-2017",
                   "value": 1,
                 },
               ]
@@ -672,10 +672,6 @@ ShallowWrapper {
             data={
               Array [
                 Object {
-                  "key": "01-01-2017",
-                  "value": 1,
-                },
-                Object {
                   "key": "01-02-2017",
                   "value": 1,
                 },
@@ -779,6 +775,10 @@ ShallowWrapper {
                   "key": "31-08-2017",
                   "value": 1,
                 },
+                Object {
+                  "key": "01-01-2017",
+                  "value": 1,
+                },
               ]
             }
             maxPoints={150}
@@ -795,10 +795,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "data": Array [
-              Object {
-                "key": "01-01-2017",
-                "value": 1,
-              },
               Object {
                 "key": "01-02-2017",
                 "value": 1,
@@ -901,6 +897,10 @@ ShallowWrapper {
               },
               Object {
                 "key": "31-08-2017",
+                "value": 1,
+              },
+              Object {
+                "key": "01-01-2017",
                 "value": 1,
               },
             ],

@@ -1,57 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import last from 'lodash/last';
-import round from 'lodash/round';
+import { utc } from 'moment';
 
 import { VictoryAxis, VictoryBrushContainer, VictoryChart, VictoryLine, VictoryTheme } from 'victory';
 
 class TimeSeries extends Component {
 
   state = {
-    zoomedXDomain: [],
+    zoomDomain: { x: [new Date(1990, 1, 1), new Date(2019, 1, 1)] }
   };
 
-  componentDidMount() {
-    const { data } = this.props;
-
-    const entireDomain = this.getEntireDomain(data);
-    this.setState({
-      zoomedXDomain: entireDomain.x,
-    });
-  }
-
-  getEntireDomain = (data) => {
-    if (!data) {
-      return {
-        y: [],
-        x: []
-      };
-    }
-    return {
-      //y: [minBy(data, d => d.y).y, maxBy(data, d => d.y).y],
-      x: [data[0].x, last(data).x]
-    };
-  };
-
-  getZoomFactor() {
-    const { zoomedXDomain } = this.state;
-    const factor = 10 / (zoomedXDomain[1] - zoomedXDomain[0]);
-    return round(factor, factor < 3 ? 1 : 0);
-  }
-
-  styleChartSlices = (selected) => {
-    const fill = selected.style && selected.style.fill;
-    return fill === '#c43a31' ? null : { style: { fill: '#c43a31' } };
-  };
-
-  onDomainChange = (domain) => {
-    this.setState({
-      zoomedXDomain: domain.x,
-    });
+  handleZoom = (domain) => {
+    this.setState({ zoomDomain: domain });
   };
 
   render() {
-    const { zoomedXDomain } = this.state;
+    const { zoomDomain } = this.state;
     let { data, ...rest } = this.props;
 
     return (
@@ -61,13 +25,13 @@ class TimeSeries extends Component {
         containerComponent={
           <VictoryBrushContainer
             brushDimension="x"
-            brushDomain={zoomedXDomain}
-            onBrushDomainChange={this.onDomainChange}
+            brushDomain={zoomDomain}
+            onBrushDomainChange={this.handleZoom}
           />
         }
       >
         <VictoryAxis
-          tickFormat={(x) => new Date(x).getFullYear()}
+          tickFormat={(x) => utc(x).toDate().getFullYear()}
         />
         <VictoryLine
           style={{

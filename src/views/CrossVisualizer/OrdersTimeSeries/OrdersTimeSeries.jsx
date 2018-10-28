@@ -28,7 +28,7 @@ class OrdersTimeSeries extends Component {
 
     // Orders by Branch
     const ordersByDate = dimensions.ordersByDate;
-    const ordersByDateData = ordersByDate.group().reduceCount().all();
+    const ordersByDateData = ordersByDate.group().reduceCount().top(100);
 
     return {
       ordersByDateData,
