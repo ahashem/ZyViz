@@ -21,7 +21,7 @@ class CrossVisualizer extends Component {
       loading: PropTypes.bool,
       error: PropTypes.bool,
       errorMsg: PropTypes.string,
-      ordersData: PropTypes.shape({}),
+      ordersData: PropTypes.arrayOf(PropTypes.shape({})),
       dimensions: PropTypes.shape({}),
     }).isRequired
   };
@@ -55,7 +55,7 @@ class CrossVisualizer extends Component {
         {loading ? (<Spin data-test="loading"/>)
           : (
             <React.Fragment>
-              <h3>Order Count</h3>
+              <h3>Orders Count</h3>
               <OrdersCountPie
                 orders={orders}
                 dimensions={dimensions}
@@ -77,7 +77,7 @@ class CrossVisualizer extends Component {
                 dimensions={dimensions}
                 onFilter={this.onFilter}
               />
-              <h3>Orders Time Series</h3>
+              <h3>Orders Count & Total Sales By Date</h3>
               <OrdersTimeSeries
                 orders={orders}
                 dimensions={dimensions}

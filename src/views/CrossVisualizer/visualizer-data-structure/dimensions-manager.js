@@ -91,10 +91,19 @@ const GenerateDimensions = (crossedOrdersData) => {
 
   // Orders by Date
   const ordersByDate = crossedOrdersData.dimension(record => {
-    const date = record.orderdate;
-    const momentDate = utc(date);
+    const isValid = (date) => date !== 'Invalid Date';
 
-    return momentDate.isValid() ? momentDate.format('DD-MM-YYYY') : null;
+    const date = record.orderdate;
+    const momentDate = new Date(date);
+
+    if (isValid(momentDate)) {
+      momentDate.setHours(0);
+      momentDate.setMinutes(0);
+      momentDate.setSeconds(0);
+      momentDate.setMilliseconds(0);
+      return momentDate;
+    }
+    return null;
   });
 
   return {

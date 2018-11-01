@@ -28,10 +28,25 @@ class OrdersTimeSeries extends Component {
 
     // Orders by Branch
     const ordersByDate = dimensions.ordersByDate;
-    const ordersByDateData = ordersByDate.group().reduceCount().top(100);
+    const ordersByDateDataGroup = ordersByDate.group().reduceCount().all();
+
+    const ordersByDateData = ordersByDateDataGroup.map(data => {
+      return {
+        x: new Date(data.key),
+        y: isNaN(data.value) ? 0 : data.value
+      };
+    });
+    const totalSaleByDateDataGroup = ordersByDate.group().reduceSum(order => order.orderAmount).all();
+    const totalSaleByDateData = totalSaleByDateDataGroup.map(data => {
+      return {
+        x: new Date(data.key),
+        y: isNaN(data.value) ? 0 : data.value
+      };
+    });
 
     return {
       ordersByDateData,
+      totalSaleByDateData,
     };
 
   };
@@ -57,12 +72,18 @@ class OrdersTimeSeries extends Component {
       <div>
         <FlexGridRow justify="space-around" gutter={48}>
 
-          <TimeSeries
-            maxPoints={150}
-            data={ordersCrossed && ordersCrossed.ordersByDateData}
-            x="key"
-            y="value"
-          />
+          {ordersCrossed && (
+            <TimeSeries
+              data={ordersCrossed.ordersByDateData}
+            />)}
+
+        </FlexGridRow>
+        <FlexGridRow justify="space-around" gutter={48}>
+
+          {ordersCrossed && (
+            <TimeSeries
+              data={ordersCrossed.totalSaleByDateData}
+            />)}
 
         </FlexGridRow>
       </div>

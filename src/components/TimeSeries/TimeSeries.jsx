@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { utc } from 'moment';
 
-import { VictoryAxis, VictoryBrushContainer, VictoryChart, VictoryLine, VictoryTheme } from 'victory';
+import { VictoryAxis, VictoryBrushContainer, VictoryChart, VictoryLine, VictoryZoomContainer } from 'victory';
 
 class TimeSeries extends Component {
 
   state = {
-    zoomDomain: { x: [new Date(1990, 1, 1), new Date(2019, 1, 1)] }
+    zoomDomain: { x: [new Date(2017, 1, 1), new Date(2018, 1, 1)] }
   };
 
   handleZoom = (domain) => {
@@ -16,32 +15,49 @@ class TimeSeries extends Component {
 
   render() {
     const { zoomDomain } = this.state;
-    let { data, ...rest } = this.props;
-
+    const { data } = this.props;
     return (
-      <VictoryChart
-        scale={{ x: 'time' }}
-        theme={VictoryTheme.material}
-        containerComponent={
-          <VictoryBrushContainer
-            brushDimension="x"
-            brushDomain={zoomDomain}
-            onBrushDomainChange={this.handleZoom}
+      <div>
+        <VictoryChart
+          scale={{ x: 'time' }}
+          containerComponent={
+            <VictoryZoomContainer
+              zoomDimension="x"
+              zoomDomain={zoomDomain}
+              onZoomDomainChange={this.handleZoom}
+            />
+          }
+        >
+          <VictoryLine
+            style={{
+              data: { stroke: 'tomato' }
+            }}
+            data={data}
           />
-        }
-      >
-        <VictoryAxis
-          tickFormat={(x) => utc(x).year()}
-        />
-        <VictoryLine
-          style={{
-            data: { stroke: 'tomato' }
-          }}
-          theme={VictoryTheme.material}
-          data={data}
-          {...rest}
-        />
-      </VictoryChart>
+
+        </VictoryChart>
+        <VictoryChart
+          padding={{ top: 0, left: 50, right: 50, bottom: 30 }}
+          width={600} height={100} scale={{ x: 'time' }}
+          containerComponent={
+            <VictoryBrushContainer
+              brushDimension="x"
+              brushDomain={zoomDomain}
+              onBrushDomainChange={this.handleZoom}
+            />
+          }
+        >
+          <VictoryAxis
+            tickFormat={(x) => new Date(x).getFullYear()}
+          />
+          <VictoryLine
+            style={{
+              data: { stroke: 'gray' }
+            }}
+            data={data}
+          />
+        </VictoryChart>
+      </div>
     );
   }
 }
