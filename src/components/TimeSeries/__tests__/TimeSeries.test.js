@@ -1,21 +1,24 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import range from 'lodash/range';
 
 import TimeSeries from '../TimeSeries';
 
 describe.skip('<TimeSeries /> component', () => {
   it('should render with simple data', () => {
-    // 1000 points (10 / 0.01 = 1000)
-    const mockTimeSeriesData = range(0, 10, 0.01).map(x => ({
-      x: x,
-      y: Math.sin(Math.PI * x / 2) * x / 10
-    }));
+    const mockTimeSeriesData = [
+      { x: new Date(Date.UTC(2019, 1, 1)), y: 125 },
+      { x: new Date(Date.UTC(2018, 1, 1)), y: 257 },
+      { x: new Date(Date.UTC(2015, 1, 1)), y: 345 },
+      { x: new Date(Date.UTC(2015, 1, 1)), y: 515 },
+      { x: new Date(Date.UTC(2011, 1, 1)), y: 132 },
+      { x: new Date(Date.UTC(2010, 1, 1)), y: 305 },
+      { x: new Date(Date.UTC(2011, 1, 1)), y: 270 },
+      { x: new Date(Date.UTC(2015, 1, 1)), y: 470 }
+    ];
 
     const rendered = shallow(
       <TimeSeries
         data={mockTimeSeriesData}
-        maxPoints={50}
       />
     );
 
