@@ -1,13 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import MockDate from 'mockdate';
 
 import OrdersTimeSeries from '../OrdersTimeSeries';
 import { crossFilterMock, dimensionsMock } from '../../../../utils/test-utils';
-import MockDate from 'mockdate';
 
 describe('<OrdersTimeSeries /> Component', () => {
   beforeAll(() => {
-    MockDate.set('1/1/2018');
+    MockDate.set('11/3/2018');
+    Date.constructor = jest.fn(() => 1541196000000);
   });
 
   test('should render children and match snapshot', () => {
