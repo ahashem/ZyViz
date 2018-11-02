@@ -39,7 +39,7 @@ class OrdersTimeSeries extends Component {
     const totalSaleByDateDataGroup = ordersByDate.group().reduceSum(order => order.orderAmount).all();
     const totalSaleByDateData = totalSaleByDateDataGroup.map(data => {
       return {
-        x: new Date(data.key),
+        x: (data.key instanceof Date) ? data.key : new Date(Date.parse(data.key)),
         y: isNaN(data.value) ? 0 : data.value
       };
     });
