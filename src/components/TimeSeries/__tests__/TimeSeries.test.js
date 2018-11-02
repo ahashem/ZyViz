@@ -1,10 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import MockDate from 'mockdate';
 
 import TimeSeries from '../TimeSeries';
 
-describe.skip('<TimeSeries /> component', () => {
-  it('should render with simple data', () => {
+describe('<TimeSeries /> component', () => {
+  beforeAll(() => {
+    MockDate.set('1/1/2018');
+  });
+
+  test('should render with simple data', () => {
     const mockTimeSeriesData = [
       { x: new Date(Date.UTC(2019, 1, 1)), y: 125 },
       { x: new Date(Date.UTC(2018, 1, 1)), y: 257 },
@@ -23,6 +28,10 @@ describe.skip('<TimeSeries /> component', () => {
     );
 
     expect(rendered).toMatchSnapshot();
+  });
+
+  afterAll(() => {
+    MockDate.reset();
   });
 });
 

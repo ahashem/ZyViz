@@ -3,8 +3,12 @@ import { shallow } from 'enzyme';
 
 import OrdersTimeSeries from '../OrdersTimeSeries';
 import { crossFilterMock, dimensionsMock } from '../../../../utils/test-utils';
+import MockDate from 'mockdate';
 
 describe('<OrdersTimeSeries /> Component', () => {
+  beforeAll(() => {
+    MockDate.set('1/1/2018');
+  });
 
   test('should render children and match snapshot', () => {
     const orders = crossFilterMock;
@@ -18,6 +22,10 @@ describe('<OrdersTimeSeries /> Component', () => {
     />);
 
     expect(rendered).toMatchSnapshot();
+  });
+
+  afterAll(() => {
+    MockDate.reset();
   });
 
 });
