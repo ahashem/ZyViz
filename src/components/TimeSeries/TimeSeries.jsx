@@ -6,7 +6,7 @@ import { VictoryAxis, VictoryBrushContainer, VictoryChart, VictoryLine, VictoryZ
 class TimeSeries extends Component {
 
   state = {
-    zoomDomain: { x: [new Date(2017, 1, 1), new Date(2018, 1, 1)] }
+    zoomDomain: { x: [new Date(Date.UTC(2017, 1, 1)), new Date(Date.UTC(2018, 1, 1))] }
   };
 
   handleZoom = (domain) => {
