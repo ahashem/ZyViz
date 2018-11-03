@@ -5,7 +5,7 @@ import MockDate from 'mockdate';
 import OrdersTimeSeries from '../OrdersTimeSeries';
 import { crossFilterMock, dimensionsMock } from '../../../../utils/test-utils';
 
-describe('<OrdersTimeSeries /> Component', () => {
+describe.skip('<OrdersTimeSeries /> Component', () => {
   beforeAll(() => {
     MockDate.set('11/3/2018');
     Date.constructor = jest.fn(() => 1541196000000);
