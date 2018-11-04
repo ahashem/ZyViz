@@ -34,7 +34,7 @@ ShallowWrapper {
       },
       "state": Object {
         "error": false,
-        "errorMes": "",
+        "errorMsg": "",
         "loading": false,
         "ordersData": Object {
           "add": [Function],
@@ -92,7 +92,7 @@ ShallowWrapper {
         },
         "state": Object {
           "error": false,
-          "errorMes": "",
+          "errorMsg": "",
           "loading": false,
           "ordersData": Object {
             "add": [Function],

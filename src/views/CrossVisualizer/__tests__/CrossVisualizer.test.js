@@ -10,7 +10,7 @@ describe('<CrossVisualizer /> Component', () => {
     const crossVisualizer = {
       loading: false,
       error: false,
-      errorMes: '',
+      errorMsg: '',
       ordersData: crossFilterMock,
     };
     const mockStore = configureStore();
