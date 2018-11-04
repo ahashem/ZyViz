@@ -49,18 +49,29 @@ export default createModule('crossVisualizer', {
 
     /**
      *
-     * @param dimension
-     * @param filterKey
-     * @param clear
+     * @param {string} dimension
+     * @param {string|Array|function}filter
+     * @param {boolean} clear
      *
-     */* updateFilters(dimension, filterKey, clear) {
-      if (!dimension || !filterKey) return;
+     */* updateFilters(dimension, filter, clear) {
+      if (!dimension || !filter) return;
 
       const dimensions = this.getState('dimensions');
 
       let updatedDimension;
-      if (dimensions[dimension]) {
-        updatedDimension = clear ? dimensions[dimension].filterAll() : dimensions[dimension].filter(filterKey);
+      if (clear) {
+        updatedDimension = dimensions[dimension].filterAll();
+      } else {
+        switch (true) {
+          case (Array.isArray(filter)):
+            updatedDimension = dimensions[dimension].filterRange([filter[0], filter[1]]);
+            break;
+          case (typeof filter === 'function'):
+            updatedDimension = dimensions[dimension].filterFunction((value => filter(value)));
+            break;
+          default:
+            updatedDimension = dimensions[dimension].filter(filter);
+        }
       }
 
       yield {

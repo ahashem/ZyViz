@@ -21,7 +21,7 @@ class CrossVisualizer extends Component {
       loading: PropTypes.bool,
       error: PropTypes.bool,
       errorMsg: PropTypes.string,
-      ordersData: PropTypes.arrayOf(PropTypes.shape({})),
+      ordersData: PropTypes.shape({}),
       dimensions: PropTypes.shape({}),
     }).isRequired
   };

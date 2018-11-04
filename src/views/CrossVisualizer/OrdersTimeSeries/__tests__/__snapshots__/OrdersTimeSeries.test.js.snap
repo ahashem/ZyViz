@@ -156,11 +156,267 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <FlexGridRow
-          gutter={48}
-          justify="space-around"
-        >
+      "children": <FlexGridRow
+        gutter={48}
+        justify="space-around"
+      >
+        <TimeSeries
+          data={
+            Array [
+              Object {
+                "x": 2014-06-25T21:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2014-07-23T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2014-12-03T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2015-05-03T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2015-07-08T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2015-12-05T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2015-12-16T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2015-12-24T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2016-02-09T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2016-02-23T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2016-08-09T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2016-09-16T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2016-12-31T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-01-31T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-04-12T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-05-30T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-07-29T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-08-04T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-08-30T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-09-29T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-10-04T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2017-10-23T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2018-03-30T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2018-05-21T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2018-06-01T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2018-06-20T22:00:00.000Z,
+                "y": 1,
+              },
+              Object {
+                "x": 2018-06-22T22:00:00.000Z,
+                "y": 1,
+              },
+            ]
+          }
+          name="chart-count"
+          onFilter={[Function]}
+          zoomDomain={
+            Object {
+              "x": Array [
+                2017-02-01T00:00:00.000Z,
+                2018-02-01T00:00:00.000Z,
+              ],
+            }
+          }
+        />
+        <TimeSeries
+          data={
+            Array [
+              Object {
+                "x": 2014-06-25T21:00:00.000Z,
+                "y": 74.36,
+              },
+              Object {
+                "x": 2014-07-23T22:00:00.000Z,
+                "y": 36.51,
+              },
+              Object {
+                "x": 2014-12-03T22:00:00.000Z,
+                "y": 1.84,
+              },
+              Object {
+                "x": 2015-05-03T22:00:00.000Z,
+                "y": 57.89,
+              },
+              Object {
+                "x": 2015-07-08T22:00:00.000Z,
+                "y": 89.96,
+              },
+              Object {
+                "x": 2015-12-05T22:00:00.000Z,
+                "y": 67.52,
+              },
+              Object {
+                "x": 2015-12-16T22:00:00.000Z,
+                "y": 83.02,
+              },
+              Object {
+                "x": 2015-12-24T22:00:00.000Z,
+                "y": 83.29,
+              },
+              Object {
+                "x": 2016-02-09T22:00:00.000Z,
+                "y": 14.34,
+              },
+              Object {
+                "x": 2016-02-23T22:00:00.000Z,
+                "y": 32.93,
+              },
+              Object {
+                "x": 2016-08-09T22:00:00.000Z,
+                "y": 78.78,
+              },
+              Object {
+                "x": 2016-09-16T22:00:00.000Z,
+                "y": 92.92,
+              },
+              Object {
+                "x": 2016-12-31T22:00:00.000Z,
+                "y": 34.84,
+              },
+              Object {
+                "x": 2017-01-31T22:00:00.000Z,
+                "y": 83.43,
+              },
+              Object {
+                "x": 2017-04-12T22:00:00.000Z,
+                "y": 99.61,
+              },
+              Object {
+                "x": 2017-05-30T22:00:00.000Z,
+                "y": 91.43,
+              },
+              Object {
+                "x": 2017-07-29T22:00:00.000Z,
+                "y": 85.38,
+              },
+              Object {
+                "x": 2017-08-04T22:00:00.000Z,
+                "y": 4.46,
+              },
+              Object {
+                "x": 2017-08-30T22:00:00.000Z,
+                "y": 45.3,
+              },
+              Object {
+                "x": 2017-09-29T22:00:00.000Z,
+                "y": 20.85,
+              },
+              Object {
+                "x": 2017-10-04T22:00:00.000Z,
+                "y": 34.16,
+              },
+              Object {
+                "x": 2017-10-23T22:00:00.000Z,
+                "y": 30.51,
+              },
+              Object {
+                "x": 2018-03-30T22:00:00.000Z,
+                "y": 78.24,
+              },
+              Object {
+                "x": 2018-05-21T22:00:00.000Z,
+                "y": 34.87,
+              },
+              Object {
+                "x": 2018-06-01T22:00:00.000Z,
+                "y": 7.64,
+              },
+              Object {
+                "x": 2018-06-20T22:00:00.000Z,
+                "y": 36.35,
+              },
+              Object {
+                "x": 2018-06-22T22:00:00.000Z,
+                "y": 30.49,
+              },
+            ]
+          }
+          name="chart-sales"
+          onFilter={[Function]}
+          zoomDomain={
+            Object {
+              "x": Array [
+                2017-02-01T00:00:00.000Z,
+                2018-02-01T00:00:00.000Z,
+              ],
+            }
+          }
+        />
+      </FlexGridRow>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
           <TimeSeries
             data={
               Array [
@@ -274,12 +530,17 @@ ShallowWrapper {
                 },
               ]
             }
-          />
-        </FlexGridRow>,
-        <FlexGridRow
-          gutter={48}
-          justify="space-around"
-        >
+            name="chart-count"
+            onFilter={[Function]}
+            zoomDomain={
+              Object {
+                "x": Array [
+                  2017-02-01T00:00:00.000Z,
+                  2018-02-01T00:00:00.000Z,
+                ],
+              }
+            }
+          />,
           <TimeSeries
             data={
               Array [
@@ -393,136 +654,24 @@ ShallowWrapper {
                 },
               ]
             }
-          />
-        </FlexGridRow>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": <TimeSeries
-            data={
-              Array [
-                Object {
-                  "x": 2014-06-25T21:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2014-07-23T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2014-12-03T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2015-05-03T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2015-07-08T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2015-12-05T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2015-12-16T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2015-12-24T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2016-02-09T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2016-02-23T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2016-08-09T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2016-09-16T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2016-12-31T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-01-31T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-04-12T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-05-30T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-07-29T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-08-04T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-08-30T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-09-29T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-10-04T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2017-10-23T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2018-03-30T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2018-05-21T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2018-06-01T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2018-06-20T22:00:00.000Z,
-                  "y": 1,
-                },
-                Object {
-                  "x": 2018-06-22T22:00:00.000Z,
-                  "y": 1,
-                },
-              ]
+            name="chart-sales"
+            onFilter={[Function]}
+            zoomDomain={
+              Object {
+                "x": Array [
+                  2017-02-01T00:00:00.000Z,
+                  2018-02-01T00:00:00.000Z,
+                ],
+              }
             }
           />,
-          "gutter": 48,
-          "justify": "space-around",
-        },
-        "ref": null,
-        "rendered": Object {
+        ],
+        "gutter": 48,
+        "justify": "space-around",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
@@ -637,137 +786,20 @@ ShallowWrapper {
                 "y": 1,
               },
             ],
+            "name": "chart-count",
+            "onFilter": [Function],
+            "zoomDomain": Object {
+              "x": Array [
+                2017-02-01T00:00:00.000Z,
+                2018-02-01T00:00:00.000Z,
+              ],
+            },
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": <TimeSeries
-            data={
-              Array [
-                Object {
-                  "x": 2014-06-25T21:00:00.000Z,
-                  "y": 74.36,
-                },
-                Object {
-                  "x": 2014-07-23T22:00:00.000Z,
-                  "y": 36.51,
-                },
-                Object {
-                  "x": 2014-12-03T22:00:00.000Z,
-                  "y": 1.84,
-                },
-                Object {
-                  "x": 2015-05-03T22:00:00.000Z,
-                  "y": 57.89,
-                },
-                Object {
-                  "x": 2015-07-08T22:00:00.000Z,
-                  "y": 89.96,
-                },
-                Object {
-                  "x": 2015-12-05T22:00:00.000Z,
-                  "y": 67.52,
-                },
-                Object {
-                  "x": 2015-12-16T22:00:00.000Z,
-                  "y": 83.02,
-                },
-                Object {
-                  "x": 2015-12-24T22:00:00.000Z,
-                  "y": 83.29,
-                },
-                Object {
-                  "x": 2016-02-09T22:00:00.000Z,
-                  "y": 14.34,
-                },
-                Object {
-                  "x": 2016-02-23T22:00:00.000Z,
-                  "y": 32.93,
-                },
-                Object {
-                  "x": 2016-08-09T22:00:00.000Z,
-                  "y": 78.78,
-                },
-                Object {
-                  "x": 2016-09-16T22:00:00.000Z,
-                  "y": 92.92,
-                },
-                Object {
-                  "x": 2016-12-31T22:00:00.000Z,
-                  "y": 34.84,
-                },
-                Object {
-                  "x": 2017-01-31T22:00:00.000Z,
-                  "y": 83.43,
-                },
-                Object {
-                  "x": 2017-04-12T22:00:00.000Z,
-                  "y": 99.61,
-                },
-                Object {
-                  "x": 2017-05-30T22:00:00.000Z,
-                  "y": 91.43,
-                },
-                Object {
-                  "x": 2017-07-29T22:00:00.000Z,
-                  "y": 85.38,
-                },
-                Object {
-                  "x": 2017-08-04T22:00:00.000Z,
-                  "y": 4.46,
-                },
-                Object {
-                  "x": 2017-08-30T22:00:00.000Z,
-                  "y": 45.3,
-                },
-                Object {
-                  "x": 2017-09-29T22:00:00.000Z,
-                  "y": 20.85,
-                },
-                Object {
-                  "x": 2017-10-04T22:00:00.000Z,
-                  "y": 34.16,
-                },
-                Object {
-                  "x": 2017-10-23T22:00:00.000Z,
-                  "y": 30.51,
-                },
-                Object {
-                  "x": 2018-03-30T22:00:00.000Z,
-                  "y": 78.24,
-                },
-                Object {
-                  "x": 2018-05-21T22:00:00.000Z,
-                  "y": 34.87,
-                },
-                Object {
-                  "x": 2018-06-01T22:00:00.000Z,
-                  "y": 7.64,
-                },
-                Object {
-                  "x": 2018-06-20T22:00:00.000Z,
-                  "y": 36.35,
-                },
-                Object {
-                  "x": 2018-06-22T22:00:00.000Z,
-                  "y": 30.49,
-                },
-              ]
-            }
-          />,
-          "gutter": 48,
-          "justify": "space-around",
-        },
-        "ref": null,
-        "rendered": Object {
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
@@ -882,14 +914,22 @@ ShallowWrapper {
                 "y": 30.49,
               },
             ],
+            "name": "chart-sales",
+            "onFilter": [Function],
+            "zoomDomain": Object {
+              "x": Array [
+                2017-02-01T00:00:00.000Z,
+                2018-02-01T00:00:00.000Z,
+              ],
+            },
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        "type": [Function],
-      },
-    ],
+      ],
+      "type": [Function],
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -898,11 +938,267 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <FlexGridRow
-            gutter={48}
-            justify="space-around"
-          >
+        "children": <FlexGridRow
+          gutter={48}
+          justify="space-around"
+        >
+          <TimeSeries
+            data={
+              Array [
+                Object {
+                  "x": 2014-06-25T21:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2014-07-23T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2014-12-03T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2015-05-03T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2015-07-08T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2015-12-05T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2015-12-16T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2015-12-24T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2016-02-09T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2016-02-23T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2016-08-09T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2016-09-16T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2016-12-31T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-01-31T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-04-12T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-05-30T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-07-29T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-08-04T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-08-30T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-09-29T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-10-04T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2017-10-23T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2018-03-30T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2018-05-21T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2018-06-01T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2018-06-20T22:00:00.000Z,
+                  "y": 1,
+                },
+                Object {
+                  "x": 2018-06-22T22:00:00.000Z,
+                  "y": 1,
+                },
+              ]
+            }
+            name="chart-count"
+            onFilter={[Function]}
+            zoomDomain={
+              Object {
+                "x": Array [
+                  2017-02-01T00:00:00.000Z,
+                  2018-02-01T00:00:00.000Z,
+                ],
+              }
+            }
+          />
+          <TimeSeries
+            data={
+              Array [
+                Object {
+                  "x": 2014-06-25T21:00:00.000Z,
+                  "y": 74.36,
+                },
+                Object {
+                  "x": 2014-07-23T22:00:00.000Z,
+                  "y": 36.51,
+                },
+                Object {
+                  "x": 2014-12-03T22:00:00.000Z,
+                  "y": 1.84,
+                },
+                Object {
+                  "x": 2015-05-03T22:00:00.000Z,
+                  "y": 57.89,
+                },
+                Object {
+                  "x": 2015-07-08T22:00:00.000Z,
+                  "y": 89.96,
+                },
+                Object {
+                  "x": 2015-12-05T22:00:00.000Z,
+                  "y": 67.52,
+                },
+                Object {
+                  "x": 2015-12-16T22:00:00.000Z,
+                  "y": 83.02,
+                },
+                Object {
+                  "x": 2015-12-24T22:00:00.000Z,
+                  "y": 83.29,
+                },
+                Object {
+                  "x": 2016-02-09T22:00:00.000Z,
+                  "y": 14.34,
+                },
+                Object {
+                  "x": 2016-02-23T22:00:00.000Z,
+                  "y": 32.93,
+                },
+                Object {
+                  "x": 2016-08-09T22:00:00.000Z,
+                  "y": 78.78,
+                },
+                Object {
+                  "x": 2016-09-16T22:00:00.000Z,
+                  "y": 92.92,
+                },
+                Object {
+                  "x": 2016-12-31T22:00:00.000Z,
+                  "y": 34.84,
+                },
+                Object {
+                  "x": 2017-01-31T22:00:00.000Z,
+                  "y": 83.43,
+                },
+                Object {
+                  "x": 2017-04-12T22:00:00.000Z,
+                  "y": 99.61,
+                },
+                Object {
+                  "x": 2017-05-30T22:00:00.000Z,
+                  "y": 91.43,
+                },
+                Object {
+                  "x": 2017-07-29T22:00:00.000Z,
+                  "y": 85.38,
+                },
+                Object {
+                  "x": 2017-08-04T22:00:00.000Z,
+                  "y": 4.46,
+                },
+                Object {
+                  "x": 2017-08-30T22:00:00.000Z,
+                  "y": 45.3,
+                },
+                Object {
+                  "x": 2017-09-29T22:00:00.000Z,
+                  "y": 20.85,
+                },
+                Object {
+                  "x": 2017-10-04T22:00:00.000Z,
+                  "y": 34.16,
+                },
+                Object {
+                  "x": 2017-10-23T22:00:00.000Z,
+                  "y": 30.51,
+                },
+                Object {
+                  "x": 2018-03-30T22:00:00.000Z,
+                  "y": 78.24,
+                },
+                Object {
+                  "x": 2018-05-21T22:00:00.000Z,
+                  "y": 34.87,
+                },
+                Object {
+                  "x": 2018-06-01T22:00:00.000Z,
+                  "y": 7.64,
+                },
+                Object {
+                  "x": 2018-06-20T22:00:00.000Z,
+                  "y": 36.35,
+                },
+                Object {
+                  "x": 2018-06-22T22:00:00.000Z,
+                  "y": 30.49,
+                },
+              ]
+            }
+            name="chart-sales"
+            onFilter={[Function]}
+            zoomDomain={
+              Object {
+                "x": Array [
+                  2017-02-01T00:00:00.000Z,
+                  2018-02-01T00:00:00.000Z,
+                ],
+              }
+            }
+          />
+        </FlexGridRow>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
             <TimeSeries
               data={
                 Array [
@@ -1016,12 +1312,17 @@ ShallowWrapper {
                   },
                 ]
               }
-            />
-          </FlexGridRow>,
-          <FlexGridRow
-            gutter={48}
-            justify="space-around"
-          >
+              name="chart-count"
+              onFilter={[Function]}
+              zoomDomain={
+                Object {
+                  "x": Array [
+                    2017-02-01T00:00:00.000Z,
+                    2018-02-01T00:00:00.000Z,
+                  ],
+                }
+              }
+            />,
             <TimeSeries
               data={
                 Array [
@@ -1135,136 +1436,24 @@ ShallowWrapper {
                   },
                 ]
               }
-            />
-          </FlexGridRow>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <TimeSeries
-              data={
-                Array [
-                  Object {
-                    "x": 2014-06-25T21:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2014-07-23T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2014-12-03T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2015-05-03T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2015-07-08T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2015-12-05T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2015-12-16T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2015-12-24T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2016-02-09T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2016-02-23T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2016-08-09T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2016-09-16T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2016-12-31T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-01-31T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-04-12T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-05-30T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-07-29T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-08-04T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-08-30T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-09-29T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-10-04T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2017-10-23T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2018-03-30T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2018-05-21T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2018-06-01T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2018-06-20T22:00:00.000Z,
-                    "y": 1,
-                  },
-                  Object {
-                    "x": 2018-06-22T22:00:00.000Z,
-                    "y": 1,
-                  },
-                ]
+              name="chart-sales"
+              onFilter={[Function]}
+              zoomDomain={
+                Object {
+                  "x": Array [
+                    2017-02-01T00:00:00.000Z,
+                    2018-02-01T00:00:00.000Z,
+                  ],
+                }
               }
             />,
-            "gutter": 48,
-            "justify": "space-around",
-          },
-          "ref": null,
-          "rendered": Object {
+          ],
+          "gutter": 48,
+          "justify": "space-around",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
@@ -1379,137 +1568,20 @@ ShallowWrapper {
                   "y": 1,
                 },
               ],
+              "name": "chart-count",
+              "onFilter": [Function],
+              "zoomDomain": Object {
+                "x": Array [
+                  2017-02-01T00:00:00.000Z,
+                  2018-02-01T00:00:00.000Z,
+                ],
+              },
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <TimeSeries
-              data={
-                Array [
-                  Object {
-                    "x": 2014-06-25T21:00:00.000Z,
-                    "y": 74.36,
-                  },
-                  Object {
-                    "x": 2014-07-23T22:00:00.000Z,
-                    "y": 36.51,
-                  },
-                  Object {
-                    "x": 2014-12-03T22:00:00.000Z,
-                    "y": 1.84,
-                  },
-                  Object {
-                    "x": 2015-05-03T22:00:00.000Z,
-                    "y": 57.89,
-                  },
-                  Object {
-                    "x": 2015-07-08T22:00:00.000Z,
-                    "y": 89.96,
-                  },
-                  Object {
-                    "x": 2015-12-05T22:00:00.000Z,
-                    "y": 67.52,
-                  },
-                  Object {
-                    "x": 2015-12-16T22:00:00.000Z,
-                    "y": 83.02,
-                  },
-                  Object {
-                    "x": 2015-12-24T22:00:00.000Z,
-                    "y": 83.29,
-                  },
-                  Object {
-                    "x": 2016-02-09T22:00:00.000Z,
-                    "y": 14.34,
-                  },
-                  Object {
-                    "x": 2016-02-23T22:00:00.000Z,
-                    "y": 32.93,
-                  },
-                  Object {
-                    "x": 2016-08-09T22:00:00.000Z,
-                    "y": 78.78,
-                  },
-                  Object {
-                    "x": 2016-09-16T22:00:00.000Z,
-                    "y": 92.92,
-                  },
-                  Object {
-                    "x": 2016-12-31T22:00:00.000Z,
-                    "y": 34.84,
-                  },
-                  Object {
-                    "x": 2017-01-31T22:00:00.000Z,
-                    "y": 83.43,
-                  },
-                  Object {
-                    "x": 2017-04-12T22:00:00.000Z,
-                    "y": 99.61,
-                  },
-                  Object {
-                    "x": 2017-05-30T22:00:00.000Z,
-                    "y": 91.43,
-                  },
-                  Object {
-                    "x": 2017-07-29T22:00:00.000Z,
-                    "y": 85.38,
-                  },
-                  Object {
-                    "x": 2017-08-04T22:00:00.000Z,
-                    "y": 4.46,
-                  },
-                  Object {
-                    "x": 2017-08-30T22:00:00.000Z,
-                    "y": 45.3,
-                  },
-                  Object {
-                    "x": 2017-09-29T22:00:00.000Z,
-                    "y": 20.85,
-                  },
-                  Object {
-                    "x": 2017-10-04T22:00:00.000Z,
-                    "y": 34.16,
-                  },
-                  Object {
-                    "x": 2017-10-23T22:00:00.000Z,
-                    "y": 30.51,
-                  },
-                  Object {
-                    "x": 2018-03-30T22:00:00.000Z,
-                    "y": 78.24,
-                  },
-                  Object {
-                    "x": 2018-05-21T22:00:00.000Z,
-                    "y": 34.87,
-                  },
-                  Object {
-                    "x": 2018-06-01T22:00:00.000Z,
-                    "y": 7.64,
-                  },
-                  Object {
-                    "x": 2018-06-20T22:00:00.000Z,
-                    "y": 36.35,
-                  },
-                  Object {
-                    "x": 2018-06-22T22:00:00.000Z,
-                    "y": 30.49,
-                  },
-                ]
-              }
-            />,
-            "gutter": 48,
-            "justify": "space-around",
-          },
-          "ref": null,
-          "rendered": Object {
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
@@ -1624,14 +1696,22 @@ ShallowWrapper {
                   "y": 30.49,
                 },
               ],
+              "name": "chart-sales",
+              "onFilter": [Function],
+              "zoomDomain": Object {
+                "x": Array [
+                  2017-02-01T00:00:00.000Z,
+                  2018-02-01T00:00:00.000Z,
+                ],
+              },
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
-          "type": [Function],
-        },
-      ],
+        ],
+        "type": [Function],
+      },
       "type": "div",
     },
   ],

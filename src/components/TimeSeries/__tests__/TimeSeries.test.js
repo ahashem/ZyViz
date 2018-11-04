@@ -4,7 +4,7 @@ import MockDate from 'mockdate';
 
 import TimeSeries from '../TimeSeries';
 
-describe.skip('<TimeSeries /> component', () => {
+describe('<TimeSeries /> component', () => {
   beforeAll(() => {
     MockDate.set('11/3/2018');
     Date.constructor = jest.fn(() => 1541196000000);
@@ -22,9 +22,18 @@ describe.skip('<TimeSeries /> component', () => {
       { x: new Date(Date.parse('2016-03-11T00:00:00+00:00')), y: 470 }
     ];
 
+    const mockZoomDomain = {
+      x: [
+        new Date(Date.parse('2015-01-01T00:00:00+00:00')),
+        new Date(Date.parse('2017-01-01T00:00:00+00:00'))
+      ]
+    };
+
     const rendered = shallow(
       <TimeSeries
+        name={'mock-chart'}
         data={mockTimeSeriesData}
+        zoomDomain={mockZoomDomain}
       />
     );
 

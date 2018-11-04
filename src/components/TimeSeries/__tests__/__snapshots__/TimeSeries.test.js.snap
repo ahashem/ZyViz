@@ -40,6 +40,15 @@ ShallowWrapper {
         },
       ]
     }
+    name="mock-chart"
+    zoomDomain={
+      Object {
+        "x": Array [
+          2015-01-01T00:00:00.000Z,
+          2017-01-01T00:00:00.000Z,
+        ],
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -69,6 +78,7 @@ ShallowWrapper {
                   rectComponent={<Rect />}
                 />
               }
+              name="mock-chart"
               onZoomDomainChange={[Function]}
               portalComponent={<Portal />}
               portalZIndex={99}
@@ -78,8 +88,8 @@ ShallowWrapper {
               zoomDomain={
                 Object {
                   "x": Array [
-                    2017-02-01T00:00:00.000Z,
-                    2018-02-01T00:00:00.000Z,
+                    2015-01-01T00:00:00.000Z,
+                    2017-01-01T00:00:00.000Z,
                   ],
                 }
               }
@@ -3308,8 +3318,8 @@ ShallowWrapper {
               brushDomain={
                 Object {
                   "x": Array [
-                    2017-02-01T00:00:00.000Z,
-                    2018-02-01T00:00:00.000Z,
+                    2015-01-01T00:00:00.000Z,
+                    2017-01-01T00:00:00.000Z,
                   ],
                 }
               }
@@ -3329,6 +3339,7 @@ ShallowWrapper {
                 }
               }
               handleWidth={8}
+              name="mock-chart"
               onBrushDomainChange={[Function]}
               portalComponent={<Portal />}
               portalZIndex={99}
@@ -7670,6 +7681,7 @@ ShallowWrapper {
                 rectComponent={<Rect />}
               />
             }
+            name="mock-chart"
             onZoomDomainChange={[Function]}
             portalComponent={<Portal />}
             portalZIndex={99}
@@ -7679,8 +7691,8 @@ ShallowWrapper {
             zoomDomain={
               Object {
                 "x": Array [
-                  2017-02-01T00:00:00.000Z,
-                  2018-02-01T00:00:00.000Z,
+                  2015-01-01T00:00:00.000Z,
+                  2017-01-01T00:00:00.000Z,
                 ],
               }
             }
@@ -11993,8 +12005,8 @@ ShallowWrapper {
             brushDomain={
               Object {
                 "x": Array [
-                  2017-02-01T00:00:00.000Z,
-                  2018-02-01T00:00:00.000Z,
+                  2015-01-01T00:00:00.000Z,
+                  2017-01-01T00:00:00.000Z,
                 ],
               }
             }
@@ -12014,6 +12026,7 @@ ShallowWrapper {
               }
             }
             handleWidth={8}
+            name="mock-chart"
             onBrushDomainChange={[Function]}
             portalComponent={<Portal />}
             portalZIndex={99}
@@ -15778,6 +15791,7 @@ ShallowWrapper {
                     rectComponent={<Rect />}
                   />
                 }
+                name="mock-chart"
                 onZoomDomainChange={[Function]}
                 portalComponent={<Portal />}
                 portalZIndex={99}
@@ -15787,8 +15801,8 @@ ShallowWrapper {
                 zoomDomain={
                   Object {
                     "x": Array [
-                      2017-02-01T00:00:00.000Z,
-                      2018-02-01T00:00:00.000Z,
+                      2015-01-01T00:00:00.000Z,
+                      2017-01-01T00:00:00.000Z,
                     ],
                   }
                 }
@@ -19017,8 +19031,8 @@ ShallowWrapper {
                 brushDomain={
                   Object {
                     "x": Array [
-                      2017-02-01T00:00:00.000Z,
-                      2018-02-01T00:00:00.000Z,
+                      2015-01-01T00:00:00.000Z,
+                      2017-01-01T00:00:00.000Z,
                     ],
                   }
                 }
@@ -19038,6 +19052,7 @@ ShallowWrapper {
                   }
                 }
                 handleWidth={8}
+                name="mock-chart"
                 onBrushDomainChange={[Function]}
                 portalComponent={<Portal />}
                 portalZIndex={99}
@@ -23379,6 +23394,7 @@ ShallowWrapper {
                   rectComponent={<Rect />}
                 />
               }
+              name="mock-chart"
               onZoomDomainChange={[Function]}
               portalComponent={<Portal />}
               portalZIndex={99}
@@ -23388,8 +23404,8 @@ ShallowWrapper {
               zoomDomain={
                 Object {
                   "x": Array [
-                    2017-02-01T00:00:00.000Z,
-                    2018-02-01T00:00:00.000Z,
+                    2015-01-01T00:00:00.000Z,
+                    2017-01-01T00:00:00.000Z,
                   ],
                 }
               }
@@ -27702,8 +27718,8 @@ ShallowWrapper {
               brushDomain={
                 Object {
                   "x": Array [
-                    2017-02-01T00:00:00.000Z,
-                    2018-02-01T00:00:00.000Z,
+                    2015-01-01T00:00:00.000Z,
+                    2017-01-01T00:00:00.000Z,
                   ],
                 }
               }
@@ -27723,6 +27739,7 @@ ShallowWrapper {
                 }
               }
               handleWidth={8}
+              name="mock-chart"
               onBrushDomainChange={[Function]}
               portalComponent={<Portal />}
               portalZIndex={99}

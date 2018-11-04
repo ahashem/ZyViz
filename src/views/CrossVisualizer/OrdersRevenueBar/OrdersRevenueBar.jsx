@@ -55,7 +55,6 @@ class OrdersRevenueBar extends Component {
    */
   crossFilterSelected = (dimension, selectedKey, deselected = false) => {
     const { onFilter } = this.props;
-    // console.log('selectedData', selectedKey);
     onFilter(dimension, selectedKey, deselected);
   };
 
