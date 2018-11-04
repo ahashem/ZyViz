@@ -79,13 +79,14 @@ class OrdersTimeSeries extends Component {
     const newZooms = {};
     for (const [key, value] of Object.entries(zoomDomains)) {
       newZooms[key] = {
+        ...value,
         x: dateRange['x'],
         y: zoomDomains[key]['y'],
       };
     }
     const newZoomDomains = Object.assign({}, zoomDomains, newZooms);
     this.setState({
-      zoomDomains: newZooms
+      zoomDomains: newZoomDomains
     }, () => onFilter('ordersByDate', dateRange['x'], deselected));
   };
 

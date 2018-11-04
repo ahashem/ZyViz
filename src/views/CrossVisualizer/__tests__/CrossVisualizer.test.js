@@ -3,8 +3,7 @@ import { mount, shallow } from 'enzyme';
 import configureStore from 'redux-mock-store';
 
 import CrossVisualizer from '../CrossVisualizer';
-
-import mockOrders from '../../../utils/test-utils/mock-test-orders';
+import { crossFilterMock } from '../../../utils/test-utils';
 
 describe('<CrossVisualizer /> Component', () => {
   test('should render children and match snapshot', () => {
@@ -12,7 +11,7 @@ describe('<CrossVisualizer /> Component', () => {
       loading: false,
       error: false,
       errorMes: '',
-      ordersData: mockOrders,
+      ordersData: crossFilterMock,
     };
     const mockStore = configureStore();
     const store = mockStore({ crossVisualizer });
