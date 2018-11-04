@@ -17,6 +17,18 @@ class OrdersTimeSeries extends Component {
     dimension: {},
   };
 
+  _chartCount = 'chart-count';
+
+  _chartSales = 'chart-sales';
+
+  state = {
+    // TODO: move to a module and update with all range or last 6-12 months of data!
+    zoomDomains: {
+      [`${this._chartCount}`]: { x: [new Date(Date.UTC(2017, 1, 1)), new Date(Date.UTC(2018, 1, 1))] },
+      [`${this._chartSales}`]: { x: [new Date(Date.UTC(2017, 1, 1)), new Date(Date.UTC(2018, 1, 1))] },
+    }
+  };
+
   /**
    * Receive a crossfilter dimensions, create groups to use for charts
    * @param {Object} dimensions
@@ -32,7 +44,7 @@ class OrdersTimeSeries extends Component {
 
     const ordersByDateData = ordersByDateDataGroup.map(data => {
       return {
-        x: new Date(data.key),
+        x: (data.key instanceof Date) ? data.key : new Date(Date.parse(data.key)),
         y: isNaN(data.value) ? 0 : data.value
       };
     });
@@ -53,18 +65,33 @@ class OrdersTimeSeries extends Component {
 
   /**
    * Uplift filter triggers
+   * @param {*|string} name
+   * @param {Array<Date>} dateRange
    * @param {*|string} dimension
    * @param {Number} selectedKey
    * @param {Boolean} deselected
    */
-  crossFilterSelected = (dimension, selectedKey, deselected = false) => {
+  crossFilterSelected = (name, dateRange, dimension, selectedKey, deselected = false) => {
+    const { zoomDomains } = this.state;
     const { onFilter } = this.props;
-    // console.log('selectedData', selectedKey);
-    onFilter(dimension, selectedKey, deselected);
+
+    // Set equal `X`(Time Scale) ZoomDomains for all child TimeSeries charts reserving the `Y` scale as is
+    const newZooms = {};
+    for (const [key, value] of Object.entries(zoomDomains)) {
+      newZooms[key] = {
+        x: dateRange['x'],
+        y: zoomDomains[key]['y'],
+      };
+    }
+    const newZoomDomains = Object.assign({}, zoomDomains, newZooms);
+    this.setState({
+      zoomDomains: newZooms
+    }, () => onFilter('ordersByDate', dateRange['x'], deselected));
   };
 
 
   render() {
+    const { zoomDomains } = this.state;
     const { dimensions } = this.props;
     const ordersCrossed = dimensions ? this.prepareOrdersCountData(dimensions) : null;
 
@@ -75,14 +102,17 @@ class OrdersTimeSeries extends Component {
           {ordersCrossed && (
             <TimeSeries
               data={ordersCrossed.ordersByDateData}
+              onFilter={this.crossFilterSelected}
+              zoomDomain={zoomDomains[this._chartCount]}
+              name={this._chartCount}
             />)}
-
-        </FlexGridRow>
-        <FlexGridRow justify="space-around" gutter={48}>
 
           {ordersCrossed && (
             <TimeSeries
               data={ordersCrossed.totalSaleByDateData}
+              onFilter={this.crossFilterSelected}
+              zoomDomain={zoomDomains[this._chartSales]}
+              name={this._chartSales}
             />)}
 
         </FlexGridRow>

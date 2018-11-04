@@ -5,23 +5,20 @@ import { VictoryAxis, VictoryBrushContainer, VictoryChart, VictoryLine, VictoryZ
 
 class TimeSeries extends Component {
 
-  state = {
-    zoomDomain: { x: [new Date(Date.UTC(2017, 1, 1)), new Date(Date.UTC(2018, 1, 1))] }
-  };
-
-  handleZoom = (domain) => {
-    this.setState({ zoomDomain: domain });
+  handleZoom = (domain, props) => {
+    const { onFilter } = this.props;
+    onFilter && onFilter(props.name, domain);
   };
 
   render() {
-    const { zoomDomain } = this.state;
-    const { data } = this.props;
+    const { data, name, zoomDomain } = this.props;
     return (
       <div>
         <VictoryChart
           scale={{ x: 'time' }}
           containerComponent={
             <VictoryZoomContainer
+              name={name}
               zoomDimension="x"
               zoomDomain={zoomDomain}
               onZoomDomainChange={this.handleZoom}
@@ -41,6 +38,7 @@ class TimeSeries extends Component {
           width={600} height={100} scale={{ x: 'time' }}
           containerComponent={
             <VictoryBrushContainer
+              name={name}
               brushDimension="x"
               brushDomain={zoomDomain}
               onBrushDomainChange={this.handleZoom}
@@ -64,6 +62,11 @@ class TimeSeries extends Component {
 
 TimeSeries.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({})),
+  name: PropTypes.string.isRequired,
+  zoomDomain: PropTypes.shape({
+    x: PropTypes.array,
+    y: PropTypes.array,
+  }).isRequired,
 };
 
 TimeSeries.defaultProps = {
