@@ -161,6 +161,12 @@ ShallowWrapper {
         justify="space-around"
       >
         <BarChart
+          axisFormats={
+            Object {
+              "x": [Function],
+              "y": [Function],
+            }
+          }
           data={
             Array [
               Object {
@@ -194,6 +200,12 @@ ShallowWrapper {
           y="value"
         />
         <BarChart
+          axisFormats={
+            Object {
+              "x": [Function],
+              "y": [Function],
+            }
+          }
           data={
             Array [
               Object {
@@ -283,6 +295,12 @@ ShallowWrapper {
           y="value"
         />
         <BarChart
+          axisFormats={
+            Object {
+              "x": [Function],
+              "y": [Function],
+            }
+          }
           data={
             Array [
               Object {
@@ -329,6 +347,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -362,6 +386,12 @@ ShallowWrapper {
             y="value"
           />,
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -451,6 +481,12 @@ ShallowWrapper {
             y="value"
           />,
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -498,6 +534,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "axisFormats": Object {
+              "x": [Function],
+              "y": [Function],
+            },
             "data": Array [
               Object {
                 "key": "Branch A",
@@ -537,6 +577,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "axisFormats": Object {
+              "x": [Function],
+              "y": [Function],
+            },
             "data": Array [
               Object {
                 "key": "Rai",
@@ -632,6 +676,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "axisFormats": Object {
+              "x": [Function],
+              "y": [Function],
+            },
             "data": Array [
               Object {
                 "key": "Fridays",
@@ -686,6 +734,12 @@ ShallowWrapper {
           justify="space-around"
         >
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -719,6 +773,12 @@ ShallowWrapper {
             y="value"
           />
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -808,6 +868,12 @@ ShallowWrapper {
             y="value"
           />
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -854,6 +920,12 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
               data={
                 Array [
                   Object {
@@ -887,6 +959,12 @@ ShallowWrapper {
               y="value"
             />,
             <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
               data={
                 Array [
                   Object {
@@ -976,6 +1054,12 @@ ShallowWrapper {
               y="value"
             />,
             <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
               data={
                 Array [
                   Object {
@@ -1023,6 +1107,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+                "y": [Function],
+              },
               "data": Array [
                 Object {
                   "key": "Branch A",
@@ -1062,6 +1150,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+                "y": [Function],
+              },
               "data": Array [
                 Object {
                   "key": "Rai",
@@ -1157,6 +1249,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+                "y": [Function],
+              },
               "data": Array [
                 Object {
                   "key": "Fridays",
