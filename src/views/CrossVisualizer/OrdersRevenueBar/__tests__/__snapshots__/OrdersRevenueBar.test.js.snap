@@ -157,10 +157,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <FlexGridRow
+        align="middle"
         gutter={48}
         justify="space-around"
       >
         <BarChart
+          axisFormats={
+            Object {
+              "x": [Function],
+              "y": [Function],
+            }
+          }
           data={
             Array [
               Object {
@@ -189,11 +196,19 @@ ShallowWrapper {
               },
             ]
           }
+          height={400}
           onClick={[Function]}
+          width={450}
           x="key"
           y="value"
         />
         <BarChart
+          axisFormats={
+            Object {
+              "x": [Function],
+              "y": [Function],
+            }
+          }
           data={
             Array [
               Object {
@@ -278,11 +293,19 @@ ShallowWrapper {
               },
             ]
           }
+          height={400}
           onClick={[Function]}
+          width={450}
           x="key"
           y="value"
         />
         <BarChart
+          axisFormats={
+            Object {
+              "x": [Function],
+              "y": [Function],
+            }
+          }
           data={
             Array [
               Object {
@@ -315,7 +338,9 @@ ShallowWrapper {
               },
             ]
           }
+          height={400}
           onClick={[Function]}
+          width={450}
           x="key"
           y="value"
         />
@@ -327,8 +352,15 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "align": "middle",
         "children": Array [
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -357,11 +389,19 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />,
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -446,11 +486,19 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />,
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -483,7 +531,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />,
@@ -498,6 +548,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "axisFormats": Object {
+              "x": [Function],
+              "y": [Function],
+            },
             "data": Array [
               Object {
                 "key": "Branch A",
@@ -524,7 +578,9 @@ ShallowWrapper {
                 "value": 375.95,
               },
             ],
+            "height": 400,
             "onClick": [Function],
+            "width": 450,
             "x": "key",
             "y": "value",
           },
@@ -537,6 +593,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "axisFormats": Object {
+              "x": [Function],
+              "y": [Function],
+            },
             "data": Array [
               Object {
                 "key": "Rai",
@@ -619,7 +679,9 @@ ShallowWrapper {
                 "value": 20.85,
               },
             ],
+            "height": 400,
             "onClick": [Function],
+            "width": 450,
             "x": "key",
             "y": "value",
           },
@@ -632,6 +694,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "axisFormats": Object {
+              "x": [Function],
+              "y": [Function],
+            },
             "data": Array [
               Object {
                 "key": "Fridays",
@@ -662,7 +728,9 @@ ShallowWrapper {
                 "value": 383.93,
               },
             ],
+            "height": 400,
             "onClick": [Function],
+            "width": 450,
             "x": "key",
             "y": "value",
           },
@@ -682,10 +750,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <FlexGridRow
+          align="middle"
           gutter={48}
           justify="space-around"
         >
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -714,11 +789,19 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -803,11 +886,19 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />
           <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+                "y": [Function],
+              }
+            }
             data={
               Array [
                 Object {
@@ -840,7 +931,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />
@@ -852,8 +945,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "align": "middle",
           "children": Array [
             <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
               data={
                 Array [
                   Object {
@@ -882,11 +982,19 @@ ShallowWrapper {
                   },
                 ]
               }
+              height={400}
               onClick={[Function]}
+              width={450}
               x="key"
               y="value"
             />,
             <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
               data={
                 Array [
                   Object {
@@ -971,11 +1079,19 @@ ShallowWrapper {
                   },
                 ]
               }
+              height={400}
               onClick={[Function]}
+              width={450}
               x="key"
               y="value"
             />,
             <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
               data={
                 Array [
                   Object {
@@ -1008,7 +1124,9 @@ ShallowWrapper {
                   },
                 ]
               }
+              height={400}
               onClick={[Function]}
+              width={450}
               x="key"
               y="value"
             />,
@@ -1023,6 +1141,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+                "y": [Function],
+              },
               "data": Array [
                 Object {
                   "key": "Branch A",
@@ -1049,7 +1171,9 @@ ShallowWrapper {
                   "value": 375.95,
                 },
               ],
+              "height": 400,
               "onClick": [Function],
+              "width": 450,
               "x": "key",
               "y": "value",
             },
@@ -1062,6 +1186,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+                "y": [Function],
+              },
               "data": Array [
                 Object {
                   "key": "Rai",
@@ -1144,7 +1272,9 @@ ShallowWrapper {
                   "value": 20.85,
                 },
               ],
+              "height": 400,
               "onClick": [Function],
+              "width": 450,
               "x": "key",
               "y": "value",
             },
@@ -1157,6 +1287,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+                "y": [Function],
+              },
               "data": Array [
                 Object {
                   "key": "Fridays",
@@ -1187,7 +1321,9 @@ ShallowWrapper {
                   "value": 383.93,
                 },
               ],
+              "height": 400,
               "onClick": [Function],
+              "width": 450,
               "x": "key",
               "y": "value",
             },
