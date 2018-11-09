@@ -56,9 +56,9 @@ const ChildrenGen = (children) => {
     const generatedChildren = [];
     childrenMap.map((child, index) => {
       if (child.type === Col) {
-        generatedChildren.push(child);
+        return generatedChildren.push(child);
       } else {
-        generatedChildren.push(
+        return generatedChildren.push(
           <Col
             key={uuid()}
             xs={boxByCountSize(columns.xs, columns.count)}
