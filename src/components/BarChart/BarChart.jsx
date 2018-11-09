@@ -13,12 +13,16 @@ function styleChartSlices(selected) {
  * @param data
  * @param {function} onClick
  * @param {Object} axisFormats - tickFormat function for both the xAxis and yAxis
+ * @param {Number} height - Chart wrapper height
+ * @param {Number} width - Chart wrapper width
  */
-const BarChart = ({ data, onClick, axisFormats, ...rest }) => {
+const BarChart = ({ data, onClick, axisFormats, height, width, ...rest }) => {
   return (
     <VictoryChart
       domainPadding={25}
       theme={VictoryTheme.material}
+      height={height}
+      width={width}
     >
       <VictoryAxis
         tickFormat={axisFormats.y}
@@ -67,7 +71,9 @@ BarChart.propTypes = {
   axisFormats: {
     x: PropTypes.func,
     y: PropTypes.func,
-  }
+  },
+  height: PropTypes.number,
+  width: PropTypes.number,
 };
 
 BarChart.defaultProps = {
@@ -77,7 +83,9 @@ BarChart.defaultProps = {
   axisFormats: {
     x: x => x,
     y: y => y,
-  }
+  },
+  height: 400,
+  width: 450
 };
 
 export default BarChart;

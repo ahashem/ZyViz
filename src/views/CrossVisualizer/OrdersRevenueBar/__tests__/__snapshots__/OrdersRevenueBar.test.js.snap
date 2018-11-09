@@ -157,6 +157,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <FlexGridRow
+        align="middle"
         gutter={48}
         justify="space-around"
       >
@@ -195,7 +196,9 @@ ShallowWrapper {
               },
             ]
           }
+          height={400}
           onClick={[Function]}
+          width={450}
           x="key"
           y="value"
         />
@@ -290,7 +293,9 @@ ShallowWrapper {
               },
             ]
           }
+          height={400}
           onClick={[Function]}
+          width={450}
           x="key"
           y="value"
         />
@@ -333,7 +338,9 @@ ShallowWrapper {
               },
             ]
           }
+          height={400}
           onClick={[Function]}
+          width={450}
           x="key"
           y="value"
         />
@@ -345,6 +352,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "align": "middle",
         "children": Array [
           <BarChart
             axisFormats={
@@ -381,7 +389,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />,
@@ -476,7 +486,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />,
@@ -519,7 +531,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />,
@@ -564,7 +578,9 @@ ShallowWrapper {
                 "value": 375.95,
               },
             ],
+            "height": 400,
             "onClick": [Function],
+            "width": 450,
             "x": "key",
             "y": "value",
           },
@@ -663,7 +679,9 @@ ShallowWrapper {
                 "value": 20.85,
               },
             ],
+            "height": 400,
             "onClick": [Function],
+            "width": 450,
             "x": "key",
             "y": "value",
           },
@@ -710,7 +728,9 @@ ShallowWrapper {
                 "value": 383.93,
               },
             ],
+            "height": 400,
             "onClick": [Function],
+            "width": 450,
             "x": "key",
             "y": "value",
           },
@@ -730,6 +750,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <FlexGridRow
+          align="middle"
           gutter={48}
           justify="space-around"
         >
@@ -768,7 +789,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />
@@ -863,7 +886,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />
@@ -906,7 +931,9 @@ ShallowWrapper {
                 },
               ]
             }
+            height={400}
             onClick={[Function]}
+            width={450}
             x="key"
             y="value"
           />
@@ -918,6 +945,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "align": "middle",
           "children": Array [
             <BarChart
               axisFormats={
@@ -954,7 +982,9 @@ ShallowWrapper {
                   },
                 ]
               }
+              height={400}
               onClick={[Function]}
+              width={450}
               x="key"
               y="value"
             />,
@@ -1049,7 +1079,9 @@ ShallowWrapper {
                   },
                 ]
               }
+              height={400}
               onClick={[Function]}
+              width={450}
               x="key"
               y="value"
             />,
@@ -1092,7 +1124,9 @@ ShallowWrapper {
                   },
                 ]
               }
+              height={400}
               onClick={[Function]}
+              width={450}
               x="key"
               y="value"
             />,
@@ -1137,7 +1171,9 @@ ShallowWrapper {
                   "value": 375.95,
                 },
               ],
+              "height": 400,
               "onClick": [Function],
+              "width": 450,
               "x": "key",
               "y": "value",
             },
@@ -1236,7 +1272,9 @@ ShallowWrapper {
                   "value": 20.85,
                 },
               ],
+              "height": 400,
               "onClick": [Function],
+              "width": 450,
               "x": "key",
               "y": "value",
             },
@@ -1283,7 +1321,9 @@ ShallowWrapper {
                   "value": 383.93,
                 },
               ],
+              "height": 400,
               "onClick": [Function],
+              "width": 450,
               "x": "key",
               "y": "value",
             },

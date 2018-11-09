@@ -156,6 +156,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <FlexGridRow
+        align="middle"
         gutter={48}
         justify="space-around"
       >
@@ -246,6 +247,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "align": "middle",
         "children": Array [
           <PieChart
             data={
@@ -441,6 +443,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <FlexGridRow
+          align="middle"
           gutter={48}
           justify="space-around"
         >
@@ -531,6 +534,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "align": "middle",
           "children": Array [
             <PieChart
               data={
