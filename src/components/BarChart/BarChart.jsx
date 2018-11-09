@@ -15,8 +15,9 @@ function styleChartSlices(selected) {
  * @param {Object} axisFormats - tickFormat function for both the xAxis and yAxis
  * @param {Number} height - Chart wrapper height
  * @param {Number} width - Chart wrapper width
+ * @param {Object} labels - Chart Axis Labels
  */
-const BarChart = ({ data, onClick, axisFormats, height, width, ...rest }) => {
+const BarChart = ({ data, onClick, axisFormats, height, width, labels, ...rest }) => {
   return (
     <VictoryChart
       domainPadding={25}
@@ -25,11 +26,19 @@ const BarChart = ({ data, onClick, axisFormats, height, width, ...rest }) => {
       width={width}
     >
       <VictoryAxis
-        tickFormat={axisFormats.y}
+        label={labels.x || ''}
+        style={{
+          axisLabel: { padding: 30 }
+        }}
+        tickFormat={axisFormats.x}
       />
       <VictoryAxis
         dependentAxis
-        tickFormat={axisFormats.x}
+        label={labels.y || ''}
+        style={{
+          axisLabel: { padding: 40 }
+        }}
+        tickFormat={axisFormats.y}
       />
       <VictoryBar
         data={data}
@@ -44,11 +53,6 @@ const BarChart = ({ data, onClick, axisFormats, height, width, ...rest }) => {
                   mutation: (props) => {
                     styleChartSlices(props);
                     return onClick(props.index);
-                  }
-                }, {
-                  target: 'labels',
-                  mutation: (props) => {
-                    return props.text === 'clicked' ? null : { text: 'clicked' };
                   }
                 }, {
                   target: 'labels',
@@ -74,6 +78,10 @@ BarChart.propTypes = {
   },
   height: PropTypes.number,
   width: PropTypes.number,
+  labels: PropTypes.shape({
+    x: PropTypes.string,
+    y: PropTypes.string,
+  }),
 };
 
 BarChart.defaultProps = {
@@ -85,7 +93,11 @@ BarChart.defaultProps = {
     y: y => y,
   },
   height: 400,
-  width: 450
+  width: 450,
+  labels: {
+    x: '',
+    y: '',
+  }
 };
 
 export default BarChart;

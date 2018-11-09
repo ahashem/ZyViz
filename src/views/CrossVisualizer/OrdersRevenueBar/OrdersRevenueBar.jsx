@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 import BarChart from '../../../components/BarChart/BarChart';
+import { Col } from 'antd';
 
 /**
  * @component OrdersRevenueBar
@@ -65,35 +66,55 @@ class OrdersRevenueBar extends Component {
 
     return (
       <div>
-        <FlexGridRow justify="space-around" gutter={48}>
+        <FlexGridRow justify="space-around" gutter={8}>
+
+          <Col
+            xs={24}
+            sm={24}
+            md={8}
+            lg={8}
+          >
+            <BarChart
+              height={250}
+              width={350}
+              labels={{ x: 'Branch', y: 'Revenue' }}
+              axisFormats={{ y: (y) => (`$${y / 1000}k`) }}
+              data={ordersCrossed && ordersCrossed.ordersByBranchData}
+              onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+                'ordersByBranch',
+                ordersCrossed.ordersByBranchData[selectedIndex].key,
+                deselected
+              )}
+              x="key"
+              y="value"
+            />
+
+
+            <BarChart
+              height={250}
+              width={350}
+              labels={{ x: 'Day of Week', y: 'Revenue' }}
+              axisFormats={{ y: (y) => (`$${y / 1000}k`) }}
+              data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
+              onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+                'ordersByWeekDay',
+                ordersCrossed.ordersByWeekDayData[selectedIndex].key,
+                deselected
+              )}
+              x="key"
+              y="value"
+            />
+          </Col>
 
           <BarChart
-            data={ordersCrossed && ordersCrossed.ordersByBranchData}
-            onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByBranch',
-              ordersCrossed.ordersByBranchData[selectedIndex].key,
-              deselected
-            )}
-            x="key"
-            y="value"
-          />
-
-          <BarChart
+            height={650}
+            width={720}
+            labels={{ x: 'Delivery Area', y: 'Revenue' }}
+            axisFormats={{ y: (y) => (`$${y / 1000}k`) }}
             data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
               'ordersByDeliveryArea',
               ordersCrossed.ordersByDeliveryAreaData[selectedIndex].key,
-              deselected
-            )}
-            x="key"
-            y="value"
-          />
-
-          <BarChart
-            data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
-            onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByWeekDay',
-              ordersCrossed.ordersByWeekDayData[selectedIndex].key,
               deselected
             )}
             x="key"

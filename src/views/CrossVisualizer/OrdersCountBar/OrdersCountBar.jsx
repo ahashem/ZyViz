@@ -77,6 +77,7 @@ class OrdersCountBar extends Component {
             <BarChart
               height={250}
               width={350}
+              labels={{ x: 'Branch', y: 'Orders Count' }}
               data={ordersCrossed && ordersCrossed.ordersByBranchData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByBranch',
@@ -89,6 +90,7 @@ class OrdersCountBar extends Component {
             <BarChart
               height={250}
               width={350}
+              labels={{ x: 'Week of Day', y: 'Orders Count' }}
               data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByWeekDay',
@@ -103,6 +105,7 @@ class OrdersCountBar extends Component {
           <BarChart
             height={650}
             width={720}
+            labels={{ x: 'Delivery Area', y: 'Orders Count' }}
             data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
               'ordersByDeliveryArea',
