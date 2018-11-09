@@ -111,6 +111,6 @@ describe('<FlexGridRow /> component', () => {
     expect(rendered.find('#child1').parent().prop('lg')).toEqual(4);
     expect(rendered.find('#child1').parent().prop('xl')).toEqual(4);
     expect(rendered.find('#child1').parent().prop('xxl')).toEqual(4);
-    expect(xs).toEqual(24); //
+    expect(xs).toEqual(24); // Antd boxes default to 24 columns
   });
 });

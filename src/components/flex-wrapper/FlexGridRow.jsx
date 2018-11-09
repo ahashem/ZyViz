@@ -93,7 +93,8 @@ const ChildrenGen = (children) => {
 /**
  * FlexGridRow component
  * @param {Number} gutter
- * @param {boolean} justify
+ * @param {string} justify
+ * @param {string} align
  * @param {Array<Node>} children
  */
 const FlexGridRow = ({ gutter, justify, align, children }) => {

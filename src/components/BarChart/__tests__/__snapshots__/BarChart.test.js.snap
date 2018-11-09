@@ -26,7 +26,9 @@ ShallowWrapper {
         },
       ]
     }
+    height={400}
     onClick={[Function]}
+    width={450}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -3818,6 +3820,7 @@ ShallowWrapper {
       },
       "domainPadding": 25,
       "groupComponent": <g />,
+      "height": 400,
       "standalone": true,
       "theme": Object {
         "area": Object {
@@ -4227,6 +4230,7 @@ ShallowWrapper {
           "width": 350,
         },
       },
+      "width": 450,
     },
     "ref": null,
     "rendered": Array [
@@ -9599,6 +9603,7 @@ ShallowWrapper {
         },
         "domainPadding": 25,
         "groupComponent": <g />,
+        "height": 400,
         "standalone": true,
         "theme": Object {
           "area": Object {
@@ -10008,6 +10013,7 @@ ShallowWrapper {
             "width": 350,
           },
         },
+        "width": 450,
       },
       "ref": null,
       "rendered": Array [
