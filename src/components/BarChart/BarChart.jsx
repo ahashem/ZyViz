@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryTheme } from 'victory';
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryLabel, VictoryTheme } from 'victory';
 
 function styleChartSlices(selected) {
   const fill = selected.style && selected.style.fill;
@@ -16,8 +16,9 @@ function styleChartSlices(selected) {
  * @param {Number} height - Chart wrapper height
  * @param {Number} width - Chart wrapper width
  * @param {Object} labels - Chart Axis Labels
+ * @param {boolean} horizontal - Chart Bar orientation
  */
-const BarChart = ({ data, onClick, axisFormats, height, width, labels, ...rest }) => {
+const BarChart = ({ data, onClick, axisFormats, height, width, labels, horizontal, ...rest }) => {
   return (
     <VictoryChart
       domainPadding={25}
@@ -26,21 +27,27 @@ const BarChart = ({ data, onClick, axisFormats, height, width, labels, ...rest }
       width={width}
     >
       <VictoryAxis
+        name={'xAxis'}
         label={labels.x || ''}
         style={{
           axisLabel: { padding: 30 }
         }}
         tickFormat={axisFormats.x}
+        tickLabelComponent={horizontal ? <VictoryLabel/> : <VictoryLabel angle={40} style={{ fontSize: 11 }}/>}
       />
       <VictoryAxis
         dependentAxis
+        name={'yAxis'}
         label={labels.y || ''}
         style={{
-          axisLabel: { padding: 40 }
+          axisLabel: { padding: horizontal ? 40 : 0 }
         }}
         tickFormat={axisFormats.y}
+        axisLabelComponent={horizontal ? <VictoryLabel/> :
+          <VictoryLabel angle={360} dy={-(height / 3)} style={{ fontSize: 13 }}/>}
       />
       <VictoryBar
+        horizontal={horizontal}
         data={data}
         {...rest}
         events={[{
@@ -57,7 +64,7 @@ const BarChart = ({ data, onClick, axisFormats, height, width, labels, ...rest }
                 }, {
                   target: 'labels',
                   mutation: (props) => {
-                    return props.text === 'clicked' ? null : { text: 'clicked' };
+                    // return props.text === 'clicked' ? null : { text: 'clicked' };
                   }
                 }
               ];
@@ -82,6 +89,7 @@ BarChart.propTypes = {
     x: PropTypes.string,
     y: PropTypes.string,
   }),
+  horizontal: PropTypes.bool,
 };
 
 BarChart.defaultProps = {
@@ -97,7 +105,8 @@ BarChart.defaultProps = {
   labels: {
     x: '',
     y: '',
-  }
+  },
+  horizontal: false
 };
 
 export default BarChart;

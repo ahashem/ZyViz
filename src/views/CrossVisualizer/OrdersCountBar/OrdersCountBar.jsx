@@ -103,9 +103,10 @@ class OrdersCountBar extends Component {
           </Col>
 
           <BarChart
+            horizontal
             height={650}
             width={720}
-            labels={{ x: 'Delivery Area', y: 'Orders Count' }}
+            labels={{ y: 'Delivery Area', x: 'Orders Count' }}
             data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
               'ordersByDeliveryArea',

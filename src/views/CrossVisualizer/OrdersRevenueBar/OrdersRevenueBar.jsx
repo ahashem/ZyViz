@@ -107,10 +107,11 @@ class OrdersRevenueBar extends Component {
           </Col>
 
           <BarChart
+            horizontal
             height={650}
             width={720}
-            labels={{ x: 'Delivery Area', y: 'Revenue' }}
-            axisFormats={{ y: (y) => (`$${y / 1000}k`) }}
+            labels={{ y: 'Delivery Area', x: 'Revenue' }}
+            axisFormats={{ x: (x) => (`$${x / 1000}k`) }}
             data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
             onClick={(selectedIndex, deselected) => this.crossFilterSelected(
               'ordersByDeliveryArea',
