@@ -67,7 +67,7 @@ class OrdersCountBar extends Component {
 
     return (
       <div>
-        <FlexGridRow justify="space-around" gutter={8}>
+        <FlexGridRow justify="space-around" gutter={24}>
 
           <Col
             xs={24}
@@ -117,7 +117,7 @@ class OrdersCountBar extends Component {
               horizontal
               labeledBars
               hiddenTicks={{ y: true }}
-              height={500}
+              height={490}
               width={720}
               labels={{ y: 'Delivery Area', x: 'Orders Count' }}
               data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
