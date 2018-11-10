@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 import BarChart from '../../../components/BarChart/BarChart';
-import { Col } from 'antd';
+import { Card } from 'antd';
+import { shortenWeekDay } from '../../../utils/helpers';
 
 /**
  * @component OrdersRevenueBar
@@ -61,24 +62,21 @@ class OrdersRevenueBar extends Component {
 
 
   render() {
-    const { dimensions } = this.props;
+    const { dimensions, loading } = this.props;
     const ordersCrossed = dimensions ? this.prepareOrdersCountData(dimensions) : null;
 
     return (
       <div>
         <FlexGridRow justify="space-around" gutter={8}>
-
-          <Col
-            xs={24}
-            sm={24}
-            md={8}
-            lg={8}
-          >
+          <Card title="Revenue By Branch" bordered hoverable loading={loading}>
             <BarChart
               height={250}
               width={350}
               labels={{ x: 'Branch', y: 'Revenue' }}
-              axisFormats={{ y: (y) => (`$${y / 1000}k`) }}
+              axisFormats={{
+                x: branch => (branch.toString().replace(/Branch /, '')),
+                y: revenue => (`$${revenue / 1000}k`)
+              }}
               data={ordersCrossed && ordersCrossed.ordersByBranchData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByBranch',
@@ -88,13 +86,15 @@ class OrdersRevenueBar extends Component {
               x="key"
               y="value"
             />
+          </Card>
 
 
+          <Card title="Revenue By Day of Week" bordered hoverable loading={loading}>
             <BarChart
               height={250}
               width={350}
               labels={{ x: 'Day of Week', y: 'Revenue' }}
-              axisFormats={{ y: (y) => (`$${y / 1000}k`) }}
+              axisFormats={{ x: day => (shortenWeekDay(day)), y: revenue => (`$${revenue / 1000}k`) }}
               data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByWeekDay',
@@ -104,23 +104,28 @@ class OrdersRevenueBar extends Component {
               x="key"
               y="value"
             />
-          </Col>
+          </Card>
+        </FlexGridRow>
+        <FlexGridRow justify="space-around" gutter={8}>
 
-          <BarChart
-            horizontal
-            height={650}
-            width={720}
-            labels={{ y: 'Delivery Area', x: 'Revenue' }}
-            axisFormats={{ x: (x) => (`$${x / 1000}k`) }}
-            data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
-            onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-              'ordersByDeliveryArea',
-              ordersCrossed.ordersByDeliveryAreaData[selectedIndex].key,
-              deselected
-            )}
-            x="key"
-            y="value"
-          />
+          <Card title="Top 20 Delivery Areas By Revenue" bordered hoverable loading={loading}>
+            <BarChart
+              horizontal
+              hiddenTicks
+              height={650}
+              width={720}
+              labels={{ y: 'Delivery Area', x: 'Revenue' }}
+              axisFormats={{ x: (x) => (`$${x / 1000}k`) }}
+              data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
+              onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+                'ordersByDeliveryArea',
+                ordersCrossed.ordersByDeliveryAreaData[selectedIndex].key,
+                deselected
+              )}
+              x="key"
+              y="value"
+            />
+          </Card>
 
         </FlexGridRow>
       </div>

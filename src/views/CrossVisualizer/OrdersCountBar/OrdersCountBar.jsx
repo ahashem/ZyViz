@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 import BarChart from '../../../components/BarChart/BarChart';
 import { Col } from 'antd';
+import { shortenWeekDay } from '../../../utils/helpers';
 
 /**
  * @component OrdersCountBar
@@ -78,6 +79,7 @@ class OrdersCountBar extends Component {
               height={250}
               width={350}
               labels={{ x: 'Branch', y: 'Orders Count' }}
+              axisFormats={{ x: value => (value.toString().replace(/Branch /, '')) }}
               data={ordersCrossed && ordersCrossed.ordersByBranchData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByBranch',
@@ -86,11 +88,13 @@ class OrdersCountBar extends Component {
               )}
               x="key"
               y="value"
+              labelKey="value"
             />
             <BarChart
               height={250}
               width={350}
               labels={{ x: 'Week of Day', y: 'Orders Count' }}
+              axisFormats={{ x: day => (shortenWeekDay(day)) }}
               data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByWeekDay',
@@ -99,11 +103,14 @@ class OrdersCountBar extends Component {
               )}
               x="key"
               y="value"
+              labelKey="value"
             />
           </Col>
 
           <BarChart
             horizontal
+            labeledBars
+            hiddenTicks={{ y: true }}
             height={650}
             width={720}
             labels={{ y: 'Delivery Area', x: 'Orders Count' }}
@@ -115,6 +122,7 @@ class OrdersCountBar extends Component {
             )}
             x="key"
             y="value"
+            labelKey="key"
           />
 
         </FlexGridRow>

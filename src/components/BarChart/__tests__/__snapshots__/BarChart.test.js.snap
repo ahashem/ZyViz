@@ -27,7 +27,15 @@ ShallowWrapper {
       ]
     }
     height={400}
+    hiddenTicks={
+      Object {
+        "x": false,
+        "y": false,
+      }
+    }
     horizontal={false}
+    labelKey={null}
+    labeledBars={false}
     labels={
       Object {
         "x": "",
@@ -585,13 +593,12 @@ ShallowWrapper {
           tickFormat={[Function]}
           tickLabelComponent={
             <VictoryLabel
-              angle={40}
               capHeight={0.71}
               direction="inherit"
               lineHeight={1}
               style={
                 Object {
-                  "fontSize": 11,
+                  "fontSize": 10,
                 }
               }
               textComponent={<Text />}
@@ -608,16 +615,9 @@ ShallowWrapper {
           }
           axisLabelComponent={
             <VictoryLabel
-              angle={360}
               capHeight={0.71}
               direction="inherit"
-              dy={-133.33333333333334}
               lineHeight={1}
-              style={
-                Object {
-                  "fontSize": 13,
-                }
-              }
               textComponent={<Text />}
               tspanComponent={<TSpan />}
             />
@@ -650,7 +650,7 @@ ShallowWrapper {
           style={
             Object {
               "axisLabel": Object {
-                "padding": 0,
+                "padding": 30,
               },
             }
           }
@@ -1144,6 +1144,11 @@ ShallowWrapper {
               capHeight={0.71}
               direction="inherit"
               lineHeight={1}
+              style={
+                Object {
+                  "fontSize": 10,
+                }
+              }
               textComponent={<Text />}
               tspanComponent={<TSpan />}
             />
@@ -1200,15 +1205,25 @@ ShallowWrapper {
             <VictoryLabel
               capHeight={0.71}
               direction="inherit"
+              dy={30}
               lineHeight={1}
               textComponent={<Text />}
               tspanComponent={<TSpan />}
             />
           }
+          labels={null}
           samples={50}
           scale="linear"
           sortOrder="ascending"
           standalone={true}
+          style={
+            Object {
+              "labels": Object {
+                "fill": "white",
+                "fontSize": 10,
+              },
+            }
+          }
           theme={
             Object {
               "area": Object {
@@ -3860,6 +3875,7 @@ ShallowWrapper {
       "domainPadding": 25,
       "groupComponent": <g />,
       "height": 400,
+      "padding": 60,
       "standalone": true,
       "theme": Object {
         "area": Object {
@@ -4794,13 +4810,12 @@ ShallowWrapper {
           />,
           "tickFormat": [Function],
           "tickLabelComponent": <VictoryLabel
-            angle={40}
             capHeight={0.71}
             direction="inherit"
             lineHeight={1}
             style={
               Object {
-                "fontSize": 11,
+                "fontSize": 10,
               }
             }
             textComponent={<Text />}
@@ -4821,16 +4836,9 @@ ShallowWrapper {
             type="axis"
           />,
           "axisLabelComponent": <VictoryLabel
-            angle={360}
             capHeight={0.71}
             direction="inherit"
-            dy={-133.33333333333334}
             lineHeight={1}
-            style={
-              Object {
-                "fontSize": 13,
-              }
-            }
             textComponent={<Text />}
             tspanComponent={<TSpan />}
           />,
@@ -4855,7 +4863,7 @@ ShallowWrapper {
           "standalone": true,
           "style": Object {
             "axisLabel": Object {
-              "padding": 0,
+              "padding": 30,
             },
           },
           "theme": Object {
@@ -5343,6 +5351,11 @@ ShallowWrapper {
             capHeight={0.71}
             direction="inherit"
             lineHeight={1}
+            style={
+              Object {
+                "fontSize": 10,
+              }
+            }
             textComponent={<Text />}
             tspanComponent={<TSpan />}
           />,
@@ -5395,14 +5408,22 @@ ShallowWrapper {
           "labelComponent": <VictoryLabel
             capHeight={0.71}
             direction="inherit"
+            dy={30}
             lineHeight={1}
             textComponent={<Text />}
             tspanComponent={<TSpan />}
           />,
+          "labels": null,
           "samples": 50,
           "scale": "linear",
           "sortOrder": "ascending",
           "standalone": true,
+          "style": Object {
+            "labels": Object {
+              "fill": "white",
+              "fontSize": 10,
+            },
+          },
           "theme": Object {
             "area": Object {
               "colorScale": Array [
@@ -6428,13 +6449,12 @@ ShallowWrapper {
             tickFormat={[Function]}
             tickLabelComponent={
               <VictoryLabel
-                angle={40}
                 capHeight={0.71}
                 direction="inherit"
                 lineHeight={1}
                 style={
                   Object {
-                    "fontSize": 11,
+                    "fontSize": 10,
                   }
                 }
                 textComponent={<Text />}
@@ -6451,16 +6471,9 @@ ShallowWrapper {
             }
             axisLabelComponent={
               <VictoryLabel
-                angle={360}
                 capHeight={0.71}
                 direction="inherit"
-                dy={-133.33333333333334}
                 lineHeight={1}
-                style={
-                  Object {
-                    "fontSize": 13,
-                  }
-                }
                 textComponent={<Text />}
                 tspanComponent={<TSpan />}
               />
@@ -6493,7 +6506,7 @@ ShallowWrapper {
             style={
               Object {
                 "axisLabel": Object {
-                  "padding": 0,
+                  "padding": 30,
                 },
               }
             }
@@ -6987,6 +7000,11 @@ ShallowWrapper {
                 capHeight={0.71}
                 direction="inherit"
                 lineHeight={1}
+                style={
+                  Object {
+                    "fontSize": 10,
+                  }
+                }
                 textComponent={<Text />}
                 tspanComponent={<TSpan />}
               />
@@ -7043,15 +7061,25 @@ ShallowWrapper {
               <VictoryLabel
                 capHeight={0.71}
                 direction="inherit"
+                dy={30}
                 lineHeight={1}
                 textComponent={<Text />}
                 tspanComponent={<TSpan />}
               />
             }
+            labels={null}
             samples={50}
             scale="linear"
             sortOrder="ascending"
             standalone={true}
+            style={
+              Object {
+                "labels": Object {
+                  "fill": "white",
+                  "fontSize": 10,
+                },
+              }
+            }
             theme={
               Object {
                 "area": Object {
@@ -9703,6 +9731,7 @@ ShallowWrapper {
         "domainPadding": 25,
         "groupComponent": <g />,
         "height": 400,
+        "padding": 60,
         "standalone": true,
         "theme": Object {
           "area": Object {
@@ -10637,13 +10666,12 @@ ShallowWrapper {
             />,
             "tickFormat": [Function],
             "tickLabelComponent": <VictoryLabel
-              angle={40}
               capHeight={0.71}
               direction="inherit"
               lineHeight={1}
               style={
                 Object {
-                  "fontSize": 11,
+                  "fontSize": 10,
                 }
               }
               textComponent={<Text />}
@@ -10664,16 +10692,9 @@ ShallowWrapper {
               type="axis"
             />,
             "axisLabelComponent": <VictoryLabel
-              angle={360}
               capHeight={0.71}
               direction="inherit"
-              dy={-133.33333333333334}
               lineHeight={1}
-              style={
-                Object {
-                  "fontSize": 13,
-                }
-              }
               textComponent={<Text />}
               tspanComponent={<TSpan />}
             />,
@@ -10698,7 +10719,7 @@ ShallowWrapper {
             "standalone": true,
             "style": Object {
               "axisLabel": Object {
-                "padding": 0,
+                "padding": 30,
               },
             },
             "theme": Object {
@@ -11186,6 +11207,11 @@ ShallowWrapper {
               capHeight={0.71}
               direction="inherit"
               lineHeight={1}
+              style={
+                Object {
+                  "fontSize": 10,
+                }
+              }
               textComponent={<Text />}
               tspanComponent={<TSpan />}
             />,
@@ -11238,14 +11264,22 @@ ShallowWrapper {
             "labelComponent": <VictoryLabel
               capHeight={0.71}
               direction="inherit"
+              dy={30}
               lineHeight={1}
               textComponent={<Text />}
               tspanComponent={<TSpan />}
             />,
+            "labels": null,
             "samples": 50,
             "scale": "linear",
             "sortOrder": "ascending",
             "standalone": true,
+            "style": Object {
+              "labels": Object {
+                "fill": "white",
+                "fontSize": 10,
+              },
+            },
             "theme": Object {
               "area": Object {
                 "colorScale": Array [

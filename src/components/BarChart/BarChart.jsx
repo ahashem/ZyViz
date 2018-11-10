@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryLabel, VictoryTheme } from 'victory';
 
+const BaseFontSize = 10;
+
 function styleChartSlices(selected) {
   const fill = selected.style && selected.style.fill;
   return fill === '#c43a31' ? null : { style: { fill: '#c43a31' } };
@@ -17,14 +19,21 @@ function styleChartSlices(selected) {
  * @param {Number} width - Chart wrapper width
  * @param {Object} labels - Chart Axis Labels
  * @param {boolean} horizontal - Chart Bar orientation
+ * @param {Object<boolean>} hiddenTicks - Hide tick labels
+ * @param {boolean} labeledBars - Display label on bar
+ * @param {string} labelKey - LabelKey to use for every bar
  */
-const BarChart = ({ data, onClick, axisFormats, height, width, labels, horizontal, ...rest }) => {
+const BarChart = ({
+                    data, onClick, axisFormats, height, width, labels, horizontal, labeledBars,
+                    labelKey, hiddenTicks, ...rest,
+                  }) => {
   return (
     <VictoryChart
       domainPadding={25}
       theme={VictoryTheme.material}
       height={height}
       width={width}
+      padding={horizontal ? { top: 50, bottom: 50, left: 80, right: 50 } : 60}
     >
       <VictoryAxis
         name={'xAxis'}
@@ -33,23 +42,25 @@ const BarChart = ({ data, onClick, axisFormats, height, width, labels, horizonta
           axisLabel: { padding: 30 }
         }}
         tickFormat={axisFormats.x}
-        tickLabelComponent={horizontal ? <VictoryLabel/> : <VictoryLabel angle={40} style={{ fontSize: 11 }}/>}
+        tickLabelComponent={<VictoryLabel style={{ fontSize: hiddenTicks.x ? 0 : BaseFontSize }}/>}
       />
       <VictoryAxis
         dependentAxis
         name={'yAxis'}
         label={labels.y || ''}
         style={{
-          axisLabel: { padding: horizontal ? 40 : 0 }
+          axisLabel: { padding: 30 }
         }}
         tickFormat={axisFormats.y}
-        axisLabelComponent={horizontal ? <VictoryLabel/> :
-          <VictoryLabel angle={360} dy={-(height / 3)} style={{ fontSize: 13 }}/>}
+        tickLabelComponent={<VictoryLabel style={{ fontSize: hiddenTicks.y ? 0 : BaseFontSize }}/>}
       />
       <VictoryBar
         horizontal={horizontal}
         data={data}
-        {...rest}
+        // animate={{
+        //   duration: 600,
+        //   onLoad: { duration: 1200 }
+        // }}
         events={[{
           target: 'data',
           eventHandlers: {
@@ -71,6 +82,10 @@ const BarChart = ({ data, onClick, axisFormats, height, width, labels, horizonta
             }
           }
         }]}
+        labels={labeledBars ? ((data) => data[`${labelKey}`]) : null}
+        style={{ labels: { fill: 'white', fontSize: BaseFontSize } }}
+        labelComponent={horizontal ? <VictoryLabel x={95}/> : <VictoryLabel dy={30}/>}
+        {...rest}
       />
     </VictoryChart>
   );
@@ -90,6 +105,12 @@ BarChart.propTypes = {
     y: PropTypes.string,
   }),
   horizontal: PropTypes.bool,
+  hiddenTicks: PropTypes.shape({
+    x: PropTypes.bool,
+    y: PropTypes.bool,
+  }),
+  labeledBars: PropTypes.bool,
+  labelKey: PropTypes.string,
 };
 
 BarChart.defaultProps = {
@@ -106,7 +127,10 @@ BarChart.defaultProps = {
     x: '',
     y: '',
   },
-  horizontal: false
+  horizontal: false,
+  hiddenTicks: { x: false, y: false },
+  labeledBars: false,
+  labelKey: null
 };
 
 export default BarChart;
