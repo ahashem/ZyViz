@@ -165,7 +165,135 @@ ShallowWrapper {
           lg={8}
           md={8}
           sm={24}
+          xl={8}
           xs={24}
+          xxl={8}
+        >
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Orders Count By Branch / Week Day"
+          >
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Branch A",
+                    "value": 4,
+                  },
+                  Object {
+                    "key": "Branch B",
+                    "value": 4,
+                  },
+                  Object {
+                    "key": "Branch C",
+                    "value": 3,
+                  },
+                  Object {
+                    "key": "Branch D",
+                    "value": 6,
+                  },
+                  Object {
+                    "key": "Branch E",
+                    "value": 3,
+                  },
+                  Object {
+                    "key": "Branch F",
+                    "value": 7,
+                  },
+                ]
+              }
+              height={250}
+              hiddenTicks={
+                Object {
+                  "x": false,
+                  "y": false,
+                }
+              }
+              horizontal={false}
+              labelKey="value"
+              labeledBars={false}
+              labels={
+                Object {
+                  "x": "Branch",
+                  "y": "Orders Count",
+                }
+              }
+              onClick={[Function]}
+              width={350}
+              x="key"
+              y="value"
+            />
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Fridays",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Mondays",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Saturdays",
+                    "value": 6,
+                  },
+                  Object {
+                    "key": "Sundays",
+                    "value": 3,
+                  },
+                  Object {
+                    "key": "Thursdays",
+                    "value": 8,
+                  },
+                  Object {
+                    "key": "Tuesdays",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Wednesdays",
+                    "value": 6,
+                  },
+                ]
+              }
+              height={250}
+              hiddenTicks={
+                Object {
+                  "x": false,
+                  "y": false,
+                }
+              }
+              horizontal={false}
+              labelKey="value"
+              labeledBars={false}
+              labels={
+                Object {
+                  "x": "Week of Day",
+                  "y": "Orders Count",
+                }
+              }
+              onClick={[Function]}
+              width={350}
+              x="key"
+              y="value"
+            />
+          </Card>
+        </Col>
+        <Card
+          bordered={true}
+          hoverable={true}
+          title="Top 20 Delivery Areas By Orders Count"
         >
           <BarChart
             axisFormats={
@@ -177,180 +305,108 @@ ShallowWrapper {
             data={
               Array [
                 Object {
-                  "key": "Branch A",
-                  "value": 4,
-                },
-                Object {
-                  "key": "Branch B",
-                  "value": 4,
-                },
-                Object {
-                  "key": "Branch C",
-                  "value": 3,
-                },
-                Object {
-                  "key": "Branch D",
-                  "value": 6,
-                },
-                Object {
-                  "key": "Branch E",
-                  "value": 3,
-                },
-                Object {
-                  "key": "Branch F",
-                  "value": 7,
-                },
-              ]
-            }
-            height={250}
-            onClick={[Function]}
-            width={350}
-            x="key"
-            y="value"
-          />
-          <BarChart
-            axisFormats={
-              Object {
-                "x": [Function],
-                "y": [Function],
-              }
-            }
-            data={
-              Array [
-                Object {
-                  "key": "Fridays",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Mondays",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Saturdays",
-                  "value": 6,
-                },
-                Object {
-                  "key": "Sundays",
-                  "value": 3,
-                },
-                Object {
-                  "key": "Thursdays",
-                  "value": 8,
-                },
-                Object {
-                  "key": "Tuesdays",
+                  "key": "Rai",
                   "value": 2,
                 },
                 Object {
-                  "key": "Wednesdays",
-                  "value": 6,
+                  "key": "Reggai",
+                  "value": 2,
+                },
+                Object {
+                  "key": "Zahra",
+                  "value": 2,
+                },
+                Object {
+                  "key": "Qibla",
+                  "value": 2,
+                },
+                Object {
+                  "key": "Doha",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Fahaheel",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Abu Halifa",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Jaber Al Ahmad",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Al Qusour",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Jaber Al Ali",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Mirqab",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Nahda",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Nuzha",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Qasser",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Rabiya",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Hadiya",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Qortuba",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Faiha",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Al Bidae",
+                  "value": 1,
+                },
+                Object {
+                  "key": "Abu Al Hasaniya",
+                  "value": 1,
                 },
               ]
             }
-            height={250}
+            height={500}
+            hiddenTicks={
+              Object {
+                "y": true,
+              }
+            }
+            horizontal={true}
+            labelKey="key"
+            labeledBars={true}
+            labels={
+              Object {
+                "x": "Orders Count",
+                "y": "Delivery Area",
+              }
+            }
             onClick={[Function]}
-            width={350}
+            width={720}
             x="key"
             y="value"
           />
-        </Col>
-        <BarChart
-          axisFormats={
-            Object {
-              "x": [Function],
-              "y": [Function],
-            }
-          }
-          data={
-            Array [
-              Object {
-                "key": "Rai",
-                "value": 2,
-              },
-              Object {
-                "key": "Reggai",
-                "value": 2,
-              },
-              Object {
-                "key": "Zahra",
-                "value": 2,
-              },
-              Object {
-                "key": "Qibla",
-                "value": 2,
-              },
-              Object {
-                "key": "Doha",
-                "value": 1,
-              },
-              Object {
-                "key": "Fahaheel",
-                "value": 1,
-              },
-              Object {
-                "key": "Abu Halifa",
-                "value": 1,
-              },
-              Object {
-                "key": "Jaber Al Ahmad",
-                "value": 1,
-              },
-              Object {
-                "key": "Al Qusour",
-                "value": 1,
-              },
-              Object {
-                "key": "Jaber Al Ali",
-                "value": 1,
-              },
-              Object {
-                "key": "Mirqab",
-                "value": 1,
-              },
-              Object {
-                "key": "Nahda",
-                "value": 1,
-              },
-              Object {
-                "key": "Nuzha",
-                "value": 1,
-              },
-              Object {
-                "key": "Qasser",
-                "value": 1,
-              },
-              Object {
-                "key": "Rabiya",
-                "value": 1,
-              },
-              Object {
-                "key": "Hadiya",
-                "value": 1,
-              },
-              Object {
-                "key": "Qortuba",
-                "value": 1,
-              },
-              Object {
-                "key": "Faiha",
-                "value": 1,
-              },
-              Object {
-                "key": "Al Bidae",
-                "value": 1,
-              },
-              Object {
-                "key": "Abu Al Hasaniya",
-                "value": 1,
-              },
-            ]
-          }
-          height={650}
-          onClick={[Function]}
-          width={720}
-          x="key"
-          y="value"
-        />
+        </Card>
       </FlexGridRow>,
     },
     "ref": null,
@@ -365,723 +421,19 @@ ShallowWrapper {
             lg={8}
             md={8}
             sm={24}
+            xl={8}
             xs={24}
+            xxl={8}
           >
-            <BarChart
-              axisFormats={
-                Object {
-                  "x": [Function],
-                  "y": [Function],
-                }
-              }
-              data={
-                Array [
-                  Object {
-                    "key": "Branch A",
-                    "value": 4,
-                  },
-                  Object {
-                    "key": "Branch B",
-                    "value": 4,
-                  },
-                  Object {
-                    "key": "Branch C",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Branch D",
-                    "value": 6,
-                  },
-                  Object {
-                    "key": "Branch E",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Branch F",
-                    "value": 7,
-                  },
-                ]
-              }
-              height={250}
-              onClick={[Function]}
-              width={350}
-              x="key"
-              y="value"
-            />
-            <BarChart
-              axisFormats={
-                Object {
-                  "x": [Function],
-                  "y": [Function],
-                }
-              }
-              data={
-                Array [
-                  Object {
-                    "key": "Fridays",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Mondays",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Saturdays",
-                    "value": 6,
-                  },
-                  Object {
-                    "key": "Sundays",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Thursdays",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "Tuesdays",
-                    "value": 2,
-                  },
-                  Object {
-                    "key": "Wednesdays",
-                    "value": 6,
-                  },
-                ]
-              }
-              height={250}
-              onClick={[Function]}
-              width={350}
-              x="key"
-              y="value"
-            />
-          </Col>,
-          <BarChart
-            axisFormats={
-              Object {
-                "x": [Function],
-                "y": [Function],
-              }
-            }
-            data={
-              Array [
-                Object {
-                  "key": "Rai",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Reggai",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Zahra",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Qibla",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Doha",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Fahaheel",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Abu Halifa",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Jaber Al Ahmad",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Al Qusour",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Jaber Al Ali",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Mirqab",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Nahda",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Nuzha",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Qasser",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Rabiya",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Hadiya",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Qortuba",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Faiha",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Al Bidae",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Abu Al Hasaniya",
-                  "value": 1,
-                },
-              ]
-            }
-            height={650}
-            onClick={[Function]}
-            width={720}
-            x="key"
-            y="value"
-          />,
-        ],
-        "gutter": 8,
-        "justify": "space-around",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <BarChart
-                axisFormats={
-                  Object {
-                    "x": [Function],
-                    "y": [Function],
-                  }
-                }
-                data={
-                  Array [
-                    Object {
-                      "key": "Branch A",
-                      "value": 4,
-                    },
-                    Object {
-                      "key": "Branch B",
-                      "value": 4,
-                    },
-                    Object {
-                      "key": "Branch C",
-                      "value": 3,
-                    },
-                    Object {
-                      "key": "Branch D",
-                      "value": 6,
-                    },
-                    Object {
-                      "key": "Branch E",
-                      "value": 3,
-                    },
-                    Object {
-                      "key": "Branch F",
-                      "value": 7,
-                    },
-                  ]
-                }
-                height={250}
-                onClick={[Function]}
-                width={350}
-                x="key"
-                y="value"
-              />,
-              <BarChart
-                axisFormats={
-                  Object {
-                    "x": [Function],
-                    "y": [Function],
-                  }
-                }
-                data={
-                  Array [
-                    Object {
-                      "key": "Fridays",
-                      "value": 1,
-                    },
-                    Object {
-                      "key": "Mondays",
-                      "value": 1,
-                    },
-                    Object {
-                      "key": "Saturdays",
-                      "value": 6,
-                    },
-                    Object {
-                      "key": "Sundays",
-                      "value": 3,
-                    },
-                    Object {
-                      "key": "Thursdays",
-                      "value": 8,
-                    },
-                    Object {
-                      "key": "Tuesdays",
-                      "value": 2,
-                    },
-                    Object {
-                      "key": "Wednesdays",
-                      "value": 6,
-                    },
-                  ]
-                }
-                height={250}
-                onClick={[Function]}
-                width={350}
-                x="key"
-                y="value"
-              />,
-            ],
-            "lg": 8,
-            "md": 8,
-            "sm": 24,
-            "xs": 24,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "axisFormats": Object {
-                  "x": [Function],
-                  "y": [Function],
-                },
-                "data": Array [
-                  Object {
-                    "key": "Branch A",
-                    "value": 4,
-                  },
-                  Object {
-                    "key": "Branch B",
-                    "value": 4,
-                  },
-                  Object {
-                    "key": "Branch C",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Branch D",
-                    "value": 6,
-                  },
-                  Object {
-                    "key": "Branch E",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Branch F",
-                    "value": 7,
-                  },
-                ],
-                "height": 250,
-                "onClick": [Function],
-                "width": 350,
-                "x": "key",
-                "y": "value",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "axisFormats": Object {
-                  "x": [Function],
-                  "y": [Function],
-                },
-                "data": Array [
-                  Object {
-                    "key": "Fridays",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Mondays",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Saturdays",
-                    "value": 6,
-                  },
-                  Object {
-                    "key": "Sundays",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Thursdays",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "Tuesdays",
-                    "value": 2,
-                  },
-                  Object {
-                    "key": "Wednesdays",
-                    "value": 6,
-                  },
-                ],
-                "height": 250,
-                "onClick": [Function],
-                "width": 350,
-                "x": "key",
-                "y": "value",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "axisFormats": Object {
-              "x": [Function],
-              "y": [Function],
-            },
-            "data": Array [
-              Object {
-                "key": "Rai",
-                "value": 2,
-              },
-              Object {
-                "key": "Reggai",
-                "value": 2,
-              },
-              Object {
-                "key": "Zahra",
-                "value": 2,
-              },
-              Object {
-                "key": "Qibla",
-                "value": 2,
-              },
-              Object {
-                "key": "Doha",
-                "value": 1,
-              },
-              Object {
-                "key": "Fahaheel",
-                "value": 1,
-              },
-              Object {
-                "key": "Abu Halifa",
-                "value": 1,
-              },
-              Object {
-                "key": "Jaber Al Ahmad",
-                "value": 1,
-              },
-              Object {
-                "key": "Al Qusour",
-                "value": 1,
-              },
-              Object {
-                "key": "Jaber Al Ali",
-                "value": 1,
-              },
-              Object {
-                "key": "Mirqab",
-                "value": 1,
-              },
-              Object {
-                "key": "Nahda",
-                "value": 1,
-              },
-              Object {
-                "key": "Nuzha",
-                "value": 1,
-              },
-              Object {
-                "key": "Qasser",
-                "value": 1,
-              },
-              Object {
-                "key": "Rabiya",
-                "value": 1,
-              },
-              Object {
-                "key": "Hadiya",
-                "value": 1,
-              },
-              Object {
-                "key": "Qortuba",
-                "value": 1,
-              },
-              Object {
-                "key": "Faiha",
-                "value": 1,
-              },
-              Object {
-                "key": "Al Bidae",
-                "value": 1,
-              },
-              Object {
-                "key": "Abu Al Hasaniya",
-                "value": 1,
-              },
-            ],
-            "height": 650,
-            "onClick": [Function],
-            "width": 720,
-            "x": "key",
-            "y": "value",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <FlexGridRow
-          align="middle"
-          gutter={8}
-          justify="space-around"
-        >
-          <Col
-            lg={8}
-            md={8}
-            sm={24}
-            xs={24}
-          >
-            <BarChart
-              axisFormats={
-                Object {
-                  "x": [Function],
-                  "y": [Function],
-                }
-              }
-              data={
-                Array [
-                  Object {
-                    "key": "Branch A",
-                    "value": 4,
-                  },
-                  Object {
-                    "key": "Branch B",
-                    "value": 4,
-                  },
-                  Object {
-                    "key": "Branch C",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Branch D",
-                    "value": 6,
-                  },
-                  Object {
-                    "key": "Branch E",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Branch F",
-                    "value": 7,
-                  },
-                ]
-              }
-              height={250}
-              onClick={[Function]}
-              width={350}
-              x="key"
-              y="value"
-            />
-            <BarChart
-              axisFormats={
-                Object {
-                  "x": [Function],
-                  "y": [Function],
-                }
-              }
-              data={
-                Array [
-                  Object {
-                    "key": "Fridays",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Mondays",
-                    "value": 1,
-                  },
-                  Object {
-                    "key": "Saturdays",
-                    "value": 6,
-                  },
-                  Object {
-                    "key": "Sundays",
-                    "value": 3,
-                  },
-                  Object {
-                    "key": "Thursdays",
-                    "value": 8,
-                  },
-                  Object {
-                    "key": "Tuesdays",
-                    "value": 2,
-                  },
-                  Object {
-                    "key": "Wednesdays",
-                    "value": 6,
-                  },
-                ]
-              }
-              height={250}
-              onClick={[Function]}
-              width={350}
-              x="key"
-              y="value"
-            />
-          </Col>
-          <BarChart
-            axisFormats={
-              Object {
-                "x": [Function],
-                "y": [Function],
-              }
-            }
-            data={
-              Array [
-                Object {
-                  "key": "Rai",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Reggai",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Zahra",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Qibla",
-                  "value": 2,
-                },
-                Object {
-                  "key": "Doha",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Fahaheel",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Abu Halifa",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Jaber Al Ahmad",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Al Qusour",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Jaber Al Ali",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Mirqab",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Nahda",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Nuzha",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Qasser",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Rabiya",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Hadiya",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Qortuba",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Faiha",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Al Bidae",
-                  "value": 1,
-                },
-                Object {
-                  "key": "Abu Al Hasaniya",
-                  "value": 1,
-                },
-              ]
-            }
-            height={650}
-            onClick={[Function]}
-            width={720}
-            x="key"
-            y="value"
-          />
-        </FlexGridRow>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "align": "middle",
-          "children": Array [
-            <Col
-              lg={8}
-              md={8}
-              sm={24}
-              xs={24}
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Orders Count By Branch / Week Day"
             >
               <BarChart
                 axisFormats={
                   Object {
                     "x": [Function],
-                    "y": [Function],
                   }
                 }
                 data={
@@ -1113,6 +465,21 @@ ShallowWrapper {
                   ]
                 }
                 height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Branch",
+                    "y": "Orders Count",
+                  }
+                }
                 onClick={[Function]}
                 width={350}
                 x="key"
@@ -1122,7 +489,6 @@ ShallowWrapper {
                 axisFormats={
                   Object {
                     "x": [Function],
-                    "y": [Function],
                   }
                 }
                 data={
@@ -1158,12 +524,33 @@ ShallowWrapper {
                   ]
                 }
                 height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Week of Day",
+                    "y": "Orders Count",
+                  }
+                }
                 onClick={[Function]}
                 width={350}
                 x="key"
                 y="value"
               />
-            </Col>,
+            </Card>
+          </Col>,
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Top 20 Delivery Areas By Orders Count"
+          >
             <BarChart
               axisFormats={
                 Object {
@@ -1255,29 +642,177 @@ ShallowWrapper {
                   },
                 ]
               }
-              height={650}
+              height={500}
+              hiddenTicks={
+                Object {
+                  "y": true,
+                }
+              }
+              horizontal={true}
+              labelKey="key"
+              labeledBars={true}
+              labels={
+                Object {
+                  "x": "Orders Count",
+                  "y": "Delivery Area",
+                }
+              }
               onClick={[Function]}
               width={720}
               x="key"
               y="value"
-            />,
-          ],
-          "gutter": 8,
-          "justify": "space-around",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
+            />
+          </Card>,
+        ],
+        "gutter": 8,
+        "justify": "space-around",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Card
+              bordered={true}
+              hoverable={true}
+              title="Orders Count By Branch / Week Day"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Branch A",
+                      "value": 4,
+                    },
+                    Object {
+                      "key": "Branch B",
+                      "value": 4,
+                    },
+                    Object {
+                      "key": "Branch C",
+                      "value": 3,
+                    },
+                    Object {
+                      "key": "Branch D",
+                      "value": 6,
+                    },
+                    Object {
+                      "key": "Branch E",
+                      "value": 3,
+                    },
+                    Object {
+                      "key": "Branch F",
+                      "value": 7,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Branch",
+                    "y": "Orders Count",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Fridays",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Mondays",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Saturdays",
+                      "value": 6,
+                    },
+                    Object {
+                      "key": "Sundays",
+                      "value": 3,
+                    },
+                    Object {
+                      "key": "Thursdays",
+                      "value": 8,
+                    },
+                    Object {
+                      "key": "Tuesdays",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Wednesdays",
+                      "value": 6,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Week of Day",
+                    "y": "Orders Count",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+            </Card>,
+            "lg": 8,
+            "md": 8,
+            "sm": 24,
+            "xl": 8,
+            "xs": 24,
+            "xxl": 8,
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "bordered": true,
               "children": Array [
                 <BarChart
                   axisFormats={
                     Object {
                       "x": [Function],
-                      "y": [Function],
                     }
                   }
                   data={
@@ -1309,6 +844,21 @@ ShallowWrapper {
                     ]
                   }
                   height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Branch",
+                      "y": "Orders Count",
+                    }
+                  }
                   onClick={[Function]}
                   width={350}
                   x="key"
@@ -1318,7 +868,6 @@ ShallowWrapper {
                   axisFormats={
                     Object {
                       "x": [Function],
-                      "y": [Function],
                     }
                   }
                   data={
@@ -1354,16 +903,30 @@ ShallowWrapper {
                     ]
                   }
                   height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Week of Day",
+                      "y": "Orders Count",
+                    }
+                  }
                   onClick={[Function]}
                   width={350}
                   x="key"
                   y="value"
                 />,
               ],
-              "lg": 8,
-              "md": 8,
-              "sm": 24,
-              "xs": 24,
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Orders Count By Branch / Week Day",
             },
             "ref": null,
             "rendered": Array [
@@ -1374,7 +937,6 @@ ShallowWrapper {
                 "props": Object {
                   "axisFormats": Object {
                     "x": [Function],
-                    "y": [Function],
                   },
                   "data": Array [
                     Object {
@@ -1403,6 +965,17 @@ ShallowWrapper {
                     },
                   ],
                   "height": 250,
+                  "hiddenTicks": Object {
+                    "x": false,
+                    "y": false,
+                  },
+                  "horizontal": false,
+                  "labelKey": "value",
+                  "labeledBars": false,
+                  "labels": Object {
+                    "x": "Branch",
+                    "y": "Orders Count",
+                  },
                   "onClick": [Function],
                   "width": 350,
                   "x": "key",
@@ -1419,7 +992,6 @@ ShallowWrapper {
                 "props": Object {
                   "axisFormats": Object {
                     "x": [Function],
-                    "y": [Function],
                   },
                   "data": Array [
                     Object {
@@ -1452,6 +1024,17 @@ ShallowWrapper {
                     },
                   ],
                   "height": 250,
+                  "hiddenTicks": Object {
+                    "x": false,
+                    "y": false,
+                  },
+                  "horizontal": false,
+                  "labelKey": "value",
+                  "labeledBars": false,
+                  "labels": Object {
+                    "x": "Week of Day",
+                    "y": "Orders Count",
+                  },
                   "onClick": [Function],
                   "width": 350,
                   "x": "key",
@@ -1464,7 +1047,131 @@ ShallowWrapper {
             ],
             "type": [Function],
           },
-          Object {
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Jaber Al Ali",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Rabiya",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Abu Al Hasaniya",
+                    "value": 1,
+                  },
+                ]
+              }
+              height={500}
+              hiddenTicks={
+                Object {
+                  "y": true,
+                }
+              }
+              horizontal={true}
+              labelKey="key"
+              labeledBars={true}
+              labels={
+                Object {
+                  "x": "Orders Count",
+                  "y": "Delivery Area",
+                }
+              }
+              onClick={[Function]}
+              width={720}
+              x="key"
+              y="value"
+            />,
+            "hoverable": true,
+            "loading": undefined,
+            "title": "Top 20 Delivery Areas By Orders Count",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
@@ -1555,7 +1262,17 @@ ShallowWrapper {
                   "value": 1,
                 },
               ],
-              "height": 650,
+              "height": 500,
+              "hiddenTicks": Object {
+                "y": true,
+              },
+              "horizontal": true,
+              "labelKey": "key",
+              "labeledBars": true,
+              "labels": Object {
+                "x": "Orders Count",
+                "y": "Delivery Area",
+              },
               "onClick": [Function],
               "width": 720,
               "x": "key",
@@ -1563,6 +1280,1147 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <FlexGridRow
+          align="middle"
+          gutter={8}
+          justify="space-around"
+        >
+          <Col
+            lg={8}
+            md={8}
+            sm={24}
+            xl={8}
+            xs={24}
+            xxl={8}
+          >
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Orders Count By Branch / Week Day"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Branch A",
+                      "value": 4,
+                    },
+                    Object {
+                      "key": "Branch B",
+                      "value": 4,
+                    },
+                    Object {
+                      "key": "Branch C",
+                      "value": 3,
+                    },
+                    Object {
+                      "key": "Branch D",
+                      "value": 6,
+                    },
+                    Object {
+                      "key": "Branch E",
+                      "value": 3,
+                    },
+                    Object {
+                      "key": "Branch F",
+                      "value": 7,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Branch",
+                    "y": "Orders Count",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Fridays",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Mondays",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Saturdays",
+                      "value": 6,
+                    },
+                    Object {
+                      "key": "Sundays",
+                      "value": 3,
+                    },
+                    Object {
+                      "key": "Thursdays",
+                      "value": 8,
+                    },
+                    Object {
+                      "key": "Tuesdays",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Wednesdays",
+                      "value": 6,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Week of Day",
+                    "y": "Orders Count",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+            </Card>
+          </Col>
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Top 20 Delivery Areas By Orders Count"
+          >
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Jaber Al Ali",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Rabiya",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Abu Al Hasaniya",
+                    "value": 1,
+                  },
+                ]
+              }
+              height={500}
+              hiddenTicks={
+                Object {
+                  "y": true,
+                }
+              }
+              horizontal={true}
+              labelKey="key"
+              labeledBars={true}
+              labels={
+                Object {
+                  "x": "Orders Count",
+                  "y": "Delivery Area",
+                }
+              }
+              onClick={[Function]}
+              width={720}
+              x="key"
+              y="value"
+            />
+          </Card>
+        </FlexGridRow>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "align": "middle",
+          "children": Array [
+            <Col
+              lg={8}
+              md={8}
+              sm={24}
+              xl={8}
+              xs={24}
+              xxl={8}
+            >
+              <Card
+                bordered={true}
+                hoverable={true}
+                title="Orders Count By Branch / Week Day"
+              >
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 4,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 4,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 6,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 7,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Branch",
+                      "y": "Orders Count",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 1,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 1,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 6,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 8,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 2,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 6,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Week of Day",
+                      "y": "Orders Count",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+              </Card>
+            </Col>,
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Top 20 Delivery Areas By Orders Count"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Rai",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Reggai",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Zahra",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Qibla",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Doha",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Fahaheel",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Abu Halifa",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Jaber Al Ahmad",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Al Qusour",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Jaber Al Ali",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Mirqab",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Nahda",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Nuzha",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Qasser",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Rabiya",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Hadiya",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Qortuba",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Faiha",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Al Bidae",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Abu Al Hasaniya",
+                      "value": 1,
+                    },
+                  ]
+                }
+                height={500}
+                hiddenTicks={
+                  Object {
+                    "y": true,
+                  }
+                }
+                horizontal={true}
+                labelKey="key"
+                labeledBars={true}
+                labels={
+                  Object {
+                    "x": "Orders Count",
+                    "y": "Delivery Area",
+                  }
+                }
+                onClick={[Function]}
+                width={720}
+                x="key"
+                y="value"
+              />
+            </Card>,
+          ],
+          "gutter": 8,
+          "justify": "space-around",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Card
+                bordered={true}
+                hoverable={true}
+                title="Orders Count By Branch / Week Day"
+              >
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 4,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 4,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 6,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 7,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Branch",
+                      "y": "Orders Count",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 1,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 1,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 6,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 8,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 2,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 6,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Week of Day",
+                      "y": "Orders Count",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+              </Card>,
+              "lg": 8,
+              "md": 8,
+              "sm": 24,
+              "xl": 8,
+              "xs": 24,
+              "xxl": 8,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bordered": true,
+                "children": Array [
+                  <BarChart
+                    axisFormats={
+                      Object {
+                        "x": [Function],
+                      }
+                    }
+                    data={
+                      Array [
+                        Object {
+                          "key": "Branch A",
+                          "value": 4,
+                        },
+                        Object {
+                          "key": "Branch B",
+                          "value": 4,
+                        },
+                        Object {
+                          "key": "Branch C",
+                          "value": 3,
+                        },
+                        Object {
+                          "key": "Branch D",
+                          "value": 6,
+                        },
+                        Object {
+                          "key": "Branch E",
+                          "value": 3,
+                        },
+                        Object {
+                          "key": "Branch F",
+                          "value": 7,
+                        },
+                      ]
+                    }
+                    height={250}
+                    hiddenTicks={
+                      Object {
+                        "x": false,
+                        "y": false,
+                      }
+                    }
+                    horizontal={false}
+                    labelKey="value"
+                    labeledBars={false}
+                    labels={
+                      Object {
+                        "x": "Branch",
+                        "y": "Orders Count",
+                      }
+                    }
+                    onClick={[Function]}
+                    width={350}
+                    x="key"
+                    y="value"
+                  />,
+                  <BarChart
+                    axisFormats={
+                      Object {
+                        "x": [Function],
+                      }
+                    }
+                    data={
+                      Array [
+                        Object {
+                          "key": "Fridays",
+                          "value": 1,
+                        },
+                        Object {
+                          "key": "Mondays",
+                          "value": 1,
+                        },
+                        Object {
+                          "key": "Saturdays",
+                          "value": 6,
+                        },
+                        Object {
+                          "key": "Sundays",
+                          "value": 3,
+                        },
+                        Object {
+                          "key": "Thursdays",
+                          "value": 8,
+                        },
+                        Object {
+                          "key": "Tuesdays",
+                          "value": 2,
+                        },
+                        Object {
+                          "key": "Wednesdays",
+                          "value": 6,
+                        },
+                      ]
+                    }
+                    height={250}
+                    hiddenTicks={
+                      Object {
+                        "x": false,
+                        "y": false,
+                      }
+                    }
+                    horizontal={false}
+                    labelKey="value"
+                    labeledBars={false}
+                    labels={
+                      Object {
+                        "x": "Week of Day",
+                        "y": "Orders Count",
+                      }
+                    }
+                    onClick={[Function]}
+                    width={350}
+                    x="key"
+                    y="value"
+                  />,
+                ],
+                "hoverable": true,
+                "loading": undefined,
+                "title": "Orders Count By Branch / Week Day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "axisFormats": Object {
+                      "x": [Function],
+                    },
+                    "data": Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 4,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 4,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 6,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 7,
+                      },
+                    ],
+                    "height": 250,
+                    "hiddenTicks": Object {
+                      "x": false,
+                      "y": false,
+                    },
+                    "horizontal": false,
+                    "labelKey": "value",
+                    "labeledBars": false,
+                    "labels": Object {
+                      "x": "Branch",
+                      "y": "Orders Count",
+                    },
+                    "onClick": [Function],
+                    "width": 350,
+                    "x": "key",
+                    "y": "value",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "axisFormats": Object {
+                      "x": [Function],
+                    },
+                    "data": Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 1,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 1,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 6,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 3,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 8,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 2,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 6,
+                      },
+                    ],
+                    "height": 250,
+                    "hiddenTicks": Object {
+                      "x": false,
+                      "y": false,
+                    },
+                    "horizontal": false,
+                    "labelKey": "value",
+                    "labeledBars": false,
+                    "labels": Object {
+                      "x": "Week of Day",
+                      "y": "Orders Count",
+                    },
+                    "onClick": [Function],
+                    "width": 350,
+                    "x": "key",
+                    "y": "value",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "children": <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Rai",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Reggai",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Zahra",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Qibla",
+                      "value": 2,
+                    },
+                    Object {
+                      "key": "Doha",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Fahaheel",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Abu Halifa",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Jaber Al Ahmad",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Al Qusour",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Jaber Al Ali",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Mirqab",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Nahda",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Nuzha",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Qasser",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Rabiya",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Hadiya",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Qortuba",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Faiha",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Al Bidae",
+                      "value": 1,
+                    },
+                    Object {
+                      "key": "Abu Al Hasaniya",
+                      "value": 1,
+                    },
+                  ]
+                }
+                height={500}
+                hiddenTicks={
+                  Object {
+                    "y": true,
+                  }
+                }
+                horizontal={true}
+                labelKey="key"
+                labeledBars={true}
+                labels={
+                  Object {
+                    "x": "Orders Count",
+                    "y": "Delivery Area",
+                  }
+                }
+                onClick={[Function]}
+                width={720}
+                x="key"
+                y="value"
+              />,
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Top 20 Delivery Areas By Orders Count",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "axisFormats": Object {
+                  "x": [Function],
+                  "y": [Function],
+                },
+                "data": Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 2,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Jaber Al Ali",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Rabiya",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 1,
+                  },
+                  Object {
+                    "key": "Abu Al Hasaniya",
+                    "value": 1,
+                  },
+                ],
+                "height": 500,
+                "hiddenTicks": Object {
+                  "y": true,
+                },
+                "horizontal": true,
+                "labelKey": "key",
+                "labeledBars": true,
+                "labels": Object {
+                  "x": "Orders Count",
+                  "y": "Delivery Area",
+                },
+                "onClick": [Function],
+                "width": 720,
+                "x": "key",
+                "y": "value",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": [Function],
           },
         ],
