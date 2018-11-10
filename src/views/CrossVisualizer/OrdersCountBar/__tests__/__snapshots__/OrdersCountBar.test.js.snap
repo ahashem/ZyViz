@@ -203,6 +203,7 @@ ShallowWrapper {
               ]
             }
             height={250}
+            horizontal={false}
             labels={
               Object {
                 "x": "Branch",
@@ -254,6 +255,7 @@ ShallowWrapper {
               ]
             }
             height={250}
+            horizontal={false}
             labels={
               Object {
                 "x": "Week of Day",
@@ -358,10 +360,11 @@ ShallowWrapper {
             ]
           }
           height={650}
+          horizontal={true}
           labels={
             Object {
-              "x": "Delivery Area",
-              "y": "Orders Count",
+              "x": "Orders Count",
+              "y": "Delivery Area",
             }
           }
           onClick={[Function]}
@@ -421,6 +424,7 @@ ShallowWrapper {
                 ]
               }
               height={250}
+              horizontal={false}
               labels={
                 Object {
                   "x": "Branch",
@@ -472,6 +476,7 @@ ShallowWrapper {
                 ]
               }
               height={250}
+              horizontal={false}
               labels={
                 Object {
                   "x": "Week of Day",
@@ -576,10 +581,11 @@ ShallowWrapper {
               ]
             }
             height={650}
+            horizontal={true}
             labels={
               Object {
-                "x": "Delivery Area",
-                "y": "Orders Count",
+                "x": "Orders Count",
+                "y": "Delivery Area",
               }
             }
             onClick={[Function]}
@@ -635,6 +641,7 @@ ShallowWrapper {
                   ]
                 }
                 height={250}
+                horizontal={false}
                 labels={
                   Object {
                     "x": "Branch",
@@ -686,6 +693,7 @@ ShallowWrapper {
                   ]
                 }
                 height={250}
+                horizontal={false}
                 labels={
                   Object {
                     "x": "Week of Day",
@@ -741,6 +749,7 @@ ShallowWrapper {
                   },
                 ],
                 "height": 250,
+                "horizontal": false,
                 "labels": Object {
                   "x": "Branch",
                   "y": "Orders Count",
@@ -794,6 +803,7 @@ ShallowWrapper {
                   },
                 ],
                 "height": 250,
+                "horizontal": false,
                 "labels": Object {
                   "x": "Week of Day",
                   "y": "Orders Count",
@@ -902,9 +912,10 @@ ShallowWrapper {
               },
             ],
             "height": 650,
+            "horizontal": true,
             "labels": Object {
-              "x": "Delivery Area",
-              "y": "Orders Count",
+              "x": "Orders Count",
+              "y": "Delivery Area",
             },
             "onClick": [Function],
             "width": 720,
@@ -973,6 +984,7 @@ ShallowWrapper {
                 ]
               }
               height={250}
+              horizontal={false}
               labels={
                 Object {
                   "x": "Branch",
@@ -1024,6 +1036,7 @@ ShallowWrapper {
                 ]
               }
               height={250}
+              horizontal={false}
               labels={
                 Object {
                   "x": "Week of Day",
@@ -1128,10 +1141,11 @@ ShallowWrapper {
               ]
             }
             height={650}
+            horizontal={true}
             labels={
               Object {
-                "x": "Delivery Area",
-                "y": "Orders Count",
+                "x": "Orders Count",
+                "y": "Delivery Area",
               }
             }
             onClick={[Function]}
@@ -1191,6 +1205,7 @@ ShallowWrapper {
                   ]
                 }
                 height={250}
+                horizontal={false}
                 labels={
                   Object {
                     "x": "Branch",
@@ -1242,6 +1257,7 @@ ShallowWrapper {
                   ]
                 }
                 height={250}
+                horizontal={false}
                 labels={
                   Object {
                     "x": "Week of Day",
@@ -1346,10 +1362,11 @@ ShallowWrapper {
                 ]
               }
               height={650}
+              horizontal={true}
               labels={
                 Object {
-                  "x": "Delivery Area",
-                  "y": "Orders Count",
+                  "x": "Orders Count",
+                  "y": "Delivery Area",
                 }
               }
               onClick={[Function]}
@@ -1405,6 +1422,7 @@ ShallowWrapper {
                     ]
                   }
                   height={250}
+                  horizontal={false}
                   labels={
                     Object {
                       "x": "Branch",
@@ -1456,6 +1474,7 @@ ShallowWrapper {
                     ]
                   }
                   height={250}
+                  horizontal={false}
                   labels={
                     Object {
                       "x": "Week of Day",
@@ -1511,6 +1530,7 @@ ShallowWrapper {
                     },
                   ],
                   "height": 250,
+                  "horizontal": false,
                   "labels": Object {
                     "x": "Branch",
                     "y": "Orders Count",
@@ -1564,6 +1584,7 @@ ShallowWrapper {
                     },
                   ],
                   "height": 250,
+                  "horizontal": false,
                   "labels": Object {
                     "x": "Week of Day",
                     "y": "Orders Count",
@@ -1672,9 +1693,10 @@ ShallowWrapper {
                 },
               ],
               "height": 650,
+              "horizontal": true,
               "labels": Object {
-                "x": "Delivery Area",
-                "y": "Orders Count",
+                "x": "Orders Count",
+                "y": "Delivery Area",
               },
               "onClick": [Function],
               "width": 720,
