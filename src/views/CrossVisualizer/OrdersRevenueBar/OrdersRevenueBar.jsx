@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 import BarChart from '../../../components/BarChart/BarChart';
-import { Card } from 'antd';
-import { shortenWeekDay } from '../../../utils/helpers';
+import { Card, Col } from 'antd';
+import { currencyTickFormat, shortenWeekDay } from '../../../utils/helpers';
 
 /**
  * @component OrdersRevenueBar
@@ -68,54 +68,60 @@ class OrdersRevenueBar extends Component {
     return (
       <div>
         <FlexGridRow justify="space-around" gutter={8}>
-          <Card title="Revenue By Branch" bordered hoverable loading={loading}>
-            <BarChart
-              height={250}
-              width={350}
-              labels={{ x: 'Branch', y: 'Revenue' }}
-              axisFormats={{
-                x: branch => (branch.toString().replace(/Branch /, '')),
-                y: revenue => (`$${revenue / 1000}k`)
-              }}
-              data={ordersCrossed && ordersCrossed.ordersByBranchData}
-              onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-                'ordersByBranch',
-                ordersCrossed.ordersByBranchData[selectedIndex].key,
-                deselected
-              )}
-              x="key"
-              y="value"
-            />
-          </Card>
-
-
-          <Card title="Revenue By Day of Week" bordered hoverable loading={loading}>
-            <BarChart
-              height={250}
-              width={350}
-              labels={{ x: 'Day of Week', y: 'Revenue' }}
-              axisFormats={{ x: day => (shortenWeekDay(day)), y: revenue => (`$${revenue / 1000}k`) }}
-              data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
-              onClick={(selectedIndex, deselected) => this.crossFilterSelected(
-                'ordersByWeekDay',
-                ordersCrossed.ordersByWeekDayData[selectedIndex].key,
-                deselected
-              )}
-              x="key"
-              y="value"
-            />
-          </Card>
-        </FlexGridRow>
-        <FlexGridRow justify="space-around" gutter={8}>
+          <Col
+            xs={24}
+            sm={24}
+            md={8}
+            lg={8}
+            xl={8}
+            xxl={8}
+          >
+            <Card title="Revenue By Branch and Week Day" bordered hoverable loading={loading}>
+              <BarChart
+                height={250}
+                width={350}
+                labels={{ x: 'Branch', y: 'Revenue' }}
+                axisFormats={{
+                  x: branch => (branch.toString().replace(/Branch /, '')),
+                  y: currencyTickFormat
+                }}
+                data={ordersCrossed && ordersCrossed.ordersByBranchData}
+                onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+                  'ordersByBranch',
+                  ordersCrossed.ordersByBranchData[selectedIndex].key,
+                  deselected
+                )}
+                x="key"
+                y="value"
+                labelKey="value"
+              />
+              <BarChart
+                height={250}
+                width={350}
+                labels={{ x: 'Day of Week', y: 'Revenue' }}
+                axisFormats={{ x: shortenWeekDay, y: currencyTickFormat }}
+                data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
+                onClick={(selectedIndex, deselected) => this.crossFilterSelected(
+                  'ordersByWeekDay',
+                  ordersCrossed.ordersByWeekDayData[selectedIndex].key,
+                  deselected
+                )}
+                x="key"
+                y="value"
+                labelKey="value"
+              />
+            </Card>
+          </Col>
 
           <Card title="Top 20 Delivery Areas By Revenue" bordered hoverable loading={loading}>
             <BarChart
               horizontal
-              hiddenTicks
-              height={650}
+              labeledBars
+              hiddenTicks={{ y: true }}
+              height={500}
               width={720}
               labels={{ y: 'Delivery Area', x: 'Revenue' }}
-              axisFormats={{ x: (x) => (`$${x / 1000}k`) }}
+              axisFormats={{ x: currencyTickFormat }}
               data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByDeliveryArea',
@@ -124,6 +130,7 @@ class OrdersRevenueBar extends Component {
               )}
               x="key"
               y="value"
+              labelKey="key"
             />
           </Card>
 

@@ -55,24 +55,22 @@ class CrossVisualizer extends Component {
         {loading ? (<Spin data-test="loading"/>)
           : (
             <React.Fragment>
-              <h3>Orders Count</h3>
-              <OrdersCountPie
-                orders={orders}
-                dimensions={dimensions}
-                onFilter={this.onFilter}
-              />
               <OrdersCountBar
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
               />
-              <h3>Orders Revenue</h3>
-              <OrdersRevenuePie
+              <OrdersRevenueBar
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
               />
-              <OrdersRevenueBar
+              <OrdersCountPie
+                orders={orders}
+                dimensions={dimensions}
+                onFilter={this.onFilter}
+              />
+              <OrdersRevenuePie
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
