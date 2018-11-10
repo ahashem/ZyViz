@@ -88,7 +88,7 @@ class OrdersRevenueBar extends Component {
                 data={ordersCrossed && ordersCrossed.ordersByBranchData}
                 onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                   'ordersByBranch',
-                  ordersCrossed.ordersByBranchData[selectedIndex].key,
+                  ordersCrossed.ordersByBranchData[`${selectedIndex}`].key,
                   deselected
                 )}
                 x="key"
@@ -103,7 +103,7 @@ class OrdersRevenueBar extends Component {
                 data={ordersCrossed && ordersCrossed.ordersByWeekDayData}
                 onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                   'ordersByWeekDay',
-                  ordersCrossed.ordersByWeekDayData[selectedIndex].key,
+                  ordersCrossed.ordersByWeekDayData[`${selectedIndex}`].key,
                   deselected
                 )}
                 x="key"
@@ -125,7 +125,7 @@ class OrdersRevenueBar extends Component {
               data={ordersCrossed && ordersCrossed.ordersByDeliveryAreaData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByDeliveryArea',
-                ordersCrossed.ordersByDeliveryAreaData[selectedIndex].key,
+                ordersCrossed.ordersByDeliveryAreaData[`${selectedIndex}`].key,
                 deselected
               )}
               x="key"

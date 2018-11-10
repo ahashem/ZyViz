@@ -104,6 +104,7 @@ const FlexGridRow = ({ gutter, justify, align, children }) => {
       justify={justify}
       align={align}
       gutter={gutter || AntdBoxes}
+      style={{ background: '#ECECEC', padding: '20px' }}
     >
       {ChildrenGen(children)}
     </Row>
