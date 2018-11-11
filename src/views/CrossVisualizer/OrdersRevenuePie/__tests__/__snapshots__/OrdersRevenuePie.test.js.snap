@@ -182,6 +182,8 @@ ShallowWrapper {
                 },
               ]
             }
+            labelKey="key"
+            name="revenueByPaymentMethod"
             onClick={[Function]}
             x="key"
             y="value"
@@ -190,7 +192,7 @@ ShallowWrapper {
         <Card
           bordered={true}
           hoverable={true}
-          title="Revenue By Size"
+          title="Revenue By Order Size"
         >
           <PieChart
             data={
@@ -217,6 +219,8 @@ ShallowWrapper {
                 },
               ]
             }
+            labelKey="key"
+            name="revenueBySize"
             onClick={[Function]}
             x="key"
             y="value"
@@ -252,6 +256,8 @@ ShallowWrapper {
                 },
               ]
             }
+            labelKey="key"
+            name="revenueByTimeOfDay"
             onClick={[Function]}
             x="key"
             y="value"
@@ -289,6 +295,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueByPaymentMethod"
               onClick={[Function]}
               x="key"
               y="value"
@@ -297,7 +305,7 @@ ShallowWrapper {
           <Card
             bordered={true}
             hoverable={true}
-            title="Revenue By Size"
+            title="Revenue By Order Size"
           >
             <PieChart
               data={
@@ -324,6 +332,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueBySize"
               onClick={[Function]}
               x="key"
               y="value"
@@ -359,6 +369,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueByTimeOfDay"
               onClick={[Function]}
               x="key"
               y="value"
@@ -393,6 +405,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueByPaymentMethod"
               onClick={[Function]}
               x="key"
               y="value"
@@ -421,6 +435,8 @@ ShallowWrapper {
                   "value": 298.48,
                 },
               ],
+              "labelKey": "key",
+              "name": "revenueByPaymentMethod",
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -462,13 +478,15 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueBySize"
               onClick={[Function]}
               x="key"
               y="value"
             />,
             "hoverable": true,
             "loading": undefined,
-            "title": "Revenue By Size",
+            "title": "Revenue By Order Size",
           },
           "ref": null,
           "rendered": Object {
@@ -498,6 +516,8 @@ ShallowWrapper {
                   "value": 13.94,
                 },
               ],
+              "labelKey": "key",
+              "name": "revenueBySize",
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -539,6 +559,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueByTimeOfDay"
               onClick={[Function]}
               x="key"
               y="value"
@@ -575,6 +597,8 @@ ShallowWrapper {
                   "value": 252.10000000000002,
                 },
               ],
+              "labelKey": "key",
+              "name": "revenueByTimeOfDay",
               "onClick": [Function],
               "x": "key",
               "y": "value",
@@ -623,6 +647,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueByPaymentMethod"
               onClick={[Function]}
               x="key"
               y="value"
@@ -631,7 +657,7 @@ ShallowWrapper {
           <Card
             bordered={true}
             hoverable={true}
-            title="Revenue By Size"
+            title="Revenue By Order Size"
           >
             <PieChart
               data={
@@ -658,6 +684,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueBySize"
               onClick={[Function]}
               x="key"
               y="value"
@@ -693,6 +721,8 @@ ShallowWrapper {
                   },
                 ]
               }
+              labelKey="key"
+              name="revenueByTimeOfDay"
               onClick={[Function]}
               x="key"
               y="value"
@@ -730,6 +760,8 @@ ShallowWrapper {
                     },
                   ]
                 }
+                labelKey="key"
+                name="revenueByPaymentMethod"
                 onClick={[Function]}
                 x="key"
                 y="value"
@@ -738,7 +770,7 @@ ShallowWrapper {
             <Card
               bordered={true}
               hoverable={true}
-              title="Revenue By Size"
+              title="Revenue By Order Size"
             >
               <PieChart
                 data={
@@ -765,6 +797,8 @@ ShallowWrapper {
                     },
                   ]
                 }
+                labelKey="key"
+                name="revenueBySize"
                 onClick={[Function]}
                 x="key"
                 y="value"
@@ -800,6 +834,8 @@ ShallowWrapper {
                     },
                   ]
                 }
+                labelKey="key"
+                name="revenueByTimeOfDay"
                 onClick={[Function]}
                 x="key"
                 y="value"
@@ -834,6 +870,8 @@ ShallowWrapper {
                     },
                   ]
                 }
+                labelKey="key"
+                name="revenueByPaymentMethod"
                 onClick={[Function]}
                 x="key"
                 y="value"
@@ -862,6 +900,8 @@ ShallowWrapper {
                     "value": 298.48,
                   },
                 ],
+                "labelKey": "key",
+                "name": "revenueByPaymentMethod",
                 "onClick": [Function],
                 "x": "key",
                 "y": "value",
@@ -903,13 +943,15 @@ ShallowWrapper {
                     },
                   ]
                 }
+                labelKey="key"
+                name="revenueBySize"
                 onClick={[Function]}
                 x="key"
                 y="value"
               />,
               "hoverable": true,
               "loading": undefined,
-              "title": "Revenue By Size",
+              "title": "Revenue By Order Size",
             },
             "ref": null,
             "rendered": Object {
@@ -939,6 +981,8 @@ ShallowWrapper {
                     "value": 13.94,
                   },
                 ],
+                "labelKey": "key",
+                "name": "revenueBySize",
                 "onClick": [Function],
                 "x": "key",
                 "y": "value",
@@ -980,6 +1024,8 @@ ShallowWrapper {
                     },
                   ]
                 }
+                labelKey="key"
+                name="revenueByTimeOfDay"
                 onClick={[Function]}
                 x="key"
                 y="value"
@@ -1016,6 +1062,8 @@ ShallowWrapper {
                     "value": 252.10000000000002,
                   },
                 ],
+                "labelKey": "key",
+                "name": "revenueByTimeOfDay",
                 "onClick": [Function],
                 "x": "key",
                 "y": "value",

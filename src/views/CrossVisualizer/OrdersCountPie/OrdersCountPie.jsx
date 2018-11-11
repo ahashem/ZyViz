@@ -77,6 +77,7 @@ class OrdersCountPie extends Component {
 
           <Card title="Orders Count By Payment Method" bordered hoverable loading={loading}>
             <PieChart
+              name='ordersByPaymentMethod'
               data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByPaymentMethod',
@@ -90,6 +91,7 @@ class OrdersCountPie extends Component {
 
           <Card title="Orders Count by Size" bordered hoverable loading={loading}>
             <PieChart
+              name='ordersBySize'
               data={ordersCrossed && ordersCrossed.ordersByAmountData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersBySize',
@@ -103,6 +105,7 @@ class OrdersCountPie extends Component {
 
           <Card title="Orders Count By Time of the Day" bordered hoverable loading={loading}>
             <PieChart
+              name='ordersByTimeOfDay'
               data={ordersCrossed && ordersCrossed.ordersByTimeData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByTimeOfDay',

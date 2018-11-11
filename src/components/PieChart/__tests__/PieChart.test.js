@@ -11,7 +11,10 @@ describe('<PieChart /> component', () => {
     ];
 
     const rendered = shallow(
-      <PieChart data={mockChartData} />
+      <PieChart
+        name="testChart"
+        data={mockChartData}
+      />
     );
 
     expect(rendered).toMatchSnapshot();
