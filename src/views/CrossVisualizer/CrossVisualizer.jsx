@@ -59,27 +59,32 @@ class CrossVisualizer extends Component {
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
+                loading={loading}
               />
               <OrdersRevenueBar
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
+                loading={loading}
               />
               <OrdersCountPie
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
+                loading={loading}
               />
               <OrdersRevenuePie
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
+                loading={loading}
               />
               <h3>Orders Count & Total Sales By Date</h3>
               <OrdersTimeSeries
                 orders={orders}
                 dimensions={dimensions}
                 onFilter={this.onFilter}
+                loading={loading}
               />
             </React.Fragment>
           )}

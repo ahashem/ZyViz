@@ -158,7 +158,7 @@ ShallowWrapper {
     "props": Object {
       "children": <FlexGridRow
         align="middle"
-        gutter={8}
+        gutter={24}
         justify="space-around"
       >
         <Col
@@ -386,7 +386,7 @@ ShallowWrapper {
                 },
               ]
             }
-            height={500}
+            height={490}
             hiddenTicks={
               Object {
                 "y": true,
@@ -642,7 +642,7 @@ ShallowWrapper {
                   },
                 ]
               }
-              height={500}
+              height={490}
               hiddenTicks={
                 Object {
                   "y": true,
@@ -664,7 +664,7 @@ ShallowWrapper {
             />
           </Card>,
         ],
-        "gutter": 8,
+        "gutter": 24,
         "justify": "space-around",
       },
       "ref": null,
@@ -1146,7 +1146,7 @@ ShallowWrapper {
                   },
                 ]
               }
-              height={500}
+              height={490}
               hiddenTicks={
                 Object {
                   "y": true,
@@ -1262,7 +1262,7 @@ ShallowWrapper {
                   "value": 1,
                 },
               ],
-              "height": 500,
+              "height": 490,
               "hiddenTicks": Object {
                 "y": true,
               },
@@ -1297,7 +1297,7 @@ ShallowWrapper {
       "props": Object {
         "children": <FlexGridRow
           align="middle"
-          gutter={8}
+          gutter={24}
           justify="space-around"
         >
           <Col
@@ -1525,7 +1525,7 @@ ShallowWrapper {
                   },
                 ]
               }
-              height={500}
+              height={490}
               hiddenTicks={
                 Object {
                   "y": true,
@@ -1781,7 +1781,7 @@ ShallowWrapper {
                     },
                   ]
                 }
-                height={500}
+                height={490}
                 hiddenTicks={
                   Object {
                     "y": true,
@@ -1803,7 +1803,7 @@ ShallowWrapper {
               />
             </Card>,
           ],
-          "gutter": 8,
+          "gutter": 24,
           "justify": "space-around",
         },
         "ref": null,
@@ -2285,7 +2285,7 @@ ShallowWrapper {
                     },
                   ]
                 }
-                height={500}
+                height={490}
                 hiddenTicks={
                   Object {
                     "y": true,
@@ -2401,7 +2401,7 @@ ShallowWrapper {
                     "value": 1,
                   },
                 ],
-                "height": 500,
+                "height": 490,
                 "hiddenTicks": Object {
                   "y": true,
                 },
