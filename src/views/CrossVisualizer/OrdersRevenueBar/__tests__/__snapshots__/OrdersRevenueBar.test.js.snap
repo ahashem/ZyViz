@@ -303,6 +303,7 @@ ShallowWrapper {
                 "x": [Function],
               }
             }
+            barRatio={0.9}
             data={
               Array [
                 Object {
@@ -560,6 +561,7 @@ ShallowWrapper {
                   "x": [Function],
                 }
               }
+              barRatio={0.9}
               data={
                 Array [
                   Object {
@@ -1069,6 +1071,7 @@ ShallowWrapper {
                   "x": [Function],
                 }
               }
+              barRatio={0.9}
               data={
                 Array [
                   Object {
@@ -1186,6 +1189,7 @@ ShallowWrapper {
               "axisFormats": Object {
                 "x": [Function],
               },
+              "barRatio": 0.9,
               "data": Array [
                 Object {
                   "key": "Rai",
@@ -1448,6 +1452,7 @@ ShallowWrapper {
                   "x": [Function],
                 }
               }
+              barRatio={0.9}
               data={
                 Array [
                   Object {
@@ -1705,6 +1710,7 @@ ShallowWrapper {
                     "x": [Function],
                   }
                 }
+                barRatio={0.9}
                 data={
                   Array [
                     Object {
@@ -2214,6 +2220,7 @@ ShallowWrapper {
                     "x": [Function],
                   }
                 }
+                barRatio={0.9}
                 data={
                   Array [
                     Object {
@@ -2331,6 +2338,7 @@ ShallowWrapper {
                 "axisFormats": Object {
                   "x": [Function],
                 },
+                "barRatio": 0.9,
                 "data": Array [
                   Object {
                     "key": "Rai",
