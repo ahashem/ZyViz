@@ -129,6 +129,7 @@ class OrdersCountBar extends Component {
               x="key"
               y="value"
               labelKey="key"
+              barRatio={0.9}
             />
           </Card>
 

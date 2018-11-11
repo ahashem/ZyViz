@@ -20,6 +20,8 @@ ShallowWrapper {
         },
       ]
     }
+    labelKey="key"
+    name="testChart"
     onClick={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -35,6 +37,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "colorScale": "cool",
       "containerComponent": <VictoryContainer
         className="VictoryContainer"
         portalComponent={<Portal />}
@@ -74,7 +77,11 @@ ShallowWrapper {
         textComponent={<Text />}
         tspanComponent={<TSpan />}
       />,
-      "sortOrder": "ascending",
+      "labels": [Function],
+      "name": "testChart",
+      "padding": 80,
+      "sortKey": "key",
+      "sortOrder": "descending",
       "standalone": true,
       "theme": Object {
         "area": Object {
@@ -495,6 +502,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "colorScale": "cool",
         "containerComponent": <VictoryContainer
           className="VictoryContainer"
           portalComponent={<Portal />}
@@ -534,7 +542,11 @@ ShallowWrapper {
           textComponent={<Text />}
           tspanComponent={<TSpan />}
         />,
-        "sortOrder": "ascending",
+        "labels": [Function],
+        "name": "testChart",
+        "padding": 80,
+        "sortKey": "key",
+        "sortOrder": "descending",
         "standalone": true,
         "theme": Object {
           "area": Object {

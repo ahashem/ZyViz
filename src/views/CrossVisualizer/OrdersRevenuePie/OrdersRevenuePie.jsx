@@ -52,7 +52,7 @@ class OrdersRevenuePie extends Component {
   /**
    * Uplift filter triggers
    * @param {*|string} dimension
-   * @param {TKey} selectedKey
+   * @param {string} selectedKey
    * @param {Boolean} deselected
    */
   crossFilterSelected = (dimension, selectedKey, deselected = false) => {
@@ -71,6 +71,7 @@ class OrdersRevenuePie extends Component {
 
           <Card title="Revenue By Payment Method" bordered hoverable loading={loading}>
             <PieChart
+              name='revenueByPaymentMethod'
               data={ordersCrossed && ordersCrossed.ordersByPaymentMethodData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByPaymentMethod',
@@ -82,8 +83,9 @@ class OrdersRevenuePie extends Component {
             />
           </Card>
 
-          <Card title="Revenue By Size" bordered hoverable loading={loading}>
+          <Card title="Revenue By Order Size" bordered hoverable loading={loading}>
             <PieChart
+              name='revenueBySize'
               data={ordersCrossed && ordersCrossed.ordersByAmountData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersBySize',
@@ -96,6 +98,7 @@ class OrdersRevenuePie extends Component {
           </Card>
           <Card title="Orders Revenue By Time of the Day" bordered hoverable loading={loading}>
             <PieChart
+              name='revenueByTimeOfDay'
               data={ordersCrossed && ordersCrossed.ordersByTimeData}
               onClick={(selectedIndex, deselected) => this.crossFilterSelected(
                 'ordersByTimeOfDay',
