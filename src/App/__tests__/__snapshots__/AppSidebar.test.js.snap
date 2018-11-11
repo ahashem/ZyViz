@@ -25,21 +25,44 @@ ShallowWrapper {
           className=""
           defaultSelectedKeys={
             Array [
-              "1",
+              "dashboard",
             ]
           }
           focusable={false}
           mode="inline"
           prefixCls="ant-menu"
+          selectedKeys={
+            Array [
+              undefined,
+            ]
+          }
           theme="dark"
         >
           <MenuItem>
             <Icon
               type="dashboard"
             />
-            <span>
-              Dashboard
-            </span>
+            <Link
+              replace={false}
+              to="/"
+            >
+              <span>
+                Dashboard
+              </span>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Icon
+              type="project"
+            />
+            <Link
+              replace={false}
+              to="/tabbed"
+            >
+              <span>
+                Tabbed Dashboard
+              </span>
+            </Link>
           </MenuItem>
         </Menu>,
         Array [],
@@ -62,65 +85,170 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <MenuItem>
-            <Icon
-              type="dashboard"
-            />
-            <span>
-              Dashboard
-            </span>
-          </MenuItem>,
+          "children": Array [
+            <MenuItem>
+              <Icon
+                type="dashboard"
+              />
+              <Link
+                replace={false}
+                to="/"
+              >
+                <span>
+                  Dashboard
+                </span>
+              </Link>
+            </MenuItem>,
+            <MenuItem>
+              <Icon
+                type="project"
+              />
+              <Link
+                replace={false}
+                to="/tabbed"
+              >
+                <span>
+                  Tabbed Dashboard
+                </span>
+              </Link>
+            </MenuItem>,
+          ],
           "className": "",
           "defaultSelectedKeys": Array [
-            "1",
+            "dashboard",
           ],
           "focusable": false,
           "mode": "inline",
+          "onClick": undefined,
           "prefixCls": "ant-menu",
+          "selectedKeys": Array [
+            undefined,
+          ],
           "theme": "dark",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Icon
-                type="dashboard"
-              />,
-              <span>
-                Dashboard
-              </span>,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "dashboard",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  type="dashboard"
+                />,
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <span>
+                    Dashboard
+                  </span>
+                </Link>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "type": "dashboard",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <span>
+                    Dashboard
+                  </span>,
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Dashboard",
+                  },
+                  "ref": null,
+                  "rendered": "Dashboard",
+                  "type": "span",
+                },
+                "type": [Function],
+              },
             ],
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "type": "dashboard",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+          Object {
+            "instance": null,
+            "key": "tabbed",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  type="project"
+                />,
+                <Link
+                  replace={false}
+                  to="/tabbed"
+                >
+                  <span>
+                    Tabbed Dashboard
+                  </span>
+                </Link>,
+              ],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Dashboard",
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "type": "project",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": "Dashboard",
-              "type": "span",
-            },
-          ],
-          "type": [Function],
-        },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <span>
+                    Tabbed Dashboard
+                  </span>,
+                  "replace": false,
+                  "to": "/tabbed",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Tabbed Dashboard",
+                  },
+                  "ref": null,
+                  "rendered": "Tabbed Dashboard",
+                  "type": "span",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
     ],
@@ -137,21 +265,44 @@ ShallowWrapper {
             className=""
             defaultSelectedKeys={
               Array [
-                "1",
+                "dashboard",
               ]
             }
             focusable={false}
             mode="inline"
             prefixCls="ant-menu"
+            selectedKeys={
+              Array [
+                undefined,
+              ]
+            }
             theme="dark"
           >
             <MenuItem>
               <Icon
                 type="dashboard"
               />
-              <span>
-                Dashboard
-              </span>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <span>
+                  Dashboard
+                </span>
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Icon
+                type="project"
+              />
+              <Link
+                replace={false}
+                to="/tabbed"
+              >
+                <span>
+                  Tabbed Dashboard
+                </span>
+              </Link>
             </MenuItem>
           </Menu>,
           Array [],
@@ -174,65 +325,170 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <MenuItem>
-              <Icon
-                type="dashboard"
-              />
-              <span>
-                Dashboard
-              </span>
-            </MenuItem>,
+            "children": Array [
+              <MenuItem>
+                <Icon
+                  type="dashboard"
+                />
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <span>
+                    Dashboard
+                  </span>
+                </Link>
+              </MenuItem>,
+              <MenuItem>
+                <Icon
+                  type="project"
+                />
+                <Link
+                  replace={false}
+                  to="/tabbed"
+                >
+                  <span>
+                    Tabbed Dashboard
+                  </span>
+                </Link>
+              </MenuItem>,
+            ],
             "className": "",
             "defaultSelectedKeys": Array [
-              "1",
+              "dashboard",
             ],
             "focusable": false,
             "mode": "inline",
+            "onClick": undefined,
             "prefixCls": "ant-menu",
+            "selectedKeys": Array [
+              undefined,
+            ],
             "theme": "dark",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Icon
-                  type="dashboard"
-                />,
-                <span>
-                  Dashboard
-                </span>,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "dashboard",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Icon
+                    type="dashboard"
+                  />,
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                    <span>
+                      Dashboard
+                    </span>
+                  </Link>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "type": "dashboard",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <span>
+                      Dashboard
+                    </span>,
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Dashboard",
+                    },
+                    "ref": null,
+                    "rendered": "Dashboard",
+                    "type": "span",
+                  },
+                  "type": [Function],
+                },
               ],
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "type": "dashboard",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
+            Object {
+              "instance": null,
+              "key": "tabbed",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Icon
+                    type="project"
+                  />,
+                  <Link
+                    replace={false}
+                    to="/tabbed"
+                  >
+                    <span>
+                      Tabbed Dashboard
+                    </span>
+                  </Link>,
+                ],
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Dashboard",
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "type": "project",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
                 },
-                "ref": null,
-                "rendered": "Dashboard",
-                "type": "span",
-              },
-            ],
-            "type": [Function],
-          },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <span>
+                      Tabbed Dashboard
+                    </span>,
+                    "replace": false,
+                    "to": "/tabbed",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Tabbed Dashboard",
+                    },
+                    "ref": null,
+                    "rendered": "Tabbed Dashboard",
+                    "type": "span",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
@@ -284,21 +540,44 @@ ShallowWrapper {
           className=""
           defaultSelectedKeys={
             Array [
-              "1",
+              "dashboard",
             ]
           }
           focusable={false}
           mode="inline"
           prefixCls="ant-menu"
+          selectedKeys={
+            Array [
+              undefined,
+            ]
+          }
           theme="dark"
         >
           <MenuItem>
             <Icon
               type="dashboard"
             />
-            <span>
-              Dashboard
-            </span>
+            <Link
+              replace={false}
+              to="/"
+            >
+              <span>
+                Dashboard
+              </span>
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Icon
+              type="project"
+            />
+            <Link
+              replace={false}
+              to="/tabbed"
+            >
+              <span>
+                Tabbed Dashboard
+              </span>
+            </Link>
           </MenuItem>
         </Menu>,
         Array [],
@@ -321,65 +600,170 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <MenuItem>
-            <Icon
-              type="dashboard"
-            />
-            <span>
-              Dashboard
-            </span>
-          </MenuItem>,
+          "children": Array [
+            <MenuItem>
+              <Icon
+                type="dashboard"
+              />
+              <Link
+                replace={false}
+                to="/"
+              >
+                <span>
+                  Dashboard
+                </span>
+              </Link>
+            </MenuItem>,
+            <MenuItem>
+              <Icon
+                type="project"
+              />
+              <Link
+                replace={false}
+                to="/tabbed"
+              >
+                <span>
+                  Tabbed Dashboard
+                </span>
+              </Link>
+            </MenuItem>,
+          ],
           "className": "",
           "defaultSelectedKeys": Array [
-            "1",
+            "dashboard",
           ],
           "focusable": false,
           "mode": "inline",
+          "onClick": undefined,
           "prefixCls": "ant-menu",
+          "selectedKeys": Array [
+            undefined,
+          ],
           "theme": "dark",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Icon
-                type="dashboard"
-              />,
-              <span>
-                Dashboard
-              </span>,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "dashboard",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  type="dashboard"
+                />,
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <span>
+                    Dashboard
+                  </span>
+                </Link>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "type": "dashboard",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <span>
+                    Dashboard
+                  </span>,
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Dashboard",
+                  },
+                  "ref": null,
+                  "rendered": "Dashboard",
+                  "type": "span",
+                },
+                "type": [Function],
+              },
             ],
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "type": "dashboard",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+          Object {
+            "instance": null,
+            "key": "tabbed",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  type="project"
+                />,
+                <Link
+                  replace={false}
+                  to="/tabbed"
+                >
+                  <span>
+                    Tabbed Dashboard
+                  </span>
+                </Link>,
+              ],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Dashboard",
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "type": "project",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": "Dashboard",
-              "type": "span",
-            },
-          ],
-          "type": [Function],
-        },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <span>
+                    Tabbed Dashboard
+                  </span>,
+                  "replace": false,
+                  "to": "/tabbed",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Tabbed Dashboard",
+                  },
+                  "ref": null,
+                  "rendered": "Tabbed Dashboard",
+                  "type": "span",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
     ],
@@ -396,21 +780,44 @@ ShallowWrapper {
             className=""
             defaultSelectedKeys={
               Array [
-                "1",
+                "dashboard",
               ]
             }
             focusable={false}
             mode="inline"
             prefixCls="ant-menu"
+            selectedKeys={
+              Array [
+                undefined,
+              ]
+            }
             theme="dark"
           >
             <MenuItem>
               <Icon
                 type="dashboard"
               />
-              <span>
-                Dashboard
-              </span>
+              <Link
+                replace={false}
+                to="/"
+              >
+                <span>
+                  Dashboard
+                </span>
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Icon
+                type="project"
+              />
+              <Link
+                replace={false}
+                to="/tabbed"
+              >
+                <span>
+                  Tabbed Dashboard
+                </span>
+              </Link>
             </MenuItem>
           </Menu>,
           Array [],
@@ -433,65 +840,170 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <MenuItem>
-              <Icon
-                type="dashboard"
-              />
-              <span>
-                Dashboard
-              </span>
-            </MenuItem>,
+            "children": Array [
+              <MenuItem>
+                <Icon
+                  type="dashboard"
+                />
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <span>
+                    Dashboard
+                  </span>
+                </Link>
+              </MenuItem>,
+              <MenuItem>
+                <Icon
+                  type="project"
+                />
+                <Link
+                  replace={false}
+                  to="/tabbed"
+                >
+                  <span>
+                    Tabbed Dashboard
+                  </span>
+                </Link>
+              </MenuItem>,
+            ],
             "className": "",
             "defaultSelectedKeys": Array [
-              "1",
+              "dashboard",
             ],
             "focusable": false,
             "mode": "inline",
+            "onClick": undefined,
             "prefixCls": "ant-menu",
+            "selectedKeys": Array [
+              undefined,
+            ],
             "theme": "dark",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Icon
-                  type="dashboard"
-                />,
-                <span>
-                  Dashboard
-                </span>,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "dashboard",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Icon
+                    type="dashboard"
+                  />,
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                    <span>
+                      Dashboard
+                    </span>
+                  </Link>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "type": "dashboard",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <span>
+                      Dashboard
+                    </span>,
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Dashboard",
+                    },
+                    "ref": null,
+                    "rendered": "Dashboard",
+                    "type": "span",
+                  },
+                  "type": [Function],
+                },
               ],
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "type": "dashboard",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
+            Object {
+              "instance": null,
+              "key": "tabbed",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Icon
+                    type="project"
+                  />,
+                  <Link
+                    replace={false}
+                    to="/tabbed"
+                  >
+                    <span>
+                      Tabbed Dashboard
+                    </span>
+                  </Link>,
+                ],
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Dashboard",
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "type": "project",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
                 },
-                "ref": null,
-                "rendered": "Dashboard",
-                "type": "span",
-              },
-            ],
-            "type": [Function],
-          },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <span>
+                      Tabbed Dashboard
+                    </span>,
+                    "replace": false,
+                    "to": "/tabbed",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Tabbed Dashboard",
+                    },
+                    "ref": null,
+                    "rendered": "Tabbed Dashboard",
+                    "type": "span",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],

@@ -5,7 +5,7 @@ import crossfilter from '../../components/crossfilter/crossfilter';
 import { GenerateDimensions, NormalizeData } from '../shared/visualizer-data-structure';
 
 
-export default createModule('crossVisualizer', {
+export default createModule('crossVisualizerTabbed', {
 
   /**
    * Initial State
@@ -21,8 +21,7 @@ export default createModule('crossVisualizer', {
   actions: {
     /**
      * this action get all Charts data
-     */
-    * getOrdersData() {
+     */* getOrdersData() {
       yield {
         loading: true,
       };

@@ -1,0 +1,2462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrdersRevenueBar /> Component should render children and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <OrdersRevenueBar
+    dimension={Object {}}
+    dimensions={
+      Object {
+        "ordersByBranch": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByDate": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByDeliveryArea": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByPaymentMethod": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersBySize": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByTimeOfDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByWeekDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+      }
+    }
+    onFilter={[MockFunction]}
+    orders={
+      Object {
+        "add": [Function],
+        "all": [Function],
+        "allFiltered": [Function],
+        "dimension": [Function],
+        "groupAll": [Function],
+        "isElementFiltered": [Function],
+        "onChange": [Function],
+        "remove": [Function],
+        "size": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <FlexGridRow
+        align="middle"
+        gutter={24}
+        justify="space-around"
+      >
+        <Col
+          lg={8}
+          md={8}
+          sm={24}
+          xl={8}
+          xs={24}
+          xxl={8}
+        >
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Revenue By Branch and Week Day"
+          >
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Branch A",
+                    "value": 230.59,
+                  },
+                  Object {
+                    "key": "Branch B",
+                    "value": 123.42000000000002,
+                  },
+                  Object {
+                    "key": "Branch C",
+                    "value": 250.42000000000002,
+                  },
+                  Object {
+                    "key": "Branch D",
+                    "value": 230.42000000000002,
+                  },
+                  Object {
+                    "key": "Branch E",
+                    "value": 220.12,
+                  },
+                  Object {
+                    "key": "Branch F",
+                    "value": 375.95,
+                  },
+                ]
+              }
+              height={250}
+              hiddenTicks={
+                Object {
+                  "x": false,
+                  "y": false,
+                }
+              }
+              horizontal={false}
+              labelKey="value"
+              labeledBars={false}
+              labels={
+                Object {
+                  "x": "Branch",
+                  "y": "Revenue",
+                }
+              }
+              onClick={[Function]}
+              width={350}
+              x="key"
+              y="value"
+            />
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                  "y": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Fridays",
+                    "value": 83.29,
+                  },
+                  Object {
+                    "key": "Mondays",
+                    "value": 57.89,
+                  },
+                  Object {
+                    "key": "Saturdays",
+                    "value": 234.60000000000002,
+                  },
+                  Object {
+                    "key": "Sundays",
+                    "value": 187.74,
+                  },
+                  Object {
+                    "key": "Thursdays",
+                    "value": 418.09000000000003,
+                  },
+                  Object {
+                    "key": "Tuesdays",
+                    "value": 65.38,
+                  },
+                  Object {
+                    "key": "Wednesdays",
+                    "value": 383.93,
+                  },
+                ]
+              }
+              height={250}
+              hiddenTicks={
+                Object {
+                  "x": false,
+                  "y": false,
+                }
+              }
+              horizontal={false}
+              labelKey="value"
+              labeledBars={false}
+              labels={
+                Object {
+                  "x": "Day of Week",
+                  "y": "Revenue",
+                }
+              }
+              onClick={[Function]}
+              width={350}
+              x="key"
+              y="value"
+            />
+          </Card>
+        </Col>
+        <Card
+          bordered={true}
+          hoverable={true}
+          title="Top 20 Delivery Areas By Revenue"
+        >
+          <BarChart
+            axisFormats={
+              Object {
+                "x": [Function],
+              }
+            }
+            data={
+              Array [
+                Object {
+                  "key": "Rai",
+                  "value": 176.21,
+                },
+                Object {
+                  "key": "Qibla",
+                  "value": 130.1,
+                },
+                Object {
+                  "key": "Zahra",
+                  "value": 112.94,
+                },
+                Object {
+                  "key": "Al Qusour",
+                  "value": 91.43,
+                },
+                Object {
+                  "key": "Al Bidae",
+                  "value": 89.96,
+                },
+                Object {
+                  "key": "Hadiya",
+                  "value": 85.38,
+                },
+                Object {
+                  "key": "Abdullah Al Salem",
+                  "value": 83.43,
+                },
+                Object {
+                  "key": "Faiha",
+                  "value": 83.02,
+                },
+                Object {
+                  "key": "Jaber Al Ahmad",
+                  "value": 78.24,
+                },
+                Object {
+                  "key": "Nuzha",
+                  "value": 74.36,
+                },
+                Object {
+                  "key": "Abu Halifa",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Sheikh Saad Aviation Terminal",
+                  "value": 57.89,
+                },
+                Object {
+                  "key": "Reggai",
+                  "value": 47.269999999999996,
+                },
+                Object {
+                  "key": "Qortuba",
+                  "value": 45.3,
+                },
+                Object {
+                  "key": "Saad Al Abdullah",
+                  "value": 36.51,
+                },
+                Object {
+                  "key": "Nahda",
+                  "value": 36.35,
+                },
+                Object {
+                  "key": "Mirqab",
+                  "value": 34.87,
+                },
+                Object {
+                  "key": "Fahaheel",
+                  "value": 34.84,
+                },
+                Object {
+                  "key": "Qasser",
+                  "value": 30.51,
+                },
+                Object {
+                  "key": "Doha",
+                  "value": 20.85,
+                },
+              ]
+            }
+            height={490}
+            hiddenTicks={
+              Object {
+                "y": true,
+              }
+            }
+            horizontal={true}
+            labelKey="key"
+            labeledBars={true}
+            labels={
+              Object {
+                "x": "Revenue",
+                "y": "Delivery Area",
+              }
+            }
+            onClick={[Function]}
+            width={720}
+            x="key"
+            y="value"
+          />
+        </Card>
+      </FlexGridRow>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "align": "middle",
+        "children": Array [
+          <Col
+            lg={8}
+            md={8}
+            sm={24}
+            xl={8}
+            xs={24}
+            xxl={8}
+          >
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Revenue By Branch and Week Day"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Branch A",
+                      "value": 230.59,
+                    },
+                    Object {
+                      "key": "Branch B",
+                      "value": 123.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch C",
+                      "value": 250.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch D",
+                      "value": 230.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch E",
+                      "value": 220.12,
+                    },
+                    Object {
+                      "key": "Branch F",
+                      "value": 375.95,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Branch",
+                    "y": "Revenue",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Fridays",
+                      "value": 83.29,
+                    },
+                    Object {
+                      "key": "Mondays",
+                      "value": 57.89,
+                    },
+                    Object {
+                      "key": "Saturdays",
+                      "value": 234.60000000000002,
+                    },
+                    Object {
+                      "key": "Sundays",
+                      "value": 187.74,
+                    },
+                    Object {
+                      "key": "Thursdays",
+                      "value": 418.09000000000003,
+                    },
+                    Object {
+                      "key": "Tuesdays",
+                      "value": 65.38,
+                    },
+                    Object {
+                      "key": "Wednesdays",
+                      "value": 383.93,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Day of Week",
+                    "y": "Revenue",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+            </Card>
+          </Col>,
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Top 20 Delivery Areas By Revenue"
+          >
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 176.21,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 130.1,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 112.94,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 91.43,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 89.96,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 85.38,
+                  },
+                  Object {
+                    "key": "Abdullah Al Salem",
+                    "value": 83.43,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 83.02,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 78.24,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 74.36,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Sheikh Saad Aviation Terminal",
+                    "value": 57.89,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 47.269999999999996,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 45.3,
+                  },
+                  Object {
+                    "key": "Saad Al Abdullah",
+                    "value": 36.51,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 36.35,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 34.87,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 34.84,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 30.51,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 20.85,
+                  },
+                ]
+              }
+              height={490}
+              hiddenTicks={
+                Object {
+                  "y": true,
+                }
+              }
+              horizontal={true}
+              labelKey="key"
+              labeledBars={true}
+              labels={
+                Object {
+                  "x": "Revenue",
+                  "y": "Delivery Area",
+                }
+              }
+              onClick={[Function]}
+              width={720}
+              x="key"
+              y="value"
+            />
+          </Card>,
+        ],
+        "gutter": 24,
+        "justify": "space-around",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Card
+              bordered={true}
+              hoverable={true}
+              title="Revenue By Branch and Week Day"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Branch A",
+                      "value": 230.59,
+                    },
+                    Object {
+                      "key": "Branch B",
+                      "value": 123.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch C",
+                      "value": 250.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch D",
+                      "value": 230.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch E",
+                      "value": 220.12,
+                    },
+                    Object {
+                      "key": "Branch F",
+                      "value": 375.95,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Branch",
+                    "y": "Revenue",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Fridays",
+                      "value": 83.29,
+                    },
+                    Object {
+                      "key": "Mondays",
+                      "value": 57.89,
+                    },
+                    Object {
+                      "key": "Saturdays",
+                      "value": 234.60000000000002,
+                    },
+                    Object {
+                      "key": "Sundays",
+                      "value": 187.74,
+                    },
+                    Object {
+                      "key": "Thursdays",
+                      "value": 418.09000000000003,
+                    },
+                    Object {
+                      "key": "Tuesdays",
+                      "value": 65.38,
+                    },
+                    Object {
+                      "key": "Wednesdays",
+                      "value": 383.93,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Day of Week",
+                    "y": "Revenue",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+            </Card>,
+            "lg": 8,
+            "md": 8,
+            "sm": 24,
+            "xl": 8,
+            "xs": 24,
+            "xxl": 8,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "children": Array [
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                      "y": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 230.59,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 123.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 250.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 230.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 220.12,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 375.95,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Branch",
+                      "y": "Revenue",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />,
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                      "y": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 83.29,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 57.89,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 234.60000000000002,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 187.74,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 418.09000000000003,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 65.38,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 383.93,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Day of Week",
+                      "y": "Revenue",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />,
+              ],
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Revenue By Branch and Week Day",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "axisFormats": Object {
+                    "x": [Function],
+                    "y": [Function],
+                  },
+                  "data": Array [
+                    Object {
+                      "key": "Branch A",
+                      "value": 230.59,
+                    },
+                    Object {
+                      "key": "Branch B",
+                      "value": 123.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch C",
+                      "value": 250.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch D",
+                      "value": 230.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch E",
+                      "value": 220.12,
+                    },
+                    Object {
+                      "key": "Branch F",
+                      "value": 375.95,
+                    },
+                  ],
+                  "height": 250,
+                  "hiddenTicks": Object {
+                    "x": false,
+                    "y": false,
+                  },
+                  "horizontal": false,
+                  "labelKey": "value",
+                  "labeledBars": false,
+                  "labels": Object {
+                    "x": "Branch",
+                    "y": "Revenue",
+                  },
+                  "onClick": [Function],
+                  "width": 350,
+                  "x": "key",
+                  "y": "value",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "axisFormats": Object {
+                    "x": [Function],
+                    "y": [Function],
+                  },
+                  "data": Array [
+                    Object {
+                      "key": "Fridays",
+                      "value": 83.29,
+                    },
+                    Object {
+                      "key": "Mondays",
+                      "value": 57.89,
+                    },
+                    Object {
+                      "key": "Saturdays",
+                      "value": 234.60000000000002,
+                    },
+                    Object {
+                      "key": "Sundays",
+                      "value": 187.74,
+                    },
+                    Object {
+                      "key": "Thursdays",
+                      "value": 418.09000000000003,
+                    },
+                    Object {
+                      "key": "Tuesdays",
+                      "value": 65.38,
+                    },
+                    Object {
+                      "key": "Wednesdays",
+                      "value": 383.93,
+                    },
+                  ],
+                  "height": 250,
+                  "hiddenTicks": Object {
+                    "x": false,
+                    "y": false,
+                  },
+                  "horizontal": false,
+                  "labelKey": "value",
+                  "labeledBars": false,
+                  "labels": Object {
+                    "x": "Day of Week",
+                    "y": "Revenue",
+                  },
+                  "onClick": [Function],
+                  "width": 350,
+                  "x": "key",
+                  "y": "value",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 176.21,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 130.1,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 112.94,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 91.43,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 89.96,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 85.38,
+                  },
+                  Object {
+                    "key": "Abdullah Al Salem",
+                    "value": 83.43,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 83.02,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 78.24,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 74.36,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Sheikh Saad Aviation Terminal",
+                    "value": 57.89,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 47.269999999999996,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 45.3,
+                  },
+                  Object {
+                    "key": "Saad Al Abdullah",
+                    "value": 36.51,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 36.35,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 34.87,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 34.84,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 30.51,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 20.85,
+                  },
+                ]
+              }
+              height={490}
+              hiddenTicks={
+                Object {
+                  "y": true,
+                }
+              }
+              horizontal={true}
+              labelKey="key"
+              labeledBars={true}
+              labels={
+                Object {
+                  "x": "Revenue",
+                  "y": "Delivery Area",
+                }
+              }
+              onClick={[Function]}
+              width={720}
+              x="key"
+              y="value"
+            />,
+            "hoverable": true,
+            "loading": undefined,
+            "title": "Top 20 Delivery Areas By Revenue",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "axisFormats": Object {
+                "x": [Function],
+              },
+              "data": Array [
+                Object {
+                  "key": "Rai",
+                  "value": 176.21,
+                },
+                Object {
+                  "key": "Qibla",
+                  "value": 130.1,
+                },
+                Object {
+                  "key": "Zahra",
+                  "value": 112.94,
+                },
+                Object {
+                  "key": "Al Qusour",
+                  "value": 91.43,
+                },
+                Object {
+                  "key": "Al Bidae",
+                  "value": 89.96,
+                },
+                Object {
+                  "key": "Hadiya",
+                  "value": 85.38,
+                },
+                Object {
+                  "key": "Abdullah Al Salem",
+                  "value": 83.43,
+                },
+                Object {
+                  "key": "Faiha",
+                  "value": 83.02,
+                },
+                Object {
+                  "key": "Jaber Al Ahmad",
+                  "value": 78.24,
+                },
+                Object {
+                  "key": "Nuzha",
+                  "value": 74.36,
+                },
+                Object {
+                  "key": "Abu Halifa",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Sheikh Saad Aviation Terminal",
+                  "value": 57.89,
+                },
+                Object {
+                  "key": "Reggai",
+                  "value": 47.269999999999996,
+                },
+                Object {
+                  "key": "Qortuba",
+                  "value": 45.3,
+                },
+                Object {
+                  "key": "Saad Al Abdullah",
+                  "value": 36.51,
+                },
+                Object {
+                  "key": "Nahda",
+                  "value": 36.35,
+                },
+                Object {
+                  "key": "Mirqab",
+                  "value": 34.87,
+                },
+                Object {
+                  "key": "Fahaheel",
+                  "value": 34.84,
+                },
+                Object {
+                  "key": "Qasser",
+                  "value": 30.51,
+                },
+                Object {
+                  "key": "Doha",
+                  "value": 20.85,
+                },
+              ],
+              "height": 490,
+              "hiddenTicks": Object {
+                "y": true,
+              },
+              "horizontal": true,
+              "labelKey": "key",
+              "labeledBars": true,
+              "labels": Object {
+                "x": "Revenue",
+                "y": "Delivery Area",
+              },
+              "onClick": [Function],
+              "width": 720,
+              "x": "key",
+              "y": "value",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <FlexGridRow
+          align="middle"
+          gutter={24}
+          justify="space-around"
+        >
+          <Col
+            lg={8}
+            md={8}
+            sm={24}
+            xl={8}
+            xs={24}
+            xxl={8}
+          >
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Revenue By Branch and Week Day"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Branch A",
+                      "value": 230.59,
+                    },
+                    Object {
+                      "key": "Branch B",
+                      "value": 123.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch C",
+                      "value": 250.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch D",
+                      "value": 230.42000000000002,
+                    },
+                    Object {
+                      "key": "Branch E",
+                      "value": 220.12,
+                    },
+                    Object {
+                      "key": "Branch F",
+                      "value": 375.95,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Branch",
+                    "y": "Revenue",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                    "y": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Fridays",
+                      "value": 83.29,
+                    },
+                    Object {
+                      "key": "Mondays",
+                      "value": 57.89,
+                    },
+                    Object {
+                      "key": "Saturdays",
+                      "value": 234.60000000000002,
+                    },
+                    Object {
+                      "key": "Sundays",
+                      "value": 187.74,
+                    },
+                    Object {
+                      "key": "Thursdays",
+                      "value": 418.09000000000003,
+                    },
+                    Object {
+                      "key": "Tuesdays",
+                      "value": 65.38,
+                    },
+                    Object {
+                      "key": "Wednesdays",
+                      "value": 383.93,
+                    },
+                  ]
+                }
+                height={250}
+                hiddenTicks={
+                  Object {
+                    "x": false,
+                    "y": false,
+                  }
+                }
+                horizontal={false}
+                labelKey="value"
+                labeledBars={false}
+                labels={
+                  Object {
+                    "x": "Day of Week",
+                    "y": "Revenue",
+                  }
+                }
+                onClick={[Function]}
+                width={350}
+                x="key"
+                y="value"
+              />
+            </Card>
+          </Col>
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Top 20 Delivery Areas By Revenue"
+          >
+            <BarChart
+              axisFormats={
+                Object {
+                  "x": [Function],
+                }
+              }
+              data={
+                Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 176.21,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 130.1,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 112.94,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 91.43,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 89.96,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 85.38,
+                  },
+                  Object {
+                    "key": "Abdullah Al Salem",
+                    "value": 83.43,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 83.02,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 78.24,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 74.36,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Sheikh Saad Aviation Terminal",
+                    "value": 57.89,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 47.269999999999996,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 45.3,
+                  },
+                  Object {
+                    "key": "Saad Al Abdullah",
+                    "value": 36.51,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 36.35,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 34.87,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 34.84,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 30.51,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 20.85,
+                  },
+                ]
+              }
+              height={490}
+              hiddenTicks={
+                Object {
+                  "y": true,
+                }
+              }
+              horizontal={true}
+              labelKey="key"
+              labeledBars={true}
+              labels={
+                Object {
+                  "x": "Revenue",
+                  "y": "Delivery Area",
+                }
+              }
+              onClick={[Function]}
+              width={720}
+              x="key"
+              y="value"
+            />
+          </Card>
+        </FlexGridRow>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "align": "middle",
+          "children": Array [
+            <Col
+              lg={8}
+              md={8}
+              sm={24}
+              xl={8}
+              xs={24}
+              xxl={8}
+            >
+              <Card
+                bordered={true}
+                hoverable={true}
+                title="Revenue By Branch and Week Day"
+              >
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                      "y": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 230.59,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 123.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 250.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 230.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 220.12,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 375.95,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Branch",
+                      "y": "Revenue",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                      "y": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 83.29,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 57.89,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 234.60000000000002,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 187.74,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 418.09000000000003,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 65.38,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 383.93,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Day of Week",
+                      "y": "Revenue",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+              </Card>
+            </Col>,
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Top 20 Delivery Areas By Revenue"
+            >
+              <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Rai",
+                      "value": 176.21,
+                    },
+                    Object {
+                      "key": "Qibla",
+                      "value": 130.1,
+                    },
+                    Object {
+                      "key": "Zahra",
+                      "value": 112.94,
+                    },
+                    Object {
+                      "key": "Al Qusour",
+                      "value": 91.43,
+                    },
+                    Object {
+                      "key": "Al Bidae",
+                      "value": 89.96,
+                    },
+                    Object {
+                      "key": "Hadiya",
+                      "value": 85.38,
+                    },
+                    Object {
+                      "key": "Abdullah Al Salem",
+                      "value": 83.43,
+                    },
+                    Object {
+                      "key": "Faiha",
+                      "value": 83.02,
+                    },
+                    Object {
+                      "key": "Jaber Al Ahmad",
+                      "value": 78.24,
+                    },
+                    Object {
+                      "key": "Nuzha",
+                      "value": 74.36,
+                    },
+                    Object {
+                      "key": "Abu Halifa",
+                      "value": 67.52,
+                    },
+                    Object {
+                      "key": "Sheikh Saad Aviation Terminal",
+                      "value": 57.89,
+                    },
+                    Object {
+                      "key": "Reggai",
+                      "value": 47.269999999999996,
+                    },
+                    Object {
+                      "key": "Qortuba",
+                      "value": 45.3,
+                    },
+                    Object {
+                      "key": "Saad Al Abdullah",
+                      "value": 36.51,
+                    },
+                    Object {
+                      "key": "Nahda",
+                      "value": 36.35,
+                    },
+                    Object {
+                      "key": "Mirqab",
+                      "value": 34.87,
+                    },
+                    Object {
+                      "key": "Fahaheel",
+                      "value": 34.84,
+                    },
+                    Object {
+                      "key": "Qasser",
+                      "value": 30.51,
+                    },
+                    Object {
+                      "key": "Doha",
+                      "value": 20.85,
+                    },
+                  ]
+                }
+                height={490}
+                hiddenTicks={
+                  Object {
+                    "y": true,
+                  }
+                }
+                horizontal={true}
+                labelKey="key"
+                labeledBars={true}
+                labels={
+                  Object {
+                    "x": "Revenue",
+                    "y": "Delivery Area",
+                  }
+                }
+                onClick={[Function]}
+                width={720}
+                x="key"
+                y="value"
+              />
+            </Card>,
+          ],
+          "gutter": 24,
+          "justify": "space-around",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Card
+                bordered={true}
+                hoverable={true}
+                title="Revenue By Branch and Week Day"
+              >
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                      "y": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 230.59,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 123.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 250.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 230.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 220.12,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 375.95,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Branch",
+                      "y": "Revenue",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+                <BarChart
+                  axisFormats={
+                    Object {
+                      "x": [Function],
+                      "y": [Function],
+                    }
+                  }
+                  data={
+                    Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 83.29,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 57.89,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 234.60000000000002,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 187.74,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 418.09000000000003,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 65.38,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 383.93,
+                      },
+                    ]
+                  }
+                  height={250}
+                  hiddenTicks={
+                    Object {
+                      "x": false,
+                      "y": false,
+                    }
+                  }
+                  horizontal={false}
+                  labelKey="value"
+                  labeledBars={false}
+                  labels={
+                    Object {
+                      "x": "Day of Week",
+                      "y": "Revenue",
+                    }
+                  }
+                  onClick={[Function]}
+                  width={350}
+                  x="key"
+                  y="value"
+                />
+              </Card>,
+              "lg": 8,
+              "md": 8,
+              "sm": 24,
+              "xl": 8,
+              "xs": 24,
+              "xxl": 8,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bordered": true,
+                "children": Array [
+                  <BarChart
+                    axisFormats={
+                      Object {
+                        "x": [Function],
+                        "y": [Function],
+                      }
+                    }
+                    data={
+                      Array [
+                        Object {
+                          "key": "Branch A",
+                          "value": 230.59,
+                        },
+                        Object {
+                          "key": "Branch B",
+                          "value": 123.42000000000002,
+                        },
+                        Object {
+                          "key": "Branch C",
+                          "value": 250.42000000000002,
+                        },
+                        Object {
+                          "key": "Branch D",
+                          "value": 230.42000000000002,
+                        },
+                        Object {
+                          "key": "Branch E",
+                          "value": 220.12,
+                        },
+                        Object {
+                          "key": "Branch F",
+                          "value": 375.95,
+                        },
+                      ]
+                    }
+                    height={250}
+                    hiddenTicks={
+                      Object {
+                        "x": false,
+                        "y": false,
+                      }
+                    }
+                    horizontal={false}
+                    labelKey="value"
+                    labeledBars={false}
+                    labels={
+                      Object {
+                        "x": "Branch",
+                        "y": "Revenue",
+                      }
+                    }
+                    onClick={[Function]}
+                    width={350}
+                    x="key"
+                    y="value"
+                  />,
+                  <BarChart
+                    axisFormats={
+                      Object {
+                        "x": [Function],
+                        "y": [Function],
+                      }
+                    }
+                    data={
+                      Array [
+                        Object {
+                          "key": "Fridays",
+                          "value": 83.29,
+                        },
+                        Object {
+                          "key": "Mondays",
+                          "value": 57.89,
+                        },
+                        Object {
+                          "key": "Saturdays",
+                          "value": 234.60000000000002,
+                        },
+                        Object {
+                          "key": "Sundays",
+                          "value": 187.74,
+                        },
+                        Object {
+                          "key": "Thursdays",
+                          "value": 418.09000000000003,
+                        },
+                        Object {
+                          "key": "Tuesdays",
+                          "value": 65.38,
+                        },
+                        Object {
+                          "key": "Wednesdays",
+                          "value": 383.93,
+                        },
+                      ]
+                    }
+                    height={250}
+                    hiddenTicks={
+                      Object {
+                        "x": false,
+                        "y": false,
+                      }
+                    }
+                    horizontal={false}
+                    labelKey="value"
+                    labeledBars={false}
+                    labels={
+                      Object {
+                        "x": "Day of Week",
+                        "y": "Revenue",
+                      }
+                    }
+                    onClick={[Function]}
+                    width={350}
+                    x="key"
+                    y="value"
+                  />,
+                ],
+                "hoverable": true,
+                "loading": undefined,
+                "title": "Revenue By Branch and Week Day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "axisFormats": Object {
+                      "x": [Function],
+                      "y": [Function],
+                    },
+                    "data": Array [
+                      Object {
+                        "key": "Branch A",
+                        "value": 230.59,
+                      },
+                      Object {
+                        "key": "Branch B",
+                        "value": 123.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch C",
+                        "value": 250.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch D",
+                        "value": 230.42000000000002,
+                      },
+                      Object {
+                        "key": "Branch E",
+                        "value": 220.12,
+                      },
+                      Object {
+                        "key": "Branch F",
+                        "value": 375.95,
+                      },
+                    ],
+                    "height": 250,
+                    "hiddenTicks": Object {
+                      "x": false,
+                      "y": false,
+                    },
+                    "horizontal": false,
+                    "labelKey": "value",
+                    "labeledBars": false,
+                    "labels": Object {
+                      "x": "Branch",
+                      "y": "Revenue",
+                    },
+                    "onClick": [Function],
+                    "width": 350,
+                    "x": "key",
+                    "y": "value",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "axisFormats": Object {
+                      "x": [Function],
+                      "y": [Function],
+                    },
+                    "data": Array [
+                      Object {
+                        "key": "Fridays",
+                        "value": 83.29,
+                      },
+                      Object {
+                        "key": "Mondays",
+                        "value": 57.89,
+                      },
+                      Object {
+                        "key": "Saturdays",
+                        "value": 234.60000000000002,
+                      },
+                      Object {
+                        "key": "Sundays",
+                        "value": 187.74,
+                      },
+                      Object {
+                        "key": "Thursdays",
+                        "value": 418.09000000000003,
+                      },
+                      Object {
+                        "key": "Tuesdays",
+                        "value": 65.38,
+                      },
+                      Object {
+                        "key": "Wednesdays",
+                        "value": 383.93,
+                      },
+                    ],
+                    "height": 250,
+                    "hiddenTicks": Object {
+                      "x": false,
+                      "y": false,
+                    },
+                    "horizontal": false,
+                    "labelKey": "value",
+                    "labeledBars": false,
+                    "labels": Object {
+                      "x": "Day of Week",
+                      "y": "Revenue",
+                    },
+                    "onClick": [Function],
+                    "width": 350,
+                    "x": "key",
+                    "y": "value",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "children": <BarChart
+                axisFormats={
+                  Object {
+                    "x": [Function],
+                  }
+                }
+                data={
+                  Array [
+                    Object {
+                      "key": "Rai",
+                      "value": 176.21,
+                    },
+                    Object {
+                      "key": "Qibla",
+                      "value": 130.1,
+                    },
+                    Object {
+                      "key": "Zahra",
+                      "value": 112.94,
+                    },
+                    Object {
+                      "key": "Al Qusour",
+                      "value": 91.43,
+                    },
+                    Object {
+                      "key": "Al Bidae",
+                      "value": 89.96,
+                    },
+                    Object {
+                      "key": "Hadiya",
+                      "value": 85.38,
+                    },
+                    Object {
+                      "key": "Abdullah Al Salem",
+                      "value": 83.43,
+                    },
+                    Object {
+                      "key": "Faiha",
+                      "value": 83.02,
+                    },
+                    Object {
+                      "key": "Jaber Al Ahmad",
+                      "value": 78.24,
+                    },
+                    Object {
+                      "key": "Nuzha",
+                      "value": 74.36,
+                    },
+                    Object {
+                      "key": "Abu Halifa",
+                      "value": 67.52,
+                    },
+                    Object {
+                      "key": "Sheikh Saad Aviation Terminal",
+                      "value": 57.89,
+                    },
+                    Object {
+                      "key": "Reggai",
+                      "value": 47.269999999999996,
+                    },
+                    Object {
+                      "key": "Qortuba",
+                      "value": 45.3,
+                    },
+                    Object {
+                      "key": "Saad Al Abdullah",
+                      "value": 36.51,
+                    },
+                    Object {
+                      "key": "Nahda",
+                      "value": 36.35,
+                    },
+                    Object {
+                      "key": "Mirqab",
+                      "value": 34.87,
+                    },
+                    Object {
+                      "key": "Fahaheel",
+                      "value": 34.84,
+                    },
+                    Object {
+                      "key": "Qasser",
+                      "value": 30.51,
+                    },
+                    Object {
+                      "key": "Doha",
+                      "value": 20.85,
+                    },
+                  ]
+                }
+                height={490}
+                hiddenTicks={
+                  Object {
+                    "y": true,
+                  }
+                }
+                horizontal={true}
+                labelKey="key"
+                labeledBars={true}
+                labels={
+                  Object {
+                    "x": "Revenue",
+                    "y": "Delivery Area",
+                  }
+                }
+                onClick={[Function]}
+                width={720}
+                x="key"
+                y="value"
+              />,
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Top 20 Delivery Areas By Revenue",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "axisFormats": Object {
+                  "x": [Function],
+                },
+                "data": Array [
+                  Object {
+                    "key": "Rai",
+                    "value": 176.21,
+                  },
+                  Object {
+                    "key": "Qibla",
+                    "value": 130.1,
+                  },
+                  Object {
+                    "key": "Zahra",
+                    "value": 112.94,
+                  },
+                  Object {
+                    "key": "Al Qusour",
+                    "value": 91.43,
+                  },
+                  Object {
+                    "key": "Al Bidae",
+                    "value": 89.96,
+                  },
+                  Object {
+                    "key": "Hadiya",
+                    "value": 85.38,
+                  },
+                  Object {
+                    "key": "Abdullah Al Salem",
+                    "value": 83.43,
+                  },
+                  Object {
+                    "key": "Faiha",
+                    "value": 83.02,
+                  },
+                  Object {
+                    "key": "Jaber Al Ahmad",
+                    "value": 78.24,
+                  },
+                  Object {
+                    "key": "Nuzha",
+                    "value": 74.36,
+                  },
+                  Object {
+                    "key": "Abu Halifa",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Sheikh Saad Aviation Terminal",
+                    "value": 57.89,
+                  },
+                  Object {
+                    "key": "Reggai",
+                    "value": 47.269999999999996,
+                  },
+                  Object {
+                    "key": "Qortuba",
+                    "value": 45.3,
+                  },
+                  Object {
+                    "key": "Saad Al Abdullah",
+                    "value": 36.51,
+                  },
+                  Object {
+                    "key": "Nahda",
+                    "value": 36.35,
+                  },
+                  Object {
+                    "key": "Mirqab",
+                    "value": 34.87,
+                  },
+                  Object {
+                    "key": "Fahaheel",
+                    "value": 34.84,
+                  },
+                  Object {
+                    "key": "Qasser",
+                    "value": 30.51,
+                  },
+                  Object {
+                    "key": "Doha",
+                    "value": 20.85,
+                  },
+                ],
+                "height": 490,
+                "hiddenTicks": Object {
+                  "y": true,
+                },
+                "horizontal": true,
+                "labelKey": "key",
+                "labeledBars": true,
+                "labels": Object {
+                  "x": "Revenue",
+                  "y": "Delivery Area",
+                },
+                "onClick": [Function],
+                "width": 720,
+                "x": "key",
+                "y": "value",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
