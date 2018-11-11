@@ -9,7 +9,7 @@ const { Content } = Layout;
  * @param {Array} children
  */
 const AppContent = ({ children }) => (
-  <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
+  <Content style={{ marginBottom: 50, padding: '20px 12px 12px 12px', background: '#ECECEC', minHeight: '100vh' }}>
     {children}
   </Content>
 );

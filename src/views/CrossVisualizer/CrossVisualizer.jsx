@@ -79,7 +79,6 @@ class CrossVisualizer extends Component {
                 onFilter={this.onFilter}
                 loading={loading}
               />
-              <h3>Orders Count & Total Sales By Date</h3>
               <OrdersTimeSeries
                 orders={orders}
                 dimensions={dimensions}

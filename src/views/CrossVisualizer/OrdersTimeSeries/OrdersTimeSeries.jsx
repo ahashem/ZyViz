@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FlexGridRow from '../../../components/flex-wrapper/FlexGridRow';
 import TimeSeries from '../../../components/TimeSeries/TimeSeries';
+import { Card } from 'antd';
 
 /**
  * @component OrdersTimeSeries
@@ -93,28 +94,34 @@ class OrdersTimeSeries extends Component {
 
   render() {
     const { zoomDomains } = this.state;
-    const { dimensions } = this.props;
+    const { dimensions, loading } = this.props;
     const ordersCrossed = dimensions ? this.prepareOrdersCountData(dimensions) : null;
 
     return (
       <div>
-        <FlexGridRow justify="space-around" gutter={48}>
+        <FlexGridRow justify="space-around" gutter={24}>
 
           {ordersCrossed && (
-            <TimeSeries
-              data={ordersCrossed.ordersByDateData}
-              onFilter={this.crossFilterSelected}
-              zoomDomain={zoomDomains[this._chartCount]}
-              name={this._chartCount}
-            />)}
+            <Card title="Orders Count over time" bordered hoverable loading={loading}>
+              <TimeSeries
+                data={ordersCrossed.ordersByDateData}
+                onFilter={this.crossFilterSelected}
+                zoomDomain={zoomDomains[this._chartCount]}
+                name={this._chartCount}
+              />
+            </Card>
+          )}
 
           {ordersCrossed && (
-            <TimeSeries
-              data={ordersCrossed.totalSaleByDateData}
-              onFilter={this.crossFilterSelected}
-              zoomDomain={zoomDomains[this._chartSales]}
-              name={this._chartSales}
-            />)}
+            <Card title="Total Sales over Time" bordered hoverable loading={loading}>
+              <TimeSeries
+                data={ordersCrossed.totalSaleByDateData}
+                onFilter={this.crossFilterSelected}
+                zoomDomain={zoomDomains[this._chartSales]}
+                name={this._chartSales}
+              />
+            </Card>
+          )}
 
         </FlexGridRow>
       </div>

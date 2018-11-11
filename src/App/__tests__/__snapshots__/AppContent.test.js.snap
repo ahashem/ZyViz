@@ -19,10 +19,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [],
       "style": Object {
-        "background": "#fff",
-        "margin": "24px 16px",
-        "minHeight": 280,
-        "padding": 24,
+        "background": "#ECECEC",
+        "marginBottom": 50,
+        "minHeight": "100vh",
+        "padding": "20px 12px 12px 12px",
       },
     },
     "ref": null,
@@ -37,10 +37,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [],
         "style": Object {
-          "background": "#fff",
-          "margin": "24px 16px",
-          "minHeight": 280,
-          "padding": 24,
+          "background": "#ECECEC",
+          "marginBottom": 50,
+          "minHeight": "100vh",
+          "padding": "20px 12px 12px 12px",
         },
       },
       "ref": null,
