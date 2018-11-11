@@ -1,0 +1,1101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrdersRevenuePie /> Component should render children and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <OrdersRevenuePie
+    dimensions={
+      Object {
+        "ordersByBranch": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByDate": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByDeliveryArea": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByPaymentMethod": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersBySize": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByTimeOfDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+        "ordersByWeekDay": Object {
+          "accessor": [Function],
+          "bottom": [Function],
+          "currentFilter": [Function],
+          "dispose": [Function],
+          "filter": [Function],
+          "filterAll": [Function],
+          "filterExact": [Function],
+          "filterFunction": [Function],
+          "filterRange": [Function],
+          "group": [Function],
+          "groupAll": [Function],
+          "hasCurrentFilter": [Function],
+          "id": [Function],
+          "remove": [Function],
+          "top": [Function],
+        },
+      }
+    }
+    onFilter={[MockFunction]}
+    orders={
+      Object {
+        "add": [Function],
+        "all": [Function],
+        "allFiltered": [Function],
+        "dimension": [Function],
+        "groupAll": [Function],
+        "isElementFiltered": [Function],
+        "onChange": [Function],
+        "remove": [Function],
+        "size": [Function],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <FlexGridRow
+        align="middle"
+        gutter={24}
+        justify="space-around"
+      >
+        <Card
+          bordered={true}
+          hoverable={true}
+          title="Revenue By Payment Method"
+        >
+          <PieChart
+            data={
+              Array [
+                Object {
+                  "key": "Cash",
+                  "value": 447.44,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 685,
+                },
+                Object {
+                  "key": "KNET",
+                  "value": 298.48,
+                },
+              ]
+            }
+            labelKey="key"
+            name=""
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />
+        </Card>
+        <Card
+          bordered={true}
+          hoverable={true}
+          title="Revenue By Size"
+        >
+          <PieChart
+            data={
+              Array [
+                Object {
+                  "key": "$10-$20",
+                  "value": 14.34,
+                },
+                Object {
+                  "key": "$20-$40",
+                  "value": 291.51,
+                },
+                Object {
+                  "key": "$40-$70",
+                  "value": 170.70999999999998,
+                },
+                Object {
+                  "key": "$70 or more",
+                  "value": 940.4199999999998,
+                },
+                Object {
+                  "key": "Less than $10",
+                  "value": 13.94,
+                },
+              ]
+            }
+            labelKey="key"
+            name=""
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />
+        </Card>
+        <Card
+          bordered={true}
+          hoverable={true}
+          title="Orders Revenue By Time of the Day"
+        >
+          <PieChart
+            data={
+              Array [
+                Object {
+                  "key": "Afternoon",
+                  "value": 686.75,
+                },
+                Object {
+                  "key": "Evening",
+                  "value": 99.61,
+                },
+                Object {
+                  "key": "Morning",
+                  "value": 324.94,
+                },
+                Object {
+                  "key": "N/A",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 252.10000000000002,
+                },
+              ]
+            }
+            labelKey="key"
+            name=""
+            onClick={[Function]}
+            x="key"
+            y="value"
+          />
+        </Card>
+      </FlexGridRow>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "align": "middle",
+        "children": Array [
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Revenue By Payment Method"
+          >
+            <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "Cash",
+                    "value": 447.44,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 685,
+                  },
+                  Object {
+                    "key": "KNET",
+                    "value": 298.48,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />
+          </Card>,
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Revenue By Size"
+          >
+            <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "$10-$20",
+                    "value": 14.34,
+                  },
+                  Object {
+                    "key": "$20-$40",
+                    "value": 291.51,
+                  },
+                  Object {
+                    "key": "$40-$70",
+                    "value": 170.70999999999998,
+                  },
+                  Object {
+                    "key": "$70 or more",
+                    "value": 940.4199999999998,
+                  },
+                  Object {
+                    "key": "Less than $10",
+                    "value": 13.94,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />
+          </Card>,
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Orders Revenue By Time of the Day"
+          >
+            <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "Afternoon",
+                    "value": 686.75,
+                  },
+                  Object {
+                    "key": "Evening",
+                    "value": 99.61,
+                  },
+                  Object {
+                    "key": "Morning",
+                    "value": 324.94,
+                  },
+                  Object {
+                    "key": "N/A",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 252.10000000000002,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />
+          </Card>,
+        ],
+        "gutter": 24,
+        "justify": "space-around",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "Cash",
+                    "value": 447.44,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 685,
+                  },
+                  Object {
+                    "key": "KNET",
+                    "value": 298.48,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />,
+            "hoverable": true,
+            "loading": undefined,
+            "title": "Revenue By Payment Method",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "data": Array [
+                Object {
+                  "key": "Cash",
+                  "value": 447.44,
+                },
+                Object {
+                  "key": "CreditCard",
+                  "value": 685,
+                },
+                Object {
+                  "key": "KNET",
+                  "value": 298.48,
+                },
+              ],
+              "labelKey": "key",
+              "name": "",
+              "onClick": [Function],
+              "x": "key",
+              "y": "value",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "$10-$20",
+                    "value": 14.34,
+                  },
+                  Object {
+                    "key": "$20-$40",
+                    "value": 291.51,
+                  },
+                  Object {
+                    "key": "$40-$70",
+                    "value": 170.70999999999998,
+                  },
+                  Object {
+                    "key": "$70 or more",
+                    "value": 940.4199999999998,
+                  },
+                  Object {
+                    "key": "Less than $10",
+                    "value": 13.94,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />,
+            "hoverable": true,
+            "loading": undefined,
+            "title": "Revenue By Size",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "data": Array [
+                Object {
+                  "key": "$10-$20",
+                  "value": 14.34,
+                },
+                Object {
+                  "key": "$20-$40",
+                  "value": 291.51,
+                },
+                Object {
+                  "key": "$40-$70",
+                  "value": 170.70999999999998,
+                },
+                Object {
+                  "key": "$70 or more",
+                  "value": 940.4199999999998,
+                },
+                Object {
+                  "key": "Less than $10",
+                  "value": 13.94,
+                },
+              ],
+              "labelKey": "key",
+              "name": "",
+              "onClick": [Function],
+              "x": "key",
+              "y": "value",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bordered": true,
+            "children": <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "Afternoon",
+                    "value": 686.75,
+                  },
+                  Object {
+                    "key": "Evening",
+                    "value": 99.61,
+                  },
+                  Object {
+                    "key": "Morning",
+                    "value": 324.94,
+                  },
+                  Object {
+                    "key": "N/A",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 252.10000000000002,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />,
+            "hoverable": true,
+            "loading": undefined,
+            "title": "Orders Revenue By Time of the Day",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "data": Array [
+                Object {
+                  "key": "Afternoon",
+                  "value": 686.75,
+                },
+                Object {
+                  "key": "Evening",
+                  "value": 99.61,
+                },
+                Object {
+                  "key": "Morning",
+                  "value": 324.94,
+                },
+                Object {
+                  "key": "N/A",
+                  "value": 67.52,
+                },
+                Object {
+                  "key": "Night",
+                  "value": 252.10000000000002,
+                },
+              ],
+              "labelKey": "key",
+              "name": "",
+              "onClick": [Function],
+              "x": "key",
+              "y": "value",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <FlexGridRow
+          align="middle"
+          gutter={24}
+          justify="space-around"
+        >
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Revenue By Payment Method"
+          >
+            <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "Cash",
+                    "value": 447.44,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 685,
+                  },
+                  Object {
+                    "key": "KNET",
+                    "value": 298.48,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />
+          </Card>
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Revenue By Size"
+          >
+            <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "$10-$20",
+                    "value": 14.34,
+                  },
+                  Object {
+                    "key": "$20-$40",
+                    "value": 291.51,
+                  },
+                  Object {
+                    "key": "$40-$70",
+                    "value": 170.70999999999998,
+                  },
+                  Object {
+                    "key": "$70 or more",
+                    "value": 940.4199999999998,
+                  },
+                  Object {
+                    "key": "Less than $10",
+                    "value": 13.94,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />
+          </Card>
+          <Card
+            bordered={true}
+            hoverable={true}
+            title="Orders Revenue By Time of the Day"
+          >
+            <PieChart
+              data={
+                Array [
+                  Object {
+                    "key": "Afternoon",
+                    "value": 686.75,
+                  },
+                  Object {
+                    "key": "Evening",
+                    "value": 99.61,
+                  },
+                  Object {
+                    "key": "Morning",
+                    "value": 324.94,
+                  },
+                  Object {
+                    "key": "N/A",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 252.10000000000002,
+                  },
+                ]
+              }
+              labelKey="key"
+              name=""
+              onClick={[Function]}
+              x="key"
+              y="value"
+            />
+          </Card>
+        </FlexGridRow>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "align": "middle",
+          "children": Array [
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Revenue By Payment Method"
+            >
+              <PieChart
+                data={
+                  Array [
+                    Object {
+                      "key": "Cash",
+                      "value": 447.44,
+                    },
+                    Object {
+                      "key": "CreditCard",
+                      "value": 685,
+                    },
+                    Object {
+                      "key": "KNET",
+                      "value": 298.48,
+                    },
+                  ]
+                }
+                labelKey="key"
+                name=""
+                onClick={[Function]}
+                x="key"
+                y="value"
+              />
+            </Card>,
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Revenue By Size"
+            >
+              <PieChart
+                data={
+                  Array [
+                    Object {
+                      "key": "$10-$20",
+                      "value": 14.34,
+                    },
+                    Object {
+                      "key": "$20-$40",
+                      "value": 291.51,
+                    },
+                    Object {
+                      "key": "$40-$70",
+                      "value": 170.70999999999998,
+                    },
+                    Object {
+                      "key": "$70 or more",
+                      "value": 940.4199999999998,
+                    },
+                    Object {
+                      "key": "Less than $10",
+                      "value": 13.94,
+                    },
+                  ]
+                }
+                labelKey="key"
+                name=""
+                onClick={[Function]}
+                x="key"
+                y="value"
+              />
+            </Card>,
+            <Card
+              bordered={true}
+              hoverable={true}
+              title="Orders Revenue By Time of the Day"
+            >
+              <PieChart
+                data={
+                  Array [
+                    Object {
+                      "key": "Afternoon",
+                      "value": 686.75,
+                    },
+                    Object {
+                      "key": "Evening",
+                      "value": 99.61,
+                    },
+                    Object {
+                      "key": "Morning",
+                      "value": 324.94,
+                    },
+                    Object {
+                      "key": "N/A",
+                      "value": 67.52,
+                    },
+                    Object {
+                      "key": "Night",
+                      "value": 252.10000000000002,
+                    },
+                  ]
+                }
+                labelKey="key"
+                name=""
+                onClick={[Function]}
+                x="key"
+                y="value"
+              />
+            </Card>,
+          ],
+          "gutter": 24,
+          "justify": "space-around",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "children": <PieChart
+                data={
+                  Array [
+                    Object {
+                      "key": "Cash",
+                      "value": 447.44,
+                    },
+                    Object {
+                      "key": "CreditCard",
+                      "value": 685,
+                    },
+                    Object {
+                      "key": "KNET",
+                      "value": 298.48,
+                    },
+                  ]
+                }
+                labelKey="key"
+                name=""
+                onClick={[Function]}
+                x="key"
+                y="value"
+              />,
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Revenue By Payment Method",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "data": Array [
+                  Object {
+                    "key": "Cash",
+                    "value": 447.44,
+                  },
+                  Object {
+                    "key": "CreditCard",
+                    "value": 685,
+                  },
+                  Object {
+                    "key": "KNET",
+                    "value": 298.48,
+                  },
+                ],
+                "labelKey": "key",
+                "name": "",
+                "onClick": [Function],
+                "x": "key",
+                "y": "value",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "children": <PieChart
+                data={
+                  Array [
+                    Object {
+                      "key": "$10-$20",
+                      "value": 14.34,
+                    },
+                    Object {
+                      "key": "$20-$40",
+                      "value": 291.51,
+                    },
+                    Object {
+                      "key": "$40-$70",
+                      "value": 170.70999999999998,
+                    },
+                    Object {
+                      "key": "$70 or more",
+                      "value": 940.4199999999998,
+                    },
+                    Object {
+                      "key": "Less than $10",
+                      "value": 13.94,
+                    },
+                  ]
+                }
+                labelKey="key"
+                name=""
+                onClick={[Function]}
+                x="key"
+                y="value"
+              />,
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Revenue By Size",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "data": Array [
+                  Object {
+                    "key": "$10-$20",
+                    "value": 14.34,
+                  },
+                  Object {
+                    "key": "$20-$40",
+                    "value": 291.51,
+                  },
+                  Object {
+                    "key": "$40-$70",
+                    "value": 170.70999999999998,
+                  },
+                  Object {
+                    "key": "$70 or more",
+                    "value": 940.4199999999998,
+                  },
+                  Object {
+                    "key": "Less than $10",
+                    "value": 13.94,
+                  },
+                ],
+                "labelKey": "key",
+                "name": "",
+                "onClick": [Function],
+                "x": "key",
+                "y": "value",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bordered": true,
+              "children": <PieChart
+                data={
+                  Array [
+                    Object {
+                      "key": "Afternoon",
+                      "value": 686.75,
+                    },
+                    Object {
+                      "key": "Evening",
+                      "value": 99.61,
+                    },
+                    Object {
+                      "key": "Morning",
+                      "value": 324.94,
+                    },
+                    Object {
+                      "key": "N/A",
+                      "value": 67.52,
+                    },
+                    Object {
+                      "key": "Night",
+                      "value": 252.10000000000002,
+                    },
+                  ]
+                }
+                labelKey="key"
+                name=""
+                onClick={[Function]}
+                x="key"
+                y="value"
+              />,
+              "hoverable": true,
+              "loading": undefined,
+              "title": "Orders Revenue By Time of the Day",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "data": Array [
+                  Object {
+                    "key": "Afternoon",
+                    "value": 686.75,
+                  },
+                  Object {
+                    "key": "Evening",
+                    "value": 99.61,
+                  },
+                  Object {
+                    "key": "Morning",
+                    "value": 324.94,
+                  },
+                  Object {
+                    "key": "N/A",
+                    "value": 67.52,
+                  },
+                  Object {
+                    "key": "Night",
+                    "value": 252.10000000000002,
+                  },
+                ],
+                "labelKey": "key",
+                "name": "",
+                "onClick": [Function],
+                "x": "key",
+                "y": "value",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

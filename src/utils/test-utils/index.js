@@ -1,7 +1,7 @@
 import crossfilter from '../../components/crossfilter/crossfilter';
-import NormalizeData from '../../views/CrossVisualizer/visualizer-data-structure/data-normalizer';
+import NormalizeData from '../../views/shared/visualizer-data-structure/data-normalizer';
 import mockOrdersJSON from './mock-test-orders';
-import GenerateDimensions from '../../views/CrossVisualizer/visualizer-data-structure/dimensions-manager';
+import GenerateDimensions from '../../views/shared/visualizer-data-structure/dimensions-manager';
 
 const mockOrdersCrossfilter = crossfilter(NormalizeData(mockOrdersJSON));
 const mockOrdersDimensions = GenerateDimensions(mockOrdersCrossfilter);

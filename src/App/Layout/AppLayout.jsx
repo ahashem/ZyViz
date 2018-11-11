@@ -9,7 +9,8 @@ import AppSidebar from './AppSidebar';
  */
 class AppLayout extends Component {
   state = {
-    collapsed: false,
+    collapsed: true,
+    currentMenuKey: 'dashboard',
   };
 
   /**
@@ -19,18 +20,34 @@ class AppLayout extends Component {
     this.setState({ collapsed });
   };
 
+  /**
+   * Handle Menu click and selected Item
+   * @param e
+   */
+  onMenuClick = (e) => {
+    this.setState({
+      currentMenuKey: e.key,
+    });
+  };
+
   render() {
+    const { collapsed, currentMenuKey } = this.state;
     const renderHeader = false;
 
     return (
       <Layout>
         {Boolean(process.env.REACT_APP_SIDE_MENU) ? (
-            <AppSidebar collapsed={this.state.collapsed} onCollapse={this.onCollapse}/>
+            <AppSidebar
+              collapsed={collapsed}
+              onCollapse={this.onCollapse}
+              onClick={this.onMenuClick}
+              currentMenu={currentMenuKey}
+            />
           ) :
           ''
         }
         <Layout>
-          {renderHeader ? <AppHeader /> : ''}
+          {renderHeader ? <AppHeader/> : ''}
           <AppContent>
             {this.props.children}
           </AppContent>

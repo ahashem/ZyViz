@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon, Layout, Menu } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Sider } = Layout;
 
@@ -9,18 +10,33 @@ const { Sider } = Layout;
  * @param {Array} children
  * @param {boolean} collapsed
  * @param {function} onCollapse
+ * @param {function} onClick
+ * @param {string} currentMenu
  */
-const AppSidebar = ({ children, collapsed, onCollapse }) => (
+const AppSidebar = ({ children, collapsed, onCollapse, onClick, currentMenu }) => (
   <Sider
     collapsible
     collapsed={collapsed}
     onCollapse={onCollapse}
   >
-    {/*Dummy Menu - Actually no use of it but a simple style!*/}
-    <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-      <Menu.Item key="1">
+    <Menu
+      theme="dark"
+      mode="inline"
+      defaultSelectedKeys={['dashboard']}
+      selectedKeys={[currentMenu]}
+      onClick={onClick}
+    >
+      <Menu.Item key="dashboard">
         <Icon type="dashboard"/>
-        <span>Dashboard</span>
+        <Link to='/'>
+          <span>Dashboard</span>
+        </Link>
+      </Menu.Item>
+      <Menu.Item key="tabbed">
+        <Icon type="project"/>
+        <Link to='/tabbed'>
+          <span>Tabbed Dashboard</span>
+        </Link>
       </Menu.Item>
     </Menu>
     {children}
@@ -36,7 +52,8 @@ AppSidebar.propTypes = {
 AppSidebar.defaultProps = {
   children: [],
   collapsed: false,
-  onCollapse: () => {}
+  onCollapse: () => {
+  }
 };
 
 export default AppSidebar;

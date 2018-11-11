@@ -29,7 +29,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <AppLayout>
-        <Connect(CrossVisualizer) />
+        <AppRouter />
       </AppLayout>,
       "className": "App",
     },
@@ -39,13 +39,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Connect(CrossVisualizer) />,
+        "children": <AppRouter />,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -62,7 +62,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <AppLayout>
-          <Connect(CrossVisualizer) />
+          <AppRouter />
         </AppLayout>,
         "className": "App",
       },
@@ -72,13 +72,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Connect(CrossVisualizer) />,
+          "children": <AppRouter />,
         },
         "ref": null,
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {},
           "ref": null,
           "rendered": null,
