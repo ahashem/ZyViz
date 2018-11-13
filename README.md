@@ -8,7 +8,7 @@ Awesome Admin Dashboard - Awesome Data Visualization
 [![node](https://img.shields.io/badge/node-=%3E8.12.0-blue.svg)](https://github.com/ahashem/ZyViz)
 [![dependencies Status](https://david-dm.org/ahashem/ZyViz/status.svg)](https://david-dm.org/ahashem/ZyViz)
 [![devDependencies Status](https://david-dm.org/ahashem/ZyViz/dev-status.svg)](https://david-dm.org/ahashem/ZyViz?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/ahashem/ZyViz/badge.svg)](https://snyk.io/test/github/ahashem/ZyViz)
+[![Known Vulnerabilities](https://snyk.io/test/github/ahashem/ZyViz/badge.svg)](https://snyk.io/test/github/ahashem/ZyViz) [![Greenkeeper badge](https://badges.greenkeeper.io/ahashem/ZyViz.svg)](https://greenkeeper.io/)
 
 
 ## About ZyViz
