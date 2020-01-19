@@ -13,7 +13,7 @@
     "lodash": "4.17.11",
     "logrocket": "0.6.17",
     "moment": "2.22.2",
-    "node-sass": "4.9.4",
+    "node-sass": "4.13.1",
     "prop-types": "15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
