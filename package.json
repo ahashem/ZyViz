@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "3.10.1",
+    "antd": "3.16.4",
     "crossfilter2": "1.4.6",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.6.0",
