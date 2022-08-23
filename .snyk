@@ -1,0 +1,218 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - victory > victory-area > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-axis > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-bar > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-box-plot > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-brush-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-brush-line > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-candlestick > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-polar-axis > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-shared-events > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-cursor-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-selection-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-tooltip > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-voronoi-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-zoom-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-errorbar > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-group > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-legend > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-line > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-pie > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-scatter > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-stack > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-voronoi > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-axis > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-brush-container > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-polar-axis > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-shared-events > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-cursor-container > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-selection-container > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-voronoi-container > victory-tooltip > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-voronoi-container > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-zoom-container > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest-circus > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-axis > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-brush-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-polar-axis > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-chart > victory-shared-events > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-cursor-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-selection-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-voronoi-container > victory-tooltip > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-zoom-container > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-tooltip > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > babel-jest > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest-circus > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest-circus > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - victory > victory-create-container > victory-voronoi-container > victory-tooltip > victory-core > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest-circus > jest-runner > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-resolve-dependencies > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest-circus > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > workbox-webpack-plugin > workbox-build > rollup-plugin-babel > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-jasmine2 > @babel/traverse > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-dir-pseudo-class > postcss-selector-parser > babel-eslint > @babel/traverse > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-pseudo-class-any-link > postcss-selector-parser > babel-eslint > @babel/traverse > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > babel-jest > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > babel-jest > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-jasmine2 > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-jasmine2 > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-resolve-dependencies > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-jasmine2 > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-dir-pseudo-class > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-pseudo-class-any-link > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > babel-jest > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > babel-jest > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > babel-jest > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > @jest/test-sequencer > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > @jest/test-sequencer > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-jasmine2 > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-jasmine2 > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-jasmine2 > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-jasmine2 > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-dir-pseudo-class > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-pseudo-class-any-link > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > babel-jest > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > @jest/test-sequencer > jest-runner > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > @jest/test-sequencer > jest-runner > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > @jest/test-sequencer > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-jasmine2 > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-jasmine2 > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-custom-selectors > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-dir-pseudo-class > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > postcss-preset-env > postcss-pseudo-class-any-link > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > @jest/core > jest-config > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > jest-config > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > @jest/test-sequencer > jest-runner > jest-runtime > jest-snapshot > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-jasmine2 > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > babel-jest > babel-preset-jest > babel-plugin-jest-hoist > @types/babel__core > @types/babel__template > @babel/types > lodash:
+        patched: '2022-08-23T07:23:30.109Z'
